@@ -1,3 +1,6 @@
-name: Nome
 theme: minima
 title: Projeto Steam-S
+
+header_pages:
+- index.md
+- dados/index.md
