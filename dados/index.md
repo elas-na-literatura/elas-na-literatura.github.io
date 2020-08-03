@@ -8,4 +8,4 @@
     * Cras lacinia turpis a ligula rutrum blandit.
     * Mauris eu neque eu turpis euismod suscipit vitae in sapien.
 
-[voltar](https://projetosteams.github.io/)
+[Retornar à Página Inicial](https://projetosteams.github.io/)
