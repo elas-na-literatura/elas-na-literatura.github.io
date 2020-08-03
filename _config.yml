@@ -4,3 +4,5 @@ title: Projeto Steam-S
 header_pages:
 - index.md
 - dados/index.md
+
+theme: jekyll-theme-cayman
