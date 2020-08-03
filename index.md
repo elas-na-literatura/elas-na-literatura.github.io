@@ -1,7 +1,7 @@
 # Hello, World!
 Este site será feito para ser o projeto de Steam-S!
 
-Veja sobre alguns dados [aqui](https://projetosteams.github.io/dados/index.md)!
+Veja sobre alguns dados [aqui](https://projetosteams.github.io/dados/)!
 
 # Informações
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus risus, mattis nec nisi in, accumsan pulvinar nibh. In lacus mauris, porta lacinia augue id, commodo suscipit velit. Vestibulum sed tellus laoreet, gravida urna sit amet, suscipit lectus. Aliquam erat volutpat. Sed blandit pellentesque efficitur. Proin finibus elit arcu, eu rutrum enim sodales vitae. Donec lectus mauris, pharetra a augue vitae, pulvinar egestas arcu.
