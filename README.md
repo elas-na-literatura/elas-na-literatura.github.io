@@ -1,5 +1,15 @@
 # Acesse a página [aqui](https://projetosteams.github.io)!
 
+Vou deixar escrito aqui para o grupo saber o básico do que que tá acontecendo nesse GitHub, e como mudar as coisas, ou adicionar livros!
+
+Eu estou trabalhando pra facilitar o máximo possível a adição de novas obras, pra ser mais rápido adicionar livros! (É o mínimo que eu posso fazer já que eu não consigo achar nada!)
+
+Por enquanto, cada página tem o nome como ```nomedapagina.md```. Para criar um arquivo em uma pasta, o nome do arquivo deve ser ```caminho/para/a/pasta/outrapagina.md```.
+
+Eventualmente, eu pretendo escrever um pouco mais sobre como mudar cada página, e como fazer a adição de livros (quando eu terminar de fazer isso), mas por enquanto é só isso!
+
+Também está aqui embaixo uma sinopse do GitHub Pages que vem de fábrica, então qualquer coisa, deem uma lidinha! :)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/projetosteams/projetosteams.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
