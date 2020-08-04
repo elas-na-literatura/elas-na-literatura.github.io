@@ -1,5 +1,5 @@
 # Hello, World!
-Este site será feito para ser o projeto de Steam-S!
+Este site está sendo feito para o projeto de Steam-S!
 
 Veja sobre alguns dados [aqui](https://projetosteams.github.io/dados/)!
 
