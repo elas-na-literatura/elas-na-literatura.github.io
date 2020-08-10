@@ -33,3 +33,18 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure{margin:0;padding:0
   font-size: 16px;
   border-radius: 5%
 }
+
+.quote {
+  background-color: #EFEFEF;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-shadow: 0px 0px 1px #555, 0px 0px 2px #555, 0px 0px 3px #555, 0px 0px 4px #555, 0px 0px 5px #555;
+  border-radius: 25px
+}
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
