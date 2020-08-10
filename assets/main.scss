@@ -3,3 +3,29 @@
 ---
 
 @import "minima";
+
+* {
+  box-sizing: border-box;
+}
+img{
+max-width: 100%;
+max-height: 100%;
+}
+/* Create two equal columns that floats next to each other */
+.columncapa {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
