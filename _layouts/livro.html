@@ -10,7 +10,7 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="row">
-          <div class="columncapa"> </div>
+          <div class="columncapa"> <img src={{ page.nomeautora | default: "https://images-na.ssl-images-amazon.com/images/I/31aX81I6vnL._SX351_BO1,204,203,200_.jpg" }}> </div>
           <div class="column">
             <h1>{{ page.nomelivro | default: "Nome da Obra" }}</h1>
             <h3 style="color:#505050"><i>{{ page.nomeautora | default: "Autora Da Silva" }} - {{ page.anolancamento | default: "1889" }}</i></h3>
