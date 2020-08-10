@@ -9,4 +9,8 @@ sinopse: >-
 link: https://www.escritas.org/pt/adelia-prado
 fontelivro: Escritas.org
 imagemcapa: https://www.escritas.org/autores/adelia-prado.jpg
+quote: >-
+  Isso aqui não é uma quote mesmo. Mas imagina se fosse?
+  Ia ser legal!
+quotepagina: 123-124
 ---
