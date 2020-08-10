@@ -14,6 +14,8 @@
           <div class="column">
             <h1 style="font-weight:900">{{ page.nomelivro | default: "Nome da Obra" }}</h1>
             <h3 style="color:#505050"><i><b>{{ page.nomeautora | default: "Autora Da Silva" }}</b> - {{ page.anolancamento | default: "1889" }}</i></h3>
+            Sinopse: {{ page.sinopse | default: "Lorem ipsum dolor sit amet."}}
+            <button class="button">Acesse via {{ page.fontelivro | default: "???" }}</button>
             {{ content }}
           </div>
         </div>
