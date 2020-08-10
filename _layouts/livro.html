@@ -15,7 +15,7 @@
             <h1 style="font-weight:900">{{ page.nomelivro | default: "Nome da Obra" }}</h1>
             <h3 style="color:#505050"><i><b>{{ page.nomeautora | default: "Autora Da Silva" }}</b> - {{ page.anolancamento | default: "1889" }}</i></h3>
             <p> Sinopse: {{ page.sinopse | default: "Lorem ipsum dolor sit amet."}} </p>
-            <button class="button" onclick='window.open({{ page.link | default: '"https://www.youtube.com/watch?v=dQw4w9WgXcQ"' }}, "_blank")'>Acesse via {{ page.fontelivro | default: "local" }}!</button>
+            <button class="button" onclick='window.open({{ page.link | default: '"https://www.youtube.com/watch?v=dQw4w9WgXcQ"' }}, "_blank")'>Acesse via {{ page.fontelivro | default: "YouTube" }}!</button>
             {{ content }}
           </div>
         </div>
