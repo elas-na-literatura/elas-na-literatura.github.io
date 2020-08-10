@@ -23,7 +23,11 @@
           <i>
           <tag style="font-size: 200%">&#x201c</tag><br>
           <div class="center">{{ page.quote | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis leo ac gravida pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam at urna vulputate, auctor ipsum id, vehicula augue. Phasellus ullamcorper molestie molestie. Fusce id maximus risus. Ut ornare nisi vitae posuere vehicula. Praesent pulvinar, felis at lobortis semper, est risus auctor enim, quis ullamcorper lacus urna sed sem. Praesent rhoncus quam ullamcorper ipsum varius, et finibus augue iaculis. Phasellus ut diam sed nulla vestibulum efficitur eget sodales nibh." }}</div>
-          <br><div style="font-size: 200%" class="right">&#x201d</div>
+          <br>
+          <div style="font-size: 200%" class="right">
+             &#x201d <br>
+            <p style="font-size: 50%">{{ page.nomelivro | default: "Nome da Obra" }}, página {{ page.quotepagina | default: "0" }}.</p>
+          </div>
           </i>
         </div>
       </div>
