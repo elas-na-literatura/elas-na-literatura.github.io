@@ -12,7 +12,7 @@ quote: >-
   Estava num dos seus momentos de melancolia; almejava qualquer coisa que ela mesma não
   sabia definir. Era a revolta surda contra a pacatez da sua vida sem emoções, contra aquele
   propósito de enterrar a sua mocidade e a sua formosura longe dos gozos e dos triunfos
-  mundanos. <br>
+  mundanos.
   O que lhe parecia agora um sacrifício parecera-lhe horas antes uma delícia.
 quotepagina: 2
 ---
