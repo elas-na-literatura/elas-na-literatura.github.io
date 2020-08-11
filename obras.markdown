@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Obras
+permalink: /obras/
 ---
 
 Está página está em desenvolvimento.
