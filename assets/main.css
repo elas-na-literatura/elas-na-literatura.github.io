@@ -35,6 +35,11 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure{margin:0;padding:0
   font-size: 16px;
   border-radius: 5px
 }
+.button:hover, .button:focus {
+  background-color: #EEEEEE;
+  color: #61F2C2;
+}
+
 
 .quote {
   background-color: #9CD7D4;
