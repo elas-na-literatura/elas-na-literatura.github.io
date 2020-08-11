@@ -37,7 +37,6 @@ function escolaLit() {
   }
 }
 </script>
-</head>
 <form>
 Filtros:
 <select id="filtros" onchange="escolaLit()">
