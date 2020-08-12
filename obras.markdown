@@ -16,35 +16,52 @@ var obras = [];
 obras[{{ forloop.index0 }}] = {titulo:"{{ livro[0] }}", autora:"{{ livro[1] }}", ano:"{{ livro[2] }}", escola:"{{ livro[3] }}", imagem:"{{ livro[4] }}", link:"{{ livro[0] | slugify: "latin"}}"};
 {% endfor %}
 
+var obrasMesmo = [];
+
+function search()
+{
+	obrasMesmo = []
+	var searchBar = document.getElementById("termo");
+	var termo = searchBar.value;
+    	for(i in obras)
+    	{
+    		if(obras[i].titulo.includes(termo))
+        	{
+        		obrasMesmo[obrasMesmo.length] = obras[i];
+        	}
+    	}
+	escolaLit();
+}
+
 function escolaLit() {
   var escolaOptions = document.getElementById("filtros");
   var escola = escolaOptions.options[escolaOptions.selectedIndex].text;
   document.getElementById("demo").innerHTML = "";
   
-  for (i in obras)
+  for (i in obrasMesmo)
   {
-  	//document.getElementById("demo").innerHTML += "<br>" + obras[i].escola + " // " + escola;
-  	if(escola != "--" && obras[i].escola != escola) continue;
+  	if(escola != "--" && obrasMesmo[i].escola != escola) continue;
     document.getElementById("demo").innerHTML += 
     '<div class="bookpreview">'+
 	'<div class="row">'+
-    '<div class="columncapatwo"><img src=' + obras[i].imagem + '> </div>'+
+    '<div class="columncapatwo"><img src=' + obrasMesmo[i].imagem + '> </div>'+
     '<div class="columntwo">'+
-    '<b style="font-weight:900;font-size:25px">' + obras[i].titulo + '</b><br>' +
-    '<tag style="color:#505050;font-size:16px"><i><b>' + obras[i].autora + '</b> - ' + obras[i].ano + '</i></tag><br><br>' +
-    '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obras[i].link + '", "_blank")\'>Conferir Obra</button>'+
+    '<b style="font-weight:900;font-size:25px">' + obrasMesmo[i].titulo + '</b><br>' +
+    '<tag style="color:#505050;font-size:16px"><i><b>' + obrasMesmo[i].autora + '</b> - ' + obrasMesmo[i].ano + '</i></tag><br><br>' +
+    '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasMesmo[i].link + '", "_blank")\'>Conferir Obra</button>'+
     '</div></div></div>';
-    // obras[i].titulo + ", de " + obras[i].autora + ".<br>";
   }
 }
 </script>
 <form>
-Filtros:
-<select id="filtros" onload="escolaLit()" onchange="escolaLit()">
+Escola Literária:
+<select id="filtros" onload="escolaLit()" onchange="search()">
   <option>--</option>
   <option>Realismo</option>
   <option>Parnasianismo</option>
   <option>Pré-Modernismo</option>
 </select>
+Nome da Obra:
+<input type="text" id="termo" value="" oninput="search()"><br>
 </form>
 <p id="demo"></p>
