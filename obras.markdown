@@ -12,14 +12,8 @@ Está página está em desenvolvimento.
 <script>
 var obras = [];
 {% for livro in page.livros %}
-obras[{{ forloop.index0 }}] = {titulo:"{{ livro[0] }}", autora:"{{ livro[1] }}", ano:"{{ livro[2] }}", escola:"{{ livro[3] }}", imagem:"{{ livro[4] }}"}
+obras[{{ forloop.index0 }}] = {titulo:"{{ livro[0] }}", autora:"{{ livro[1] }}", ano:"{{ livro[2] }}", escola:"{{ livro[3] }}", imagem:"{{ livro[4] }}", link:"{{ livro[0] | slugify: "latin"}}"};
 {% endfor %}
-// obras[0] = {titulo:"abcde", ano:1879, autora:"linda", escola:"Realismo"};
-// obras[1] = {titulo:"gfsdgfds", ano:1902, autora:"ana", escola:"Parnasianismo"};
-// obras[2] = {titulo:"dfdavc", ano:1899, autora:"martha", escola:"Realismo"};
-// obras[3] = {titulo:"fdvrgf", ano:1876, autora:"claudia", escola:"Realismo"};
-// obras[4] = {titulo:"fdsavre", ano:1879, autora:"janaina", escola:"Pré-Modernismo"};
-// obras[5] = {titulo:"htwfg", ano:1900, autora:"claudia", escola:"Realismo"};
 
 function escolaLit() {
   var escolaOptions = document.getElementById("filtros");
@@ -33,11 +27,11 @@ function escolaLit() {
     document.getElementById("demo").innerHTML += 
     '<div class="bookpreview">'+
 	'<div class="row">'+
-    '<div class="columncapatwo"><img src=https://images-na.ssl-images-amazon.com/images/I/31aX81I6vnL._SX351_BO1,204,203,200_.jpg> </div>'+
+    '<div class="columncapatwo"><img src=' + obras[i].imagem + '> </div>'+
     '<div class="columntwo">'+
-    '<h1 style="font-weight:900">' + obras[i].titulo + '</h1>' +
-    '<h3 style="color:#505050"><i><b>' + obras[i].autora + '</b> - ' + obras[i].ano + '</i></h3>' +
-    '<button>Confira Obra</button>'+
+    '<b style="font-weight:900;font-size:25px">' + obras[i].titulo + '</b><br>' +
+    '<tag style="color:#505050;font-size:16px"><i><b>' + obras[i].autora + '</b> - ' + obras[i].ano + '</i></tag><br><br><br>' +
+    '<button class="button" onclick='window.open("{{ site.url }}obras/{{ obras[i].link | default: '/404' }}", "_blank")'>Conferir Obra</button>'+
     '</div></div></div>';
     // obras[i].titulo + ", de " + obras[i].autora + ".<br>";
   }
