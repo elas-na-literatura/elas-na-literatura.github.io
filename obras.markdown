@@ -21,13 +21,11 @@ function autora()
 	obrasMesmo = [];
 	var autoraBar = document.getElementById("autorabox");
 	var autoraVal = autoraBar.value;
-	alert(autoraVal);
     	for(i in obras)
     	{
 		var novaAutora = string_to_slug_mod(obras[i].autora);
     		if(novaAutora.includes(string_to_slug_mod(autoraVal)))
         	{
-			alert("tem sim");
         		obrasMesmo[obrasMesmo.length] = obras[i];
         	}
     	}
