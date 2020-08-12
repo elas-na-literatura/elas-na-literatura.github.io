@@ -92,9 +92,9 @@ Escola Literária:
   <option>Parnasianismo</option>
   <option>Pré-Modernismo</option>
 </select> <br>
-Autora: &#x1F50D
+Autora: 🔍
 <input type="text" id="autorabox" value="" oninput="autora()"><br>
-Nome da Obra: &#x1F50D
+Nome da Obra: 🔍
 <input type="text" id="termo" value="" oninput="autora()"><br>
 </form>
 <p id="demo"></p>
