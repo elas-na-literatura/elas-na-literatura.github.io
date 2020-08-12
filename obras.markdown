@@ -92,7 +92,7 @@ Escola Literária:
   <option>Pré-Modernismo</option>
 </select>
 Autora:
-<input type="text" id="autora" value="" oninput="search()"><br>
+<input type="text" id="autora" value="" oninput="autora()"><br>
 Nome da Obra:
 <input type="text" id="termo" value="" oninput="search()"><br>
 </form>
