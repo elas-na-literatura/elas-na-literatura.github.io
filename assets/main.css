@@ -79,7 +79,7 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure{margin:0;padding:0
   margin: 2%;
   padding: 20px;
   border-radius: 25px;
-  width: 35%;
-  min-width: 365px;
+  width: 40%;
+  min-width: 340px;
   display: inline-block;
 }
