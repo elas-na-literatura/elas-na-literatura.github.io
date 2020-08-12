@@ -62,8 +62,8 @@ function escolaLit() {
 	'<div class="row">'+
     '<div class="columncapatwo"><img src=' + obrasDeVerdade[i].imagem + '> </div>'+
     '<div class="columntwo">'+
-    '<b style="font-weight:900;font-size:25px">' + obrasDeVerdade[i].titulo + '</b><br>' +
-    '<tag style="color:#505050;font-size:16px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></tag><br><br>' +
+    '<h1 style="font-weight:900;font-size:36px">' + obrasDeVerdade[i].titulo + '</h1><br>' +
+    '<h3 style="color:#505050;font-size:25px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></h3><br><br>' +
     '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasDeVerdade[i].link + '", "_self")\'>Conferir Obra</button>'+
     '</div></div></div><br>';
   }
