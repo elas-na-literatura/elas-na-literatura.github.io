@@ -12,7 +12,7 @@ Está página está em desenvolvimento.
 <script>
 var obras = [];
 {% for livro in page.livros %}
-obras[{{ forloop.index0 }}] = {titulo:"{{ livros[0] }}", autora:"{{ livros[1] }}", ano:"{{ livros[2] }}", escola:"{{ livros[3] }}", imagem:"{{ livros[4] }}"}
+obras[{{ forloop.index0 }}] = {titulo:"{{ livro[0] }}", autora:"{{ livro[1] }}", ano:"{{ livro[2] }}", escola:"{{ livro[3] }}", imagem:"{{ livro[4] }}"}
 {% endfor %}
 // obras[0] = {titulo:"abcde", ano:1879, autora:"linda", escola:"Realismo"};
 // obras[1] = {titulo:"gfsdgfds", ano:1902, autora:"ana", escola:"Parnasianismo"};
