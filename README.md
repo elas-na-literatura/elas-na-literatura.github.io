@@ -6,7 +6,39 @@ Eu estou trabalhando pra facilitar o máximo possível a adição de novas obras
 
 Por enquanto, cada página tem o nome como ```nomedapagina.md```. Para criar um arquivo em uma pasta, o nome do arquivo deve ser ```caminho/para/a/pasta/outrapagina.md```.
 
-Eventualmente, eu pretendo escrever um pouco mais sobre como mudar cada página, e como fazer a adição de livros (quando eu terminar de fazer isso), mas por enquanto é só isso!
+Dá pra criar novos arquivos dentro de cada pasta também!
+
+Na pasta obras, no presente momento, tem dois livros: A viúva Simões e A Intrusa, ambos da Júlia Lopes!
+
+Para colocar mais livros, criem um novo documento!
+
+ISSO AQUI É IMPORTANTE: Se o nome da obra for ```Nome da Obra Eãúçõ```, o nome do arquivo DEVE ser ```nome-da-obra-eauco.md```, tudo em minúsculo, com espaços, vírgulas e outros pontos gramaticais virando hífens, e sem acento nenhum!
+
+Nessa parte, eu recomendo fazer Ctrl+C Ctrl+V de algum dos documentos que eu já fiz, pra ficar mais fácil!
+
+Vai mudando todas as informações pra ficar certo. Por exemplo:
+
+Documento Original:
+```
+(a-intrusa.md)
+---
+layout: livro
+nomelivro: A Intrusa
+nomeautora: Júlia Lopes de Almeida
+anolancamento: 1908
+[...]
+```
+
+Novo Documento:
+```
+(nome-da-obra-eauco.md)
+---
+layout: livro
+nomelivro: Nome da Obra Eãúçõ
+nomeautora: Super Autora
+anolancamento: 2021
+[...]
+```
 
 Também está aqui embaixo uma sinopse do GitHub Pages que vem de fábrica, então qualquer coisa, deem uma lidinha! :)
 
