@@ -3,8 +3,10 @@ layout: page
 title: Obras
 permalink: /obras/
 onLoadFunction: autora()
-livros: [["A viúva Simões", "Júlia Lopes de Almeida", "1897", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg"],
+livros: [
+["A viúva Simões", "Júlia Lopes de Almeida", "1897", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg"],
 ["A Intrusa", "Júlia Lopes de Almeida", "1908", "Realismo", "https://m.media-amazon.com/images/I/51T2IipVdtL.jpg"]
+]
 ---
 <script>
 var obras = [];
