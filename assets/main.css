@@ -28,7 +28,7 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure{margin:0;padding:0
 .button {
   background-color: #61F2C2; /* Aquamarine */
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -38,7 +38,7 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure{margin:0;padding:0
 }
 .button:hover, .button:focus {
   background-color: #8EFFC9;
-  color: black;
+  color: white;
 }
 
 /* Trem de quote legal */
