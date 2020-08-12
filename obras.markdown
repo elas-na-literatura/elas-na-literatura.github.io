@@ -55,7 +55,7 @@ function escolaLit() {
   
   for (i in obrasDeVerdade)
   {
-  	if(escola != "--" && obrasDeVerdade[i].escola != escola) continue;
+  	if(escola != "Todas" && obrasDeVerdade[i].escola != escola) continue;
     document.getElementById("demo").innerHTML += 
     '<div class="bookpreview">'+
 	'<div class="row">'+
@@ -86,7 +86,7 @@ function string_to_slug_mod (str) {
 <form>
 Escola Literária:
 <select id="filtros" onload="escolaLit()" onchange="autora()">
-  <option>--</option>
+  <option>Todas</option>
   <option>Realismo</option>
   <option>Parnasianismo</option>
   <option>Pré-Modernismo</option>
