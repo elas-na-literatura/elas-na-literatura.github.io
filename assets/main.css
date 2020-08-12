@@ -80,6 +80,6 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure{margin:0;padding:0
   padding: 20px;
   border-radius: 25px;
   width: 40%;
-  min-width: 320px;
+  min-width: 300px;
   display: inline-block;
 }
