@@ -14,18 +14,35 @@ obras[{{ forloop.index0 }}] = {titulo:"{{ livro[0] }}", autora:"{{ livro[1] }}",
 {% endfor %}
 
 var obrasMesmo = [];
+var obrasDeVerdade = [];
+
+function autora()
+{
+	obrasMesmo = []
+	var searchBar = document.getElementById("autora");
+	var autora = searchBar.value;
+    	for(i in obras)
+    	{
+		var novaAutora = string_to_slug_mod(obras[i].autora);
+    		if(novaAutora.includes(string_to_slug_mod(autora)))
+        	{
+        		obrasMesmo[obrasMesmo.length] = obras[i];
+        	}
+    	}
+	search();
+}
 
 function search()
 {
-	obrasMesmo = []
+	obrasDeVerdade = []
 	var searchBar = document.getElementById("termo");
 	var termo = searchBar.value;
-    	for(i in obras)
+    	for(i in obrasMesmo)
     	{
-		var novoTitulo = string_to_slug_mod(obras[i].titulo);
+		var novoTitulo = string_to_slug_mod(obrasMesmo[i].titulo);
     		if(novoTitulo.includes(string_to_slug_mod(termo)))
         	{
-        		obrasMesmo[obrasMesmo.length] = obras[i];
+        		obrasDeVerdade[obrasDeVerdade.length] = obrasMesmo[i];
         	}
     	}
 	escolaLit();
@@ -36,17 +53,17 @@ function escolaLit() {
   var escola = escolaOptions.options[escolaOptions.selectedIndex].text;
   document.getElementById("demo").innerHTML = "";
   
-  for (i in obrasMesmo)
+  for (i in obrasDeVerdade)
   {
-  	if(escola != "--" && obrasMesmo[i].escola != escola) continue;
+  	if(escola != "--" && obrasDeVerdade[i].escola != escola) continue;
     document.getElementById("demo").innerHTML += 
     '<div class="bookpreview">'+
 	'<div class="row">'+
-    '<div class="columncapatwo"><img src=' + obrasMesmo[i].imagem + '> </div>'+
+    '<div class="columncapatwo"><img src=' + obrasDeVerdade[i].imagem + '> </div>'+
     '<div class="columntwo">'+
-    '<b style="font-weight:900;font-size:25px">' + obrasMesmo[i].titulo + '</b><br>' +
-    '<tag style="color:#505050;font-size:16px"><i><b>' + obrasMesmo[i].autora + '</b> - ' + obrasMesmo[i].ano + '</i></tag><br><br>' +
-    '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasMesmo[i].link + '", "_blank")\'>Conferir Obra</button>'+
+    '<b style="font-weight:900;font-size:25px">' + obrasDeVerdade[i].titulo + '</b><br>' +
+    '<tag style="color:#505050;font-size:16px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></tag><br><br>' +
+    '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasDeVerdade[i].link + '", "_blank")\'>Conferir Obra</button>'+
     '</div></div></div>';
   }
 }
@@ -74,6 +91,8 @@ Escola Literária:
   <option>Parnasianismo</option>
   <option>Pré-Modernismo</option>
 </select>
+Autora:
+<input type="text" id="autora" value="" oninput="search()"><br>
 Nome da Obra:
 <input type="text" id="termo" value="" oninput="search()"><br>
 </form>
