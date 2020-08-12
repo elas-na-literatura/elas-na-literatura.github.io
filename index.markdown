@@ -13,4 +13,4 @@ layout: home
 <p>O nosso projeto visa, portanto, trazer à luz diversas obras de autoras brasileiras não representadas em aulas e livros.</p>
 
 <h2>Que tal saber mais?</h2>
-<button class="button" onclick='window.open("{{ site.url }}/obras", "_blank")'><b>Veja as obras do site!</b></button>
+<button class="button" onclick='window.open("{{ site.url }}/obras")'><b>Veja as obras do site!</b></button>
