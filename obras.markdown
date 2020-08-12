@@ -20,11 +20,12 @@ function autora()
 {
 	obrasMesmo = [];
 	var autoraBar = document.getElementById("autora");
-	var autora = autoraBar.value;
+	var autoraVal = autoraBar.value;
+	alert(autoraVal);
     	for(i in obras)
     	{
 		var novaAutora = string_to_slug_mod(obras[i].autora);
-    		if(novaAutora.includes(string_to_slug_mod(autora)))
+    		if(novaAutora.includes(string_to_slug_mod(autoraVal)))
         	{
 			alert("tem sim");
         		obrasMesmo[obrasMesmo.length] = obras[i];
@@ -93,7 +94,7 @@ Escola Literária:
   <option>Pré-Modernismo</option>
 </select>
 Autora:
-<input type="text" id="autora" value="" oninput="alert('mudou autora! (n vai fazer lhufas)')"><br>
+<input type="text" id="autora" value="" oninput="autora()"><br>
 Nome da Obra:
 <input type="text" id="termo" value="" oninput="search()"><br>
 </form>
