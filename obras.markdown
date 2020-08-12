@@ -39,7 +39,7 @@ function escolaLit() {
 </script>
 <form>
 Filtros:
-<select id="filtros" onchange="escolaLit()">
+<select id="filtros" onload="escolaLit()" onchange="escolaLit()">
   <option>--</option>
   <option>Realismo</option>
   <option>Parnasianismo</option>
