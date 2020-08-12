@@ -5,7 +5,7 @@ permalink: /obras/
 onLoadFunction: autora()
 livros: [["A viúva Simões", "Júlia Lopes de Almeida", "1897", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg"],
 ["exemplo", "Adélia Prado", "2020", "Parnasianismo", "https://www.escritas.org/autores/adelia-prado.jpg"],
-["teste", "dfsfdsfsd", "3132", "Pré-Modernismo", ""]]
+["teste", "Alamo", "3132", "Pré-Modernismo", ""]]
 ---
 <script>
 var obras = [];
@@ -18,14 +18,15 @@ var obrasDeVerdade = [];
 
 function autora()
 {
-	obrasMesmo = []
-	var searchBar = document.getElementById("autora");
-	var autora = searchBar.value;
+	obrasMesmo = [];
+	var autoraBar = document.getElementById("autora");
+	var autora = autoraBar.value;
     	for(i in obras)
     	{
 		var novaAutora = string_to_slug_mod(obras[i].autora);
     		if(novaAutora.includes(string_to_slug_mod(autora)))
         	{
+			alert("tem sim");
         		obrasMesmo[obrasMesmo.length] = obras[i];
         	}
     	}
@@ -34,7 +35,7 @@ function autora()
 
 function search()
 {
-	obrasDeVerdade = []
+	obrasDeVerdade = [];
 	var searchBar = document.getElementById("termo");
 	var termo = searchBar.value;
     	for(i in obrasMesmo)
