@@ -2,7 +2,7 @@
 layout: page
 title: Obras
 permalink: /obras/
-onLoadFunction: search()
+onLoadFunction: autora()
 livros: [["A viúva Simões", "Júlia Lopes de Almeida", "1897", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg"],
 ["exemplo", "Adélia Prado", "2020", "Parnasianismo", "https://www.escritas.org/autores/adelia-prado.jpg"],
 ["teste", "dfsfdsfsd", "3132", "Pré-Modernismo", ""]]
