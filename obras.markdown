@@ -55,8 +55,8 @@ function string_to_slug_mod (str) {
     str = str.replace(/^\s+|\s+$/g, ''); // trim
     str = str.toLowerCase();
     // remove accents, swap ñ for n, etc
-    var from = "ãàáäâèéëêìíïîòóöôùúüûñç·/_,:;";
-    var to   = "aaaaaeeeeiiiioooouuuunc      ";
+    var from = "ãàáäâèéëêìíïîòóöôùúüûñç·/_,:;õ";
+    var to   = "aaaaaeeeeiiiioooouuuunc      o";
     for (var i=0, l=from.length ; i<l ; i++) {
         str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
     }
