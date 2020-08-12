@@ -11,12 +11,15 @@ Está página está em desenvolvimento.
 
 <script>
 var obras = [];
-obras[0] = {titulo:"abcde", ano:1879, autora:"linda", escola:"Realismo"};
-obras[1] = {titulo:"gfsdgfds", ano:1902, autora:"ana", escola:"Parnasianismo"};
-obras[2] = {titulo:"dfdavc", ano:1899, autora:"martha", escola:"Realismo"};
-obras[3] = {titulo:"fdvrgf", ano:1876, autora:"claudia", escola:"Realismo"};
-obras[4] = {titulo:"fdsavre", ano:1879, autora:"janaina", escola:"Pré-Modernismo"};
-obras[5] = {titulo:"htwfg", ano:1900, autora:"claudia", escola:"Realismo"};
+{% for livro in page.livros %}
+obras[{{ forloop.index0 }}] = {titulo:"{{ livros[0] }}", autora:"{{ livros[1] }}", ano:"{{ livros[2] }}", escola:"{{ livros[3] }}", imagem:"{{ livros[4] }}"}
+{% endfor %}
+// obras[0] = {titulo:"abcde", ano:1879, autora:"linda", escola:"Realismo"};
+// obras[1] = {titulo:"gfsdgfds", ano:1902, autora:"ana", escola:"Parnasianismo"};
+// obras[2] = {titulo:"dfdavc", ano:1899, autora:"martha", escola:"Realismo"};
+// obras[3] = {titulo:"fdvrgf", ano:1876, autora:"claudia", escola:"Realismo"};
+// obras[4] = {titulo:"fdsavre", ano:1879, autora:"janaina", escola:"Pré-Modernismo"};
+// obras[5] = {titulo:"htwfg", ano:1900, autora:"claudia", escola:"Realismo"};
 
 function escolaLit() {
   var escolaOptions = document.getElementById("filtros");
@@ -40,9 +43,6 @@ function escolaLit() {
   }
 }
 </script>
-{% for livro in page.livros %}
-	{{ livro[0] }} <br>
-{% endfor %}
 <form>
 Filtros:
 <select id="filtros" onchange="escolaLit()">
