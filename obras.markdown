@@ -6,7 +6,8 @@ onLoadFunction: autora()
 livros: [
 ["A viúva Simões", "Júlia Lopes de Almeida", "1897", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg"],
 ["A Intrusa", "Júlia Lopes de Almeida", "1908", "Realismo", "https://m.media-amazon.com/images/I/51T2IipVdtL.jpg"],
-["A Falência", "Júlia Lopes de Almeida", "1901", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/51ZZ-KUvnhL._SX346_BO1,204,203,200_.jpg"]
+["A Falência", "Júlia Lopes de Almeida", "1901", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/51ZZ-KUvnhL._SX346_BO1,204,203,200_.jpg"],
+["A Isca", "Júlia Lopes de Almeida", "1922", "Realismo", "https://i.imgur.com/3pAMxqZ.png"]
 ]
 ---
 <script>
