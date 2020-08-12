@@ -25,7 +25,8 @@ function search()
 	var termo = searchBar.value;
     	for(i in obras)
     	{
-    		if(obras[i].titulo.includes(termo))
+		var novoTitulo = string_to_slug_mod(obras[i].titulo);
+    		if(novoTitulo.includes(string_to_slug_mod(termo)))
         	{
         		obrasMesmo[obrasMesmo.length] = obras[i];
         	}
@@ -51,6 +52,21 @@ function escolaLit() {
     '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasMesmo[i].link + '", "_blank")\'>Conferir Obra</button>'+
     '</div></div></div>';
   }
+}
+
+function string_to_slug_mod (str) {
+    str = str.replace(/^\s+|\s+$/g, ''); // trim
+    str = str.toLowerCase();
+    // remove accents, swap ñ for n, etc
+    var from = "ãàáäâèéëêìíïîòóöôùúüûñç·/_,:;";
+    var to   = "aaaaaeeeeiiiioooouuuunc      ";
+    for (var i=0, l=from.length ; i<l ; i++) {
+        str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+    }
+    str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+        .replace(/\s+/g, ' ') // collapse whitespace and replace by spacebar
+        .replace(/ +/g, ' '); // collapse spaces
+	return str;
 }
 </script>
 <form>
