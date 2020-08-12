@@ -19,7 +19,7 @@ var obrasDeVerdade = [];
 function autora()
 {
 	obrasMesmo = [];
-	var autoraBar = document.getElementById("autora");
+	var autoraBar = document.getElementById("autorabox");
 	var autoraVal = autoraBar.value;
 	alert(autoraVal);
     	for(i in obras)
@@ -87,15 +87,15 @@ function string_to_slug_mod (str) {
 </script>
 <form>
 Escola Literária:
-<select id="filtros" onload="escolaLit()" onchange="search()">
+<select id="filtros" onload="escolaLit()" onchange="autora()">
   <option>--</option>
   <option>Realismo</option>
   <option>Parnasianismo</option>
   <option>Pré-Modernismo</option>
-</select>
+</select> <br>
 Autora:
-<input type="text" id="autora" value="" oninput="autora()"><br>
+<input type="text" id="autorabox" value="" oninput="autora()"><br>
 Nome da Obra:
-<input type="text" id="termo" value="" oninput="search()"><br>
+<input type="text" id="termo" value="" oninput="autora()"><br>
 </form>
 <p id="demo"></p>
