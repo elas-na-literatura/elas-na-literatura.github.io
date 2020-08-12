@@ -65,7 +65,7 @@ function escolaLit() {
     '<b style="font-weight:900;font-size:25px">' + obrasDeVerdade[i].titulo + '</b><br>' +
     '<tag style="color:#505050;font-size:16px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></tag><br><br>' +
     '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasDeVerdade[i].link + '", "_self")\'>Conferir Obra</button>'+
-    '</div></div></div>';
+    '</div></div></div><br>';
   }
 }
 
