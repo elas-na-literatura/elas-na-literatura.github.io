@@ -65,12 +65,16 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure{margin:0;padding:0
   width: 30%;
   padding: 10px 0px;
   vertical-align: middle;
+  display: flex;
+  align-items: center
 }
 .columntwo {
   float: left;
   width: 70%;
   padding: 10px;
   vertical-align: middle;
+  display: flex;
+  align-items: center
 }
 
 .bookpreview {
