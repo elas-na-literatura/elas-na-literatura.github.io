@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Este projeto servirá para dar foco a escritoras mulheres não
   representadas no Brasil durante o Realismo.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://projetosteams.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: supercontatwitterlegal
 github_username:  projetosteams
 
