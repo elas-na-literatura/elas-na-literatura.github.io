@@ -9,8 +9,8 @@ link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action
 fontelivro: Domínio Público
 imagemcapa: https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg
 quote: |
-  - Mas se ele não tivesse morrido, eu ainda seria casada...
-  Era sempre esta frase e tapava a boca de Luciano, até que ele, entre risonho e agastado, concluía:
+  - Mas se ele não tivesse morrido, eu ainda seria casada... <br>
+  Era sempre esta frase e tapava a boca de Luciano, até que ele, entre risonho e agastado, concluía: <br>
   - Sim... ele teve ao menos o juízo de morrer a tempo!
 quotepagina: 70
 ---
