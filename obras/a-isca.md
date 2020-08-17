@@ -9,6 +9,6 @@ link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action
 fontelivro: Domínio Público
 imagemcapa: https://i.imgur.com/3pAMxqZ.png
 quote: |
-"Só eu Vera, no meio de toda esta gente, percebo e sinto a tempestade do seu espírito, porque a amo, e a um ponto tal, que não penso em mais nada e nem em mai ninguém... E todo este clamor, todo o meu desespero nem sequer a fazem voltar os olhos para mim?"
+  Só eu Vera, no meio de toda esta gente, percebo e sinto a tempestade do seu espírito, porque a amo, e a um ponto tal, que não penso em mais nada e nem em mai ninguém... E todo este clamor, todo o meu desespero nem sequer a fazem voltar os olhos para mim?
 quotepagina: 4
 ---
