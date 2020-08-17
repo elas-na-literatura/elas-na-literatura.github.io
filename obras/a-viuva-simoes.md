@@ -4,15 +4,13 @@ nomelivro: A viúva Simões
 nomeautora: Júlia Lopes de Almeida
 anolancamento: 1897
 sinopse: |
-  Este livro, escrito por uma das primeiras mulheres brasileiras a ser reconhecida por suas obras, conta a história da Viúva Simões. 
+  Obra que mostra a vida de Ernestina, a viúva Simões, em um chalé em Santa Tereza após a morte do marido. Nesta ficção, descubra a história de uma mulher que transgrediu os valores a imagem da mulher do século XIX. 
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=7553
 fontelivro: Domínio Público
 imagemcapa: https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg
 quote: |
-  Estava num dos seus momentos de melancolia; almejava qualquer coisa que ela mesma não
-  sabia definir. Era a revolta surda contra a pacatez da sua vida sem emoções, contra aquele
-  propósito de enterrar a sua mocidade e a sua formosura longe dos gozos e dos triunfos
-  mundanos.
-  O que lhe parecia agora um sacrifício parecera-lhe horas antes uma delícia.
-quotepagina: 2
+  - Mas se ele não tivesse morrido, eu ainda seria casada...
+Era sempre esta frase e tapava a boca de Luciano, até que ele, entre risonho e agastado, concluía:
+- Sim... ele teve ao menos o juízo de morrer a tempo!
+quotepagina: 70
 ---
