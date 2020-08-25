@@ -6,8 +6,8 @@ layout: home
 ---
 
 <section class="parallax">
-            <img src="bgr.png" id=bgr>
-            <img src="book.png" id=book>
+            <img src="rsc/prlx/bgr.png" id=bgr>
+            <img src="rsc/prlx/book.png" id=book>
             <h1 id=title>Bem vindo(a) ao nosso projeto!</h1>
         </section>
         <script type="text/javascript">
