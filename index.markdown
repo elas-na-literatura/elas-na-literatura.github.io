@@ -5,7 +5,25 @@
 layout: home
 ---
 
-<h1>Bem-vinda(o) ao nosso projeto!</h1>
+<section class="parallax">
+            <img src="bgr.png" id=bgr>
+            <img src="book.png" id=book>
+            <h1 id=title>Bem vindo(a) ao nosso projeto!</h1>
+        </section>
+        <script type="text/javascript">
+            let bgr = document.getElementById("bgr");
+            let book = document.getElementById("book");
+            let title = document.getElementById("title");
+
+            window.addEventListener("scroll", function()
+            {
+                var scrollYValue = window.scrollY;
+
+                bgr.style.top = -scrollYValue * 0.75 + 'px';
+                book.style.top = -scrollYValue * 0.5 + 'px';
+                title.style.top = -scrollYValue * 0.25 + 'px';
+            });
+        </script>
 
 <p> Em aulas e livros de literatura brasileira, aprendemos sobre autores renomados como Machado de Assis, Guimarães Rosa, José de Alencar, Graciliano Ramos, entre outros. </p>
 <h3>Suas obras são exemplares. Porém, onde se encontram as autoras de escolas literárias pré-modernistas?</h3>
