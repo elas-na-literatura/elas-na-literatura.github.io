@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-banner: Bem vindo(a) ao nosso projeto!
+banner: Bem-vindo(a) ao nosso projeto!
 ---
 
 <script>
