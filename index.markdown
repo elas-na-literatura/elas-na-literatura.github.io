@@ -3,13 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+banner: Bem vindo(a) ao nosso projeto!
 ---
-
-<section class="parallax">
-    <img src="rsc/prlx/bgr.png" id=bgr>
-    <img src="rsc/prlx/book.png" id=book>
-    <h1 id=title>Bem vindo(a) ao nosso projeto!</h1>
-</section>
 
 <script>
     let bgr = document.getElementById("bgr");
