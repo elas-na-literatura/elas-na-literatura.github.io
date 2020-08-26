@@ -15,6 +15,7 @@ banner: Bem-vindo(a) ao nosso projeto!
     window.addEventListener("scroll", function()
     {
         let scrollCoeff = (window.innerWidth / window.innerHeight)/(1.77);
+        if (scrollCoeff > 1) { scrollCoeff = 1; }
         var scrollYValue = window.scrollY;
 
         bgr.style.top = -scrollYValue * (0.75 * scrollCoeff) + 'px';
