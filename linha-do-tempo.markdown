@@ -16,12 +16,13 @@ function changeDescription(escola)
     alert(`Description changed to ${escola}.`);
     switch(escola)
     {
-        case "Realismo":
+        case 'Realismo':
+            alert(`partiu realismo`);
             document.getElementByID("escTitle").innerHTML = "Realismo";
             document.getElementByID("escDesc").innerHTML = "O Realismo é definido por lorem ipsum dolor sit amet.";
             break;
 
-        case "Simbolismo":
+        case 'Simbolismo':
             document.getElementByID("escTitle").innerHTML = "Simbolismo";
             document.getElementByID("escDesc").innerHTML = "O Simbolismo é definido por lorem ipsum dolor sit amet.";
             break;
