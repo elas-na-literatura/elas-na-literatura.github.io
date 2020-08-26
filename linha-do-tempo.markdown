@@ -3,8 +3,8 @@ layout: default
 ---
 
 <h1>Linha do Tempo:</h1>
-
-<img scr="../rsc/ldt/ldt.png" alt="Linha do Tempo" usemap="#ldtmap" width="100%" id="ldt">
+<p>Clique em um trecho da linha do tempo para saber mais sobre a escola literária deste período de tempo!</p>
+<img id="ldt" src="../rsc/ldt/ldt.png" alt="Linha do Tempo" usemap="#ldtmap" width="100%">
 <map id="ldtmapid" name="ldtmap">
     <area shape="rect" coords="15,9,806,257" alt="Realismo" onclick="changeDescription('Realismo')">
     <area shape="rect" coords="806,9,1597,257" alt="Simbolismo" onclick="changeDescription('Simbolismo')">
