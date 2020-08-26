@@ -138,3 +138,9 @@ body{
     z-index: 1;
     text-shadow: 0px 0px 1px #000, 0px 0px 2px #000, 0px 0px 3px #000, 0px 0px 4px #000, 0px 0px 5px #000;
 }
+
+/* Sombra no título da escola literária */
+.escTitulo
+{
+    text-shadow: 0px 0px 1px #000, 0px 0px 2px #000, 0px 0px 3px #000, 0px 0px 4px #000, 0px 0px 5px #000;
+}

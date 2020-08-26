@@ -3,18 +3,18 @@ layout: page
 title: Obras
 permalink: /obras/
 onLoadFunction: autora()
-livros: [
-["A viúva Simões", "Júlia Lopes de Almeida", "1897", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg"],
-["A Intrusa", "Júlia Lopes de Almeida", "1908", "Realismo", "https://m.media-amazon.com/images/I/51T2IipVdtL.jpg"],
-["A Falência", "Júlia Lopes de Almeida", "1901", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/51ZZ-KUvnhL._SX346_BO1,204,203,200_.jpg"],
-["A Isca", "Júlia Lopes de Almeida", "1922", "Realismo", "https://i.imgur.com/3pAMxqZ.png"]
-]
+# livros: [
+# ["A viúva Simões", "Júlia Lopes de Almeida", "1897", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg"],
+# ["A Intrusa", "Júlia Lopes de Almeida", "1908", "Realismo", "https://m.media-amazon.com/images/I/51T2IipVdtL.jpg"],
+# ["A Falência", "Júlia Lopes de Almeida", "1901", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/51ZZ-KUvnhL._SX346_BO1,204,203,200_.jpg"],
+# ["A Isca", "Júlia Lopes de Almeida", "1922", "Realismo", "https://i.imgur.com/3pAMxqZ.png"]
+# ]
 ---
 <script>
 var obras = [];
 {% for pagina in site.pages %}
 {% if pagina.dir == "/obras/"%}
-obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"Realismo", imagem:"pagina.imagemcapa", link:"{{ pagina.nomelivro | slugify: "latin"}}"};
+obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"Realismo", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}"};
 {% endif %}
 {% endfor %}
 // {*% for livro in page.livros %*}

@@ -13,7 +13,7 @@ layout: default
     <!-- <area shape="rect" coords="806,9,1597,257" alt="Simbolismo" onclick="changeDescription('Simbolismo')"> -->
 </map>
 
-<h2 id=escTitle style="color:#57ABEC"></h2>
+<h1 id=escTitle style="font-size:350%; color:#57ABEC" class="escTitulo"></h1>
 <p id=escDesc></p>
 
 <script>
