@@ -27,7 +27,7 @@ function changeDescription(escola)
     }
 }
 
-window.onload = function () {
+/* window.onload = function () {
     var ImageMap = function (map, img) {
             var n,
                 areas = map.getElementsByTagName('area'),
@@ -54,7 +54,7 @@ window.onload = function () {
         },
         imageMap = new ImageMap(document.getElementById('ldtmapid'), document.getElementById('ldt'));
     imageMap.resize();
-    return;
+    return; */
 }
 </script>
 
