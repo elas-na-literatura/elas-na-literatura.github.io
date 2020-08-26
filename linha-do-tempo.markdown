@@ -1,10 +1,12 @@
 ---
 layout: default
+title: Linha do Tempo
+permalink: /linha-do-tempo/
 ---
 
 <h1>Linha do Tempo:</h1>
 <p>Clique em um trecho da linha do tempo para saber mais sobre a escola literária deste período de tempo, além de obras importantes do período!</p>
-<img id="ldt" src="../rsc/ldt/ldt.svg" alt="Linha do Tempo" usemap="#ldtmap" width="680px">
+<img id="ldt" src="../rsc/ldt/ldt.svg" alt="Linha do Tempo" usemap="#ldtmap" width="680px" style="min-width:680px">
 <map id="ldtmapid" name="ldtmap">
     <area shape="rect" coords="93,0,258,57" alt="Realismo" onclick="changeDescription('Realismo')">
     <area shape="rect" coords="258,0,423,57" alt="Simbolismo" onclick="changeDescription('Simbolismo')">
