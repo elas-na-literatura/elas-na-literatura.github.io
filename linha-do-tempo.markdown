@@ -21,13 +21,13 @@ function changeDescription(escola)
     {
         case 'Realismo':
             alert(`partiu realismo`);
-            document.getElementByID("escTitle").innerHTML = "Realismo";
-            document.getElementByID("escDesc").innerHTML = "O Realismo é definido por lorem ipsum dolor sit amet.";
+            document.getElementById('escTitle').innerHTML = 'Realismo';
+            document.getElementById('escDesc').innerHTML = 'O Realismo é definido por lorem ipsum dolor sit amet.';
             break;
 
         case 'Simbolismo':
-            document.getElementByID("escTitle").innerHTML = "Simbolismo";
-            document.getElementByID("escDesc").innerHTML = "O Simbolismo é definido por lorem ipsum dolor sit amet.";
+            document.getElementById('escTitle').innerHTML = 'Simbolismo';
+            document.getElementById('escDesc').innerHTML = 'O Simbolismo é definido por lorem ipsum dolor sit amet.';
             break;
     }
 }
