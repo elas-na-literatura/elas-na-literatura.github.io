@@ -12,9 +12,14 @@ livros: [
 ---
 <script>
 var obras = [];
-{% for livro in page.livros %}
-obras[{{ forloop.index0 }}] = {titulo:"{{ livro[0] }}", autora:"{{ livro[1] }}", ano:"{{ livro[2] }}", escola:"{{ livro[3] }}", imagem:"{{ livro[4] }}", link:"{{ livro[0] | slugify: "latin"}}"};
+{% for pagina in site.pages %}
+{% if pagina.dir == "/obras/"%}
+obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"Realismo", imagem:"pagina.imagemcapa", link:"{{ pagina.nomelivro | slugify: "latin"}}"};
+{% endif %}
 {% endfor %}
+// {*% for livro in page.livros %*}
+// obras[{{ forloop.index0 }}] = {titulo:"{{ livro[0] }}", autora:"{{ livro[1] }}", ano:"{{ livro[2] }}", escola:"{{ livro[3] }}", imagem:"{{ livro[4] }}", link:"{{ livro[0] | slugify: "latin"}}"};
+// {*% endfor %*}
 
 var obrasMesmo = [];
 var obrasDeVerdade = [];
@@ -92,6 +97,8 @@ Escola Literária:
   <option>Todas</option>
   <option>Realismo</option>
   <option>Simbolismo</option>
+  <option>Pré-Modernismo</option>
+  <option>Modernismo</option>
   <!-- <option></option> -->
 </select> <br>
 Autora: 🔍
