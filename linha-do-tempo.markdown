@@ -6,14 +6,14 @@ layout: default
 <p>Clique em um trecho da linha do tempo para saber mais sobre a escola literária deste período de tempo!</p>
 <img id="ldt" src="../rsc/ldt/ldt.png" alt="Linha do Tempo" usemap="#ldtmap" width="680px">
 <map id="ldtmapid" name="ldtmap">
-    <area shape="rect" coords="3,2,170,53" alt="Realismo" onclick="changeDescription()">
+    <area shape="rect" coords="3,2,170,53" alt="Realismo" onclick="changeDescription('Realismo')">
     <!-- <area shape="rect" coords="806,9,1597,257" alt="Simbolismo" onclick="changeDescription('Simbolismo')"> -->
 </map>
 
 <script>
-function changeDescription()
+function changeDescription(escola)
 {
-    alert('Description changed.');
+    alert(`Description changed to ${escola}.`);
     switch(escola)
     {
         case "Realismo":
