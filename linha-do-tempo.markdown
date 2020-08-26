@@ -10,6 +10,9 @@ layout: default
     <!-- <area shape="rect" coords="806,9,1597,257" alt="Simbolismo" onclick="changeDescription('Simbolismo')"> -->
 </map>
 
+<h2 id=escTitle style="color:#57ABEC"></h2>
+<p id=escDesc></p>
+
 <script>
 function changeDescription(escola)
 {
@@ -29,6 +32,3 @@ function changeDescription(escola)
     }
 }
 </script>
-
-<h2 id=escTitle style="color:#57ABEC"></h2>
-<p id=escDesc></p>
