@@ -21,8 +21,7 @@
 title: Projeto de Steam-S
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Este projeto servirá para dar foco a escritoras mulheres não
-  representadas no Brasil durante o Realismo.
+  A literatura brasileira na voz delas!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://projetosteams.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: supercontatwitterlegal
