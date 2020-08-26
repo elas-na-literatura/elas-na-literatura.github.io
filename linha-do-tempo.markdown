@@ -14,20 +14,20 @@ layout: default
 function changeDescription()
 {
     alert('Description changed.');
-    /* switch(escola)
+    switch(escola)
     {
         case "Realismo":
-            document.getElementByID("title").innerText = "Realismo";
-            document.getElementByID("desc").innerText = "O Realismo é definido por lorem ipsum dolor sit amet.";
+            document.getElementByID("escTitle").innerHTML = "Realismo";
+            document.getElementByID("escDesc").innerHTML = "O Realismo é definido por lorem ipsum dolor sit amet.";
             break;
 
         case "Simbolismo":
-            document.getElementByID("title").innerText = "Simbolismo";
-            document.getElementByID("desc").innerText = "O Simbolismo é definido por lorem ipsum dolor sit amet.";
+            document.getElementByID("escTitle").innerHTML = "Simbolismo";
+            document.getElementByID("escDesc").innerHTML = "O Simbolismo é definido por lorem ipsum dolor sit amet.";
             break;
-    } */
+    }
 }
 </script>
 
-<h2 id=title style="color:#57ABEC"></h2>
-<p id = desc></p>
+<h2 id=escTitle style="color:#57ABEC"></h2>
+<p id=escDesc></p>
