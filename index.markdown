@@ -11,13 +11,15 @@ banner: Bem-vindo(a) ao nosso projeto!
     let book = document.getElementById("book");
     let title = document.getElementById("title");
 
+
     window.addEventListener("scroll", function()
     {
+        let scrollCoeff = window.innerHeight / 1080;
         var scrollYValue = window.scrollY;
 
-        bgr.style.top = -scrollYValue * 0.75 + 'px';
-        book.style.top = -scrollYValue * 0.5 + 'px';
-        title.style.top = -scrollYValue * 0.25 + 'px';
+        bgr.style.top = -scrollYValue * (0.75 * scrollCoeff) + 'px';
+        book.style.top = -scrollYValue * (0.5 * scrollCoeff)+ 'px';
+        title.style.top = -scrollYValue * (0.25 * scrollCoeff) + 'px';
     });
 </script>
 
