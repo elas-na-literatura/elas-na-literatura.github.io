@@ -91,8 +91,8 @@ Escola Literária:
 <select id="filtros" onload="escolaLit()" onchange="autora()">
   <option>Todas</option>
   <option>Realismo</option>
-  <option>Parnasianismo</option>
-  <option>Pré-Modernismo</option>
+  <option>Simbolismo</option>
+  <!-- <option></option> -->
 </select> <br>
 Autora: 🔍
 <input type="text" id="autorabox" value="" oninput="autora()"><br>
