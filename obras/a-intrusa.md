@@ -11,4 +11,5 @@ imagemcapa: https://m.media-amazon.com/images/I/51T2IipVdtL.jpg
 quote: |
   Alice sorriu. Certamente a vida é às vezes bem amarga e dura de ganhar! Que deveria ela esperar?... Fosse o que fosse esperaria até o fim!
 quotepagina: 79
+escolalit: Realismo
 ---

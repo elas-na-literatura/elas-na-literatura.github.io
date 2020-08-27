@@ -13,4 +13,5 @@ quote: |
   Era sempre esta frase e tapava a boca de Luciano, até que ele, entre risonho e agastado, concluía: <br>
   - Sim... ele teve ao menos o juízo de morrer a tempo!
 quotepagina: 70
+escolalit: Realismo
 ---

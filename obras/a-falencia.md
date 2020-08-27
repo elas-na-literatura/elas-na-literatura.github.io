@@ -11,4 +11,5 @@ imagemcapa: https://images-na.ssl-images-amazon.com/images/I/51ZZ-KUvnhL._SX346_
 quote: |
   Camila, com o olhar aberto para o veludo macio da sombra, percebia que estava tudo perdido, irremissivelmente. No outro dia escreveria uma carta a Gervásio, com a sua última palavra.
 quotepagina: 220
+escolalit: Realismo
 ---
