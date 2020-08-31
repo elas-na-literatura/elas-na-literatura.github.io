@@ -26,10 +26,10 @@ function processURLParams()
     alert(`Found URL Params! ${url.substring(url.indexOf("?")+1)}`);
     var params = url.substring(url.indexOf("?")+1).split("&");
     alert(`Found URL Params!`);
-    for(param in params)
+    for(i in params)
     {
-      alert(param);
-      setParam(param);
+      alert(params[i]);
+      setParam(params[i]);
     }
   }
   autora();
