@@ -18,7 +18,7 @@ permalink: /linha-do-tempo/
 
 <h1 id=escTitle style="font-size:350%; color:#57ABEC" class="escTitulo"></h1>
 <h1 id=escAutora style="font-size:200%"></h1>
-<p id=escDesc></p>
+<p id=escDesc></p> 
 
 <script>
 function changeDescription(ano)
