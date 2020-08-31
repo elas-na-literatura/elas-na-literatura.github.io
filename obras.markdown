@@ -2,7 +2,7 @@
 layout: page
 title: Obras
 permalink: /obras/
-onLoadFunction: autora()
+onLoadFunction: onLoad()
 ---
 <script>
 var obras = [];
