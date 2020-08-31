@@ -40,7 +40,7 @@ function setParam(param)
   var values = param.split("=")
   if(values.length = 2)
   {
-    document.getElementById(values[0]).value = values[1].replace("+", " ").replace("%20", " "); 
+    document.getElementById(values[0]).value = values[1].replace(/\+/g, " ").replace(/(%20)/g, " "); 
   }
 }
 
