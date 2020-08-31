@@ -2,7 +2,7 @@
 layout: page
 title: Obras
 permalink: /obras/
-onLoadFunction: onLoad()
+onLoadFunction: processURLParams()
 ---
 <script>
 var obras = [];
@@ -17,7 +17,7 @@ obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagin
 var obrasMesmo = [];
 var obrasDeVerdade = [];
 
-function onLoad()
+function processURLParams()
 {
   var url = window.location.href;
   if(url.includes("?"))
