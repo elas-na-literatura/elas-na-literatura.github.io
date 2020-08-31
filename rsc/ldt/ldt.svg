@@ -44,10 +44,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="1360.066"
-     inkscape:cy="271.2394"
+     inkscape:cx="1429.2472"
+     inkscape:cy="273.69177"
      inkscape:document-units="mm"
-     inkscape:current-layer="g4524"
+     inkscape:current-layer="g4654"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -63,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -75,87 +75,43 @@
     <g
        id="g4524"
        transform="translate(92.22619,86.178571)">
+      <rect
+         style="fill:#bcbcbc;fill-opacity:1;stroke:none;stroke-width:4.12340117;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4753"
+         width="896.85602"
+         height="18.142857"
+         x="-103.56941"
+         y="166.42815"
+         ry="3.9195905" />
       <g
-         id="g4768"
-         transform="matrix(1.0024981,0,0,1,-2.0376247,0)">
-        <rect
-           ry="3.9195905"
-           y="166.42815"
-           x="-93.738098"
-           height="18.142857"
-           width="118.68452"
-           id="rect4753"
-           style="fill:#ff81ae;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <rect
-           style="fill:#ffa781;fill-opacity:1;stroke:none;stroke-width:1.84295869;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect4755"
-           width="179.16071"
-           height="18.142857"
-           x="43.467262"
-           y="166.42815"
-           ry="3.9195905" />
-        <rect
-           ry="3.9195905"
-           y="166.42815"
-           x="241.14882"
-           height="18.142857"
-           width="179.16071"
-           id="rect4757"
-           style="fill:#fff981;fill-opacity:1;stroke:none;stroke-width:1.84295869;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <rect
-           style="fill:#a4ff81;fill-opacity:1;stroke:none;stroke-width:1.84295869;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect4759"
-           width="179.16071"
-           height="18.142857"
-           x="438.83032"
-           y="166.42815"
-           ry="3.9195905" />
-        <rect
-           ry="3.9195905"
-           y="166.42815"
-           x="636.5119"
-           height="18.142857"
-           width="179.16071"
-           id="rect4761"
-           style="fill:#81ddff;fill-opacity:1;stroke:none;stroke-width:1.84295869;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         id="g4654">
+        <g
+           id="g4659">
+          <circle
+             cy="175.49957"
+             cx="22.268694"
+             id="path4530"
+             style="fill:#ffa781;fill-opacity:1;stroke:#d2552b;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             r="33.639881" />
+          <text
+             id="text4663"
+             y="182.19043"
+             x="21.721556"
+             style="font-style:normal;font-weight:normal;font-size:18.99221611px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.47480547"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Leelawadee UI';-inkscape-font-specification:'Leelawadee UI';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.47480547"
+               y="182.19043"
+               x="21.721556"
+               id="tspan4661"
+               sodipodi:role="line">1862</tspan></text>
+        </g>
       </g>
       <g
-         transform="translate(3.4162966)"
-         id="g4751">
-        <g
-           transform="matrix(0.8533777,0.2152995,-0.5212931,1.0402965,80.134289,-95.176172)"
-           id="g4528">
-          <g
-             transform="matrix(0.26458333,0,0,0.26458333,109.60157,224.26497)"
-             inkscape:label="Cube:x0.00:x0.00:x0.00:x0.00:x0.00:x0.00"
-             id="g4653" />
-          <g
-             id="g4668">
-            <ellipse
-               style="fill:#eb4e4f;fill-opacity:1;stroke:#ad3738;stroke-width:1.54604971;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="path4530"
-               cx="-65.102333"
-               cy="270.67575"
-               transform="matrix(0.97924814,-0.20266495,0.52129311,0.8533777,0,0)"
-               rx="35.737061"
-               ry="33.639881" />
-            <text
-               xml:space="preserve"
-               style="font-style:normal;font-weight:normal;font-size:18.99221611px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.47480547"
-               x="-60.577103"
-               y="277.36661"
-               id="text4663"
-               transform="matrix(1.0402965,-0.2152995,0.52129311,0.85337771,0,0)"><tspan
-                 sodipodi:role="line"
-                 id="tspan4661"
-                 x="-60.577103"
-                 y="277.36661"
-                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Leelawadee UI';-inkscape-font-specification:'Leelawadee UI';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.47480547">1881</tspan></text>
-          </g>
-        </g>
+         id="g4636"
+         transform="translate(-5.2916667,238.88095)">
         <g
            id="g4680"
-           transform="matrix(0.8533777,0.2152995,-0.5212931,1.0402965,285.84277,-95.176172)">
+           transform="matrix(0.8533777,0.2152995,-0.5212931,1.0402965,289.25907,-94.094814)">
           <g
              id="g4670"
              inkscape:label="Cube:x0.00:x0.00:x0.00:x0.00:x0.00:x0.00"
@@ -185,7 +141,7 @@
           </g>
         </g>
         <g
-           transform="translate(8.9090169,-6.6985309)"
+           transform="translate(12.325314,-5.6401975)"
            id="g4713">
           <circle
              cy="182.1981"
@@ -206,14 +162,14 @@
                sodipodi:role="line">1902</tspan></text>
         </g>
         <g
-           transform="translate(6.459554e-5,-12.845732)"
+           transform="translate(3.4163612,-12.845732)"
            id="g4729">
           <circle
              r="33.639881"
              style="fill:#eb4e4f;fill-opacity:1;stroke:#ad3738;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="circle4715"
              cx="635.97772"
-             cy="188.34531" />
+             cy="189.40364" />
           <text
              xml:space="preserve"
              style="font-style:normal;font-weight:normal;font-size:18.99221611px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.47480547"

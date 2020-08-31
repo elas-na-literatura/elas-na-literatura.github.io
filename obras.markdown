@@ -3,12 +3,6 @@ layout: page
 title: Obras
 permalink: /obras/
 onLoadFunction: autora()
-# livros: [
-# ["A viúva Simões", "Júlia Lopes de Almeida", "1897", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/41LokrPE6jL._SX311_BO1,204,203,200_.jpg"],
-# ["A Intrusa", "Júlia Lopes de Almeida", "1908", "Realismo", "https://m.media-amazon.com/images/I/51T2IipVdtL.jpg"],
-# ["A Falência", "Júlia Lopes de Almeida", "1901", "Realismo", "https://images-na.ssl-images-amazon.com/images/I/51ZZ-KUvnhL._SX346_BO1,204,203,200_.jpg"],
-# ["A Isca", "Júlia Lopes de Almeida", "1922", "Realismo", "https://i.imgur.com/3pAMxqZ.png"]
-# ]
 ---
 <script>
 var obras = [];
@@ -19,17 +13,37 @@ obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagin
 {% endif %}
 {% endif %}
 {% endfor %}
-// {*% for livro in page.livros %*}
-// obras[{{ forloop.index0 }}] = {titulo:"{{ livro[0] }}", autora:"{{ livro[1] }}", ano:"{{ livro[2] }}", escola:"{{ livro[3] }}", imagem:"{{ livro[4] }}", link:"{{ livro[0] | slugify: "latin"}}"};
-// {*% endfor %*}
 
 var obrasMesmo = [];
 var obrasDeVerdade = [];
 
+function onLoad()
+{
+  var url = window.location.href;
+  if(url.includes("?"))
+  {
+    var params = url.substring(url.indexOf("?")+1).split(&);
+    for(param in params)
+    {
+      setParam(param);
+    }
+  }
+  autora();
+}
+
+function setParam(param)
+{
+  var values = param.split("=")
+  if(values.length = 2)
+  {
+    document.getElementById(values[0]).value = values[1].replace("+", " ").replace("%20", " ");
+  }
+}
+
 function autora()
 {
 	obrasMesmo = [];
-	var autoraBar = document.getElementById("autorabox");
+	var autoraBar = document.getElementById("nomeautora");
 	var autoraVal = autoraBar.value;
     	for(i in obras)
     	{
@@ -104,7 +118,7 @@ Escola Literária:
   <!-- <option></option> -->
 </select> <br>
 Autora: 🔍
-<input type="text" id="autorabox" value="" oninput="autora()"><br>
+<input type="text" id="nomeautora" value="" oninput="autora()"><br>
 Nome da Obra: 🔍
 <input type="text" id="termo" value="" oninput="autora()"><br>
 </form>
