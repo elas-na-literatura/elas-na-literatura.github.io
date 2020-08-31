@@ -20,11 +20,12 @@ var obrasDeVerdade = [];
 function processURLParams()
 {
   var url = window.location.href;
-  // alert(url);
+  alert(url);
   if(url.includes("?"))
   {
-    // alert(`Found URL Params!`);
+    alert(`Found URL Params! ${url.substring(url.indexOf("?")+1)}`);
     var params = url.substring(url.indexOf("?")+1).split("&");
+    alert(`Found URL Params!`);
     for(param in params)
     {
       alert(param);
