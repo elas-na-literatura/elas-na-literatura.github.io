@@ -30,7 +30,7 @@ function changeDescription(ano)
             document.getElementById('escTitle').style.color = '#ffa781';
             document.getElementById('escAutora').innerHTML = '<b>Júlia Lopes de Almeida</b>';
             document.getElementById('escDesc').innerHTML = 'Júlia Lopes de Almeida foi uma escritora abolicionista carioca, defensora da educação feminina, que nasceu em 24 de Setembro de 1862 e morreu em 30 de Maio de 1934. Foi autora de diversas obras, e uma das primeiras mulheres brasileiras a receber aclamação por suas obras, e foi uma das idealizadoras da Academia Brasileira de Letras. Foi mãe também da fundadora da nova escola brasileira de declamação, Margarida Lopes de Almeida.';
-            document.getElementById('escDesc').innerHTML += '<br><br><button class="button" onclick=\'window.open("{{ site.url }}obras/?nomeautora=Júlia+Lopes+de+Almeida", "_self")\'>Acesse Aqui Suas Obras</button>';
+            document.getElementById('escDesc').innerHTML += '<br><br><button class="button" onclick=\'window.open("{{ site.url }}obras/?nomeautora=Julia+Lopes+de+Almeida", "_self")\'>Acesse Aqui Suas Obras</button>';
             break;
         /* 
         case 'Simbolismo':
