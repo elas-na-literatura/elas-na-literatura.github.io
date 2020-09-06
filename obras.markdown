@@ -9,7 +9,7 @@ var obras = [];
 {% for pagina in site.pages %}
 {% if pagina.dir == "/obras/"%}
 {% if pagina.name != "obras.markdown"%}
-obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote  | default: "Lorem ipsum dolor sit amet." }}"};
+obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote  | default: "Lorem ipsum dolor sit amet." }}".replace(/\n/g, "")};
 {% endif %}
 {% endif %}
 {% endfor %}
