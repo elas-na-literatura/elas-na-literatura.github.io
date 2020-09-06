@@ -9,16 +9,10 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="row">
-          <div class="columncapa"> <img src={{ page.imagemcapa | default: "https://images-na.ssl-images-amazon.com/images/I/31aX81I6vnL._SX351_BO1,204,203,200_.jpg" }}> </div>
-          <div class="column">
-            <h1 style="font-weight:900">{{ page.nomelivro | default: "Nome da Obra" }}</h1>
-            <h3 style="color:#505050"><i><b>{{ page.nomeautora | default: "Autora Da Silva" }}</b> - {{ page.anolancamento | default: "S/A" }}</i></h3>
-            <p> Sinopse: {{ page.sinopse | default: "Lorem ipsum dolor sit amet."}} </p>
-            <button class="button" onclick='window.open("{{ page.link | default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", "_blank")'><b>Acesse via {{ page.fontelivro | default: "YouTube" }}!</b></button>
-            {{ content }}
-          </div>
-        </div>
+        <h1 style="font-weight:900">{{ page.nomelivro | default: "Nome da Obra" }}</h1>
+        <h3 style="color:#505050"><i><b>{{ page.nomeautora | default: "Autora Da Silva" }}</b> - {{ page.anolancamento | default: "S/A" }}</i></h3>
+        <button class="button" onclick='window.open("{{ page.link | default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", "_blank")'><b>Acesse via {{ page.fontelivro | default: "YouTube" }}!</b></button>
+        {{ content }}
         <div class="quote" style="font-weight:400">
           <i>
           <tag style="font-size: 200%">&#x201c</tag><br>
