@@ -43,6 +43,10 @@ body{
   clear: both;
 }
 
+.row img {
+  border-radius: 5px;
+}
+
 /* Botão estilizado no livro */
 
 .button {
@@ -95,13 +99,14 @@ body{
 }
 
 .bookpreview {
-  background-color: #EFEFEF;
+  outline: 2px solid #EFEFEF;
   color: black;
   margin: 2% auto;
   padding: 20px;
   border-radius: 25px;
   width: 80%;
   min-width: 300px;
+  box-shadow: 0px 5px 10px #CCCCCC;
 }
 
 .buttonbottom {
