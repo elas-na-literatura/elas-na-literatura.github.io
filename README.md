@@ -22,7 +22,7 @@ Documento Original:
 ```
 (a-intrusa.md)
 ---
-layout: livro
+layout: prosa
 nomelivro: A Intrusa
 nomeautora: Júlia Lopes de Almeida
 anolancamento: 1908
@@ -33,7 +33,7 @@ Novo Documento:
 ```
 (nome-da-obra-eauco.md)
 ---
-layout: livro
+layout: prosa
 nomelivro: Nome da Obra Eãúçõ
 nomeautora: Super Autora
 anolancamento: 2021
