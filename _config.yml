@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Projeto de Steam-S
+title: Elas na Literatura
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A literatura brasileira na voz delas!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://projetosteams.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: supercontatwitterlegal
-github_username:  projetosteams
+url: "https://elas-na-literatura.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: elas-na-lit
+github_username:  elas-na-literatura
 
 # Build settings
 theme: minima
