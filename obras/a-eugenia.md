@@ -2,7 +2,7 @@
 layout: poesia
 nomelivro: A Eugênia
 nomeautora: Auta de Souza
-anolancamento: S/A
+anolancamento: Sem Ano
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81640
 fontelivro: Domínio Público
 quote: |
