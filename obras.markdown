@@ -9,7 +9,7 @@ var obras = [];
 {% for pagina in site.pages %}
 {% if pagina.dir == "/obras/"%}
 {% if pagina.name != "obras.markdown"%}
-obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}"};
+obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:'{{ pagina.quote  | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis leo ac gravida pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam at urna vulputate, auctor ipsum id, vehicula augue. Phasellus ullamcorper molestie molestie. Fusce id maximus risus. Ut ornare nisi vitae posuere vehicula. Praesent pulvinar, felis at lobortis semper, est risus auctor enim, quis ullamcorper lacus urna sed sem. Praesent rhoncus quam ullamcorper ipsum varius, et finibus augue iaculis. Phasellus ut diam sed nulla vestibulum efficitur eget sodales nibh." }}'};
 {% endif %}
 {% endif %}
 {% endfor %}
@@ -86,16 +86,32 @@ function escolaLit() {
   
   for (i in obrasDeVerdade)
   {
-  	if(escola != "Todas" && obrasDeVerdade[i].escola != escola.toLowerCase()) continue;
-    document.getElementById("demo").innerHTML += 
-    '<div class="bookpreview">\n'+
-	'<div class="row">\n'+
-    '<div class="columncapatwo">\n<img src=' + obrasDeVerdade[i].imagem + '>\n</div>\n'+
-    '<div class="columntwo">\n'+
-    '<tag style="font-weight:900;font-size:36px">' + obrasDeVerdade[i].titulo + '</tag>\n<br>\n' +
-    '<tag style="color:#505050;font-size:25px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></tag>\n<br><br>\n' +
-    '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasDeVerdade[i].link + '", "_self")\'>Conferir Obra</button>\n'+
-    '</div>\n</div>\n</div>\n<br>\n';
+    if(escola != "Todas" && obrasDeVerdade[i].escola != escola.toLowerCase()) continue;
+    switch(escola.toLowerCase())
+    {
+      case "prosa":
+        document.getElementById("demo").innerHTML += 
+        '<div class="bookpreview">\n'+
+        '<div class="row">\n'+
+        '<div class="columncapatwo">\n<img src=' + obrasDeVerdade[i].imagem + '>\n</div>\n'+
+        '<div class="columntwo">\n'+
+        '<tag style="font-weight:900;font-size:36px">' + obrasDeVerdade[i].titulo + '</tag>\n<br>\n' +
+        '<tag style="color:#505050;font-size:25px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></tag>\n<br><br>\n' +
+        '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasDeVerdade[i].link + '", "_self")\'>Conferir Obra</button>\n'+
+        '</div>\n</div>\n</div>\n<br>\n';
+        break;
+      case "poesia":
+        document.getElementById("demo").innerHTML += 
+        '<div class="bookpreview">\n'+
+        '<tag style="font-weight:900;font-size:36px">' + obrasDeVerdade[i].titulo + '</tag>\n<br>\n' +
+        '<tag style="color:#505050;font-size:25px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></tag>\n<br><br>\n' +
+        '<div class="quote" style="font-weight:400"> <i> <tag style="font-size: 200%">&#x201c</tag><br>' +
+        '<div class="center">' + obrasDeVerdade[i].quote + '</div><br><div style="font-size: 200%" class="right"> &#x201d <br>' +
+        '<p style="font-size: 50%"><tag style="font-weight:750">{{ page.nomelivro | default: "Nome da Obra" }}</tag>, página {{ page.quotepagina | default: "0" }}.</p></div></i></div>' +
+        '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasDeVerdade[i].link + '", "_self")\'>Conferir Obra</button>\n'+
+        '\n</div>\n<br>\n';
+        break;
+    }
   }
 }
 
