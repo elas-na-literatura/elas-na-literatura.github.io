@@ -7,4 +7,5 @@ link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action
 fontelivro: Domínio Público
 quote: |
   Imagem santa que entrevejo em sonho, <br>Sempre, sempre a cantar, <br>Criatura inocente, anjo risonho, <br>Que me ensinaste a amar!
+quotepagina: 1
 ---

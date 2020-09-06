@@ -9,7 +9,7 @@ var obras = [];
 {% for pagina in site.pages %}
 {% if pagina.dir == "/obras/"%}
 {% if pagina.name != "obras.markdown"%}
-obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}"};
+obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}", quotepag:"{{ pagina.quotepagina }}"};
 {% endif %}
 {% endif %}
 {% endfor %}
@@ -107,7 +107,7 @@ function escolaLit() {
         '<tag style="color:#505050;font-size:25px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></tag>\n<br>\n' +
         '<div class="quote" style="font-weight:400">\n<i>\n<tag style="font-size: 200%">&#x201c</tag><br>\n' +
         '<div class="center">' + obrasDeVerdade[i].quote + '</div><br>\n<div style="font-size: 200%" class="right"> &#x201d <br>\n' +
-        '<p style="font-size: 50%"><tag style="font-weight:750">' + obrasDeVerdade[i].titulo + '</tag>, ' + obrasDeVerdade[i].autora + '.</p></div></i></div>' +
+        '<p style="font-size: 50%"><tag style="font-weight:750">' + obrasDeVerdade[i].titulo + '</tag>, ' + obrasDeVerdade[i].quotepag + 'ª Estrofe.</p></div></i></div>' +
         '<button class="button" onclick=\'window.open("' + obrasDeVerdade[i].dest + '", "_self")\'>Acesse via ' + obrasDeVerdade[i].destname + '!</button>\n'+
         '\n</div>\n<br>\n';
         break;
