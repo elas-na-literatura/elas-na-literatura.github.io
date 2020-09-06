@@ -1,6 +1,6 @@
 ---
-layout: poema
-nomelivro: Lindo Poema
+layout: poesia
+nomelivro: Linda Poesia
 nomeautora: Fulana de Tal
 anolancamento: 2020
 # link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=7552
