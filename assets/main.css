@@ -99,11 +99,11 @@ body{
 }
 
 .bookpreview {
-  outline: 2px solid #EFEFEF;
   color: black;
   margin: 2% auto;
   padding: 20px;
   border-radius: 25px;
+  border: 2px solid #EFEFEF;
   width: 80%;
   min-width: 300px;
   box-shadow: 0px 5px 10px #CCCCCC;
