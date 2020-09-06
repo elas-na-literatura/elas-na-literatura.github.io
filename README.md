@@ -12,7 +12,7 @@ Na pasta obras, no presente momento, tem dois livros: A viúva Simões e A Intru
 
 Para colocar mais livros, criem um novo documento!
 
-ISSO AQUI É IMPORTANTE: Se o nome da obra for ```Nome da Obra Eãúçõ```, o nome do arquivo DEVE ser ```nome-da-obra-eauco.md```, tudo em minúsculo, com espaços, vírgulas e outros pontos gramaticais virando hífens, e sem acento nenhum!
+ISSO AQUI É IMPORTANTE: Se o nome da obra for ```Nome da Obra Eãúçõ```, o nome do arquivo DEVE ser ```nome-da-obra-eauco.md```, tudo em letra minúscula, com hífens no lugar de espaços, vírgulas e outros pontos gramaticais, e sem acento nenhum!
 
 Nessa parte, eu recomendo fazer Ctrl+C Ctrl+V de algum dos documentos que eu já fiz, pra ficar mais fácil!
 
