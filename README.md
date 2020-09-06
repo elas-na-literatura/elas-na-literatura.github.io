@@ -19,7 +19,7 @@ Nessa parte, eu recomendo fazer Ctrl+C Ctrl+V de algum dos documentos que eu já
 Vai mudando todas as informações pra ficar certo. Por exemplo:
 
 Documento Original:
-```
+```markdown
 (a-intrusa.md)
 ---
 layout: prosa
@@ -30,7 +30,7 @@ anolancamento: 1908
 ```
 
 Novo Documento:
-```
+```markdown
 (nome-da-obra-eauco.md)
 ---
 layout: prosa
