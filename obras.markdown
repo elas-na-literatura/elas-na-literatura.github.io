@@ -87,7 +87,6 @@ function escolaLit() {
   for (i in obrasDeVerdade)
   {
     if(escola != "Todas" && obrasDeVerdade[i].escola != escola.toLowerCase()) continue;
-    alert(`Escola: "${obrasDeVerdade[i].escola}"`)
     switch(obrasDeVerdade[i].escola)
     {
       case "prosa":
