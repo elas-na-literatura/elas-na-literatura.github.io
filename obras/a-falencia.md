@@ -1,5 +1,5 @@
 ---
-layout: livro
+layout: prosa
 nomelivro: A Falência
 nomeautora: Júlia Lopes de Almeida
 anolancamento: 1901

@@ -1,5 +1,5 @@
 ---
-layout: livro
+layout: prosa
 nomelivro: A Intrusa
 nomeautora: Júlia Lopes de Almeida
 anolancamento: 1908

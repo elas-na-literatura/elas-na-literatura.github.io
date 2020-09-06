@@ -118,7 +118,7 @@ function string_to_slug_mod (str) {
 Tipo de Obra Literária:
 <select id="filtros" onload="escolaLit()" onchange="autora()">
   <option>Todas</option>
-  <option>Livro</option>
+  <option>Prosa</option>
   <option>Poesia</option>
   <!-- <option>Pré-Modernismo</option> -->
   <!-- <option>Modernismo</option> -->

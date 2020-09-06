@@ -1,5 +1,5 @@
 ---
-layout: livro
+layout: prosa
 nomelivro: Livros das Donas e Donzelas
 nomeautora: Júlia Lopes de Almeida
 anolancamento: 1906

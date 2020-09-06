@@ -1,5 +1,5 @@
 ---
-layout: livro
+layout: prosa
 nomelivro: Histórias da Nossa Terra
 nomeautora: Júlia Lopes de Almeida
 anolancamento: 1907

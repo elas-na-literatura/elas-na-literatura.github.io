@@ -1,5 +1,5 @@
 ---
-layout: livro
+layout: prosa
 nomelivro: A Isca
 nomeautora: Júlia Lopes de Almeida
 anolancamento: 1922
