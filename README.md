@@ -40,8 +40,8 @@ anolancamento: 2021
 [...]
 ```
 
-### Vale notar que os parênteses não fazem parte do arquivo. Eles só se encontram no exemplo pra poder mostrar de qual documento o código faz parte.
-## Os três hífens no começo e no fim são OBRIGATÓRIOSSSS
+#### Vale notar que os parênteses não fazem parte do arquivo. Eles só se encontram no exemplo pra poder mostrar de qual documento o código faz parte.
+### Os três hífens no começo e no fim são OBRIGATÓRIOSSSS
 
 Também está aqui embaixo uma sinopse do GitHub Pages que vem de fábrica, então qualquer coisa, deem uma lidinha! :)
 Isso serviria na hora de fazer páginas como o about, mas eu realmente não tô usando Markdown faz uns 2 meses...
