@@ -9,7 +9,7 @@ var obras = [];
 {% for pagina in site.pages %}
 {% if pagina.dir == "/obras/"%}
 {% if pagina.name != "obras.markdown"%}
-obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.escolalit }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}"};
+obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}"};
 {% endif %}
 {% endif %}
 {% endfor %}
@@ -86,7 +86,7 @@ function escolaLit() {
   
   for (i in obrasDeVerdade)
   {
-  	if(escola != "Todas" && obrasDeVerdade[i].escola != escola) continue;
+  	if(escola != "Todas" && obrasDeVerdade[i].escola != escola.toLowerCase()) continue;
     document.getElementById("demo").innerHTML += 
     '<div class="bookpreview">\n'+
 	'<div class="row">\n'+
@@ -115,13 +115,13 @@ function string_to_slug_mod (str) {
 }
 </script>
 <form>
-Escola Literária:
+Tipo de Obra Literária:
 <select id="filtros" onload="escolaLit()" onchange="autora()">
   <option>Todas</option>
-  <option>Realismo</option>
-  <option>Simbolismo</option>
-  <option>Pré-Modernismo</option>
-  <option>Modernismo</option>
+  <option>Livro</option>
+  <option>Poesia</option>
+  <!-- <option>Pré-Modernismo</option> -->
+  <!-- <option>Modernismo</option> -->
   <!-- <option></option> -->
 </select> <br>
 Autora: 🔍
