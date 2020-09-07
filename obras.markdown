@@ -110,8 +110,6 @@ function escolaLit() {
   var obraOffset = (obrasPorPagina * (atualPagina - 1))
   var obraEmPag = 0;
 
-  alert(`obrasPorPagina: ${obrasPorPagina}\npagMax: ${pagMax}\natualPagina: ${atualPagina}\nobraOffset: ${obraOffset}\nobraEmPag: ${obraEmPag}`)
-
   // Adição de obras no HTML
   for(val in obrasDeVerdade)
   {
@@ -165,6 +163,7 @@ function string_to_slug_mod (str) {
 <form>
 Obras por página:
 <select id="opp" onchange="processParams()">
+  <option>5</option>
   <option>10</option>
   <option>25</option>
   <option>50</option>
@@ -189,7 +188,9 @@ Nome da Obra: 🔍
 <input type="text" id="termo" value="" oninput="autora()"><br>
 </form>
 <p id="demo"></p>
+<div style="position: fixed;width: 600px;bottom: 15px;margin: auto;/* min-width: 300px; */border-radius: 5px;background: #F0F0F0;border: 2px solid #CDCDCD;box-shadow: 0px 5px 10px #AAAAAA;z-index: 50;padding: 5px 5px;align-content: center;">
 <form>
 Página Atual
 <input type="number" id="paginaatual" value="1" oninput="processParams()"><br>
 </form>
+</div>
