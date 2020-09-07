@@ -4,8 +4,8 @@ nomelivro: Ano Bom
 nomeautora: Auta de Souza
 anolancamento: Sem Ano
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81649
-fontelivro: Domínio Público
+fontelivro: DomÃ­nio PÃºblico
 quote: |
-  Hoje começa o ano. Na alegria<br>De nívea pomba quando nasce a aurora,<br>Deixa, minh’alma, a tua fantasia<br>Subir, cantando, pelo espaço a fora...
+  Hoje comeÃ§a o ano. Na alegria<br>De nÃ­vea pomba quando nasce a aurora,<br>Deixa, minhâ€™alma, a tua fantasia<br>Subir, cantando, pelo espaÃ§o a fora...
 quotepagina: 1
 ---

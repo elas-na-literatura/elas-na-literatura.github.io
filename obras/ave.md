@@ -4,8 +4,8 @@ nomelivro: Ave
 nomeautora: Auta de Souza
 anolancamento: Sem Ano
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81654
-fontelivro: Domínio Público
+fontelivro: DomÃ­nio PÃºblico
 quote: |
-  Quando morre uma criança,<br>Diz-se que o pálido anjinho<br>Voou como uma esperança.<br>Foi para o céu direitinho.
+  Quando morre uma crianÃ§a,<br>Diz-se que o pÃ¡lido anjinho<br>Voou como uma esperanÃ§a.<br>Foi para o cÃ©u direitinho.
 quotepagina: 1
 ---

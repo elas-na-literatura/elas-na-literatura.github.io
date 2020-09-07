@@ -1,11 +1,11 @@
 ---
 layout: poesia
-nomelivro: Ao Pé do Túmulo
+nomelivro: Ao PÃ© do TÃºmulo
 nomeautora: Auta de Souza
 anolancamento: Sem Ano
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81647
-fontelivro: Domínio Público
+fontelivro: DomÃ­nio PÃºblico
 quote: |
-  Eis o descanso eterno, o doce abrigo<br>Das almas tristes e despedaçadas;<br>Eis o repouso, enfim; e o sono amigo<br>Já vem cerrar-me as pálpebras cansadas.
+  Eis o descanso eterno, o doce abrigo<br>Das almas tristes e despedaÃ§adas;<br>Eis o repouso, enfim; e o sono amigo<br>JÃ¡ vem cerrar-me as pÃ¡lpebras cansadas.
 quotepagina: 1
 ---
