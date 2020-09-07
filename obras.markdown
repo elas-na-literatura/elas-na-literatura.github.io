@@ -115,9 +115,9 @@ function escolaLit() {
   // Adição de obras no HTML
   for(val in obrasDeVerdade)
   {
+    var i = val + obraOffset;
     if(obraEmPag > obrasPorPagina) continue;
     if(escola != "Todas" && obrasDeVerdade[i].escola != escola.toLowerCase()) continue;
-    var i = val + obraOffset;
     switch(obrasDeVerdade[i].escola)
     {
       case "prosa":
