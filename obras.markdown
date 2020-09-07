@@ -9,7 +9,7 @@ var obras = [];
 {% for pagina in site.pages %}
 {% if pagina.dir == "/obras/"%}
 {% if pagina.name != "obras.markdown"%}
-obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}", quotepag:"{{ pagina.quotepagina }}"};
+obras[obras.length] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}", quotepag:"{{ pagina.quotepagina }}"};
 {% endif %}
 {% endif %}
 {% endfor %}
@@ -17,6 +17,9 @@ obras[{{ forloop.index0 }}] = {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagin
 var obrasMesmo = [];
 var obrasDeVerdade = [];
 
+var obrasPorPagina = 10, atualPagina = 1, pagMax = 1;
+
+// Processamento de parâmetros no URL
 function processURLParams()
 {
   var url = window.location.href;
@@ -28,9 +31,10 @@ function processURLParams()
       setParam(params[i]);
     }
   }
-  autora();
+  processParams();
 }
 
+// Método para mudar valores do HTML baseado no URL
 function setParam(param)
 {
   var values = param.split("=")
@@ -47,6 +51,20 @@ function setParam(param)
   }
 }
 
+// Processamento do número de páginas
+function processParams()
+{
+  obrasPorPagina = parseInt(document.getElementById("opp").options[document.getElementById("opp").selectedIndex].text);
+  if(!Number.isInteger(obrasPorPagina))
+  {
+    obrasPorPagina = 99999;
+  }
+  atualPagina = Math.abs(parseInt(document.getElementById("paginaatual").value));
+  if(atualPagina < 1) atualPagina = 1;
+  autora();
+}
+
+// Filtro por nome de autora
 function autora()
 {
 	obrasMesmo = [];
@@ -63,6 +81,7 @@ function autora()
 	search();
 }
 
+// Filtro por nome de obra
 function search()
 {
 	obrasDeVerdade = [];
@@ -79,14 +98,24 @@ function search()
 	escolaLit();
 }
 
+// Filtro por tipo de texto (previamente de escola literária) + Paginação
 function escolaLit() {
   var escolaOptions = document.getElementById("filtros");
   var escola = escolaOptions.options[escolaOptions.selectedIndex].text;
   document.getElementById("demo").innerHTML = "";
   
-  for (i in obrasDeVerdade)
+  // Paginação
+  pagMax = Math.ceil(obrasDeVerdade.length / obrasPorPagina);
+  if(atualPagina > pagMax) atualPagina = pagMax
+  var obraOffset = (obrasPorPagina * (atualPagina - 1))
+  var obraEmPag = 0;
+
+  // Adição de obras no HTML
+  for(val in obrasDeVerdade)
   {
+    if(obraEmPag > obrasPorPagina) continue;
     if(escola != "Todas" && obrasDeVerdade[i].escola != escola.toLowerCase()) continue;
+    var i = val + obraOffset;
     switch(obrasDeVerdade[i].escola)
     {
       case "prosa":
@@ -112,6 +141,7 @@ function escolaLit() {
         '\n</div>\n<br>\n';
         break;
     }
+    obraEmPag++;
   }
 }
 
@@ -131,6 +161,17 @@ function string_to_slug_mod (str) {
 }
 </script>
 <form>
+Obras por página:
+<select id="opp" onchange="processParams()">
+  <option>10</option>
+  <option>25</option>
+  <option>50</option>
+  <option>100</option>
+  <option>Todas</option>
+  <!-- <option>Pré-Modernismo</option> -->
+  <!-- <option>Modernismo</option> -->
+  <!-- <option></option> -->
+</select> <br>
 Tipo de Obra Literária:
 <select id="filtros" onload="escolaLit()" onchange="autora()">
   <option>Todas</option>
@@ -146,3 +187,7 @@ Nome da Obra: 🔍
 <input type="text" id="termo" value="" oninput="autora()"><br>
 </form>
 <p id="demo"></p>
+<form>
+Página Atual
+<input type="text" id="paginaatual" value="" oninput="processParams()"><br>
+</form>
