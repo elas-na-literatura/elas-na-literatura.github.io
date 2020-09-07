@@ -114,7 +114,7 @@ function escolaLit() {
   for(val in obrasDeVerdade)
   {
     var i = parseInt(val) + obraOffset;
-    if(obraEmPag > obrasPorPagina) continue;
+    if(obraEmPag >= obrasPorPagina) continue;
     if(escola != "Todas" && obrasDeVerdade[i].escola != escola.toLowerCase()) continue;
     switch(obrasDeVerdade[i].escola)
     {
