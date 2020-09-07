@@ -110,6 +110,8 @@ function escolaLit() {
   var obraOffset = (obrasPorPagina * (atualPagina - 1))
   var obraEmPag = 0;
 
+  alert(`obrasPorPagina: ${obrasPorPagina}\npagMax: ${pagMax}\natualPagina: ${atualPagina}\nobraOffset: ${obraOffset}\nobraEmPag: ${obraEmPag}`)
+
   // Adição de obras no HTML
   for(val in obrasDeVerdade)
   {
@@ -189,5 +191,5 @@ Nome da Obra: 🔍
 <p id="demo"></p>
 <form>
 Página Atual
-<input type="text" id="paginaatual" value="" oninput="processParams()"><br>
+<input type="number" id="paginaatual" value="1" oninput="processParams()"><br>
 </form>
