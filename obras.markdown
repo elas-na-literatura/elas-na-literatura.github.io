@@ -107,7 +107,6 @@ function escolaLit() {
   // Paginação
   pagMax = Math.ceil(obrasDeVerdade.length / obrasPorPagina);
   if(atualPagina > pagMax) atualPagina = pagMax
-  document.getElementById("paginaatual").value = atualPagina;
   var obraOffset = (obrasPorPagina * (atualPagina - 1))
   var obraEmPag = 0;
 
