@@ -60,7 +60,7 @@ function processParams()
     obrasPorPagina = 99999;
   }
   atualPagina = parseInt(document.getElementById("paginaatual").value)
-  if(document.getElementById("paginaatual").value = "" or atualPagina < 1) atualPagina = 1;
+  if(document.getElementById("paginaatual").value == "" || atualPagina < 1) atualPagina = 1;
   autora();
 }
 
@@ -107,6 +107,7 @@ function escolaLit() {
   // Paginação
   pagMax = Math.ceil(obrasDeVerdade.length / obrasPorPagina);
   if(atualPagina > pagMax) atualPagina = pagMax
+  document.getElementById("paginaatual").value = atualPagina;
   var obraOffset = (obrasPorPagina * (atualPagina - 1))
   var obraEmPag = 0;
 
