@@ -2,7 +2,7 @@
 layout: poesia
 nomelivro: Cores
 nomeautora: Auta de Souza
-anolancamento: Sem Ano
+anolancamento: 1897
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81690
 fontelivro: Domínio Público
 quote: |

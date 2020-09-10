@@ -2,7 +2,7 @@
 layout: poesia
 nomelivro: Fefa
 nomeautora: Auta de Souza
-anolancamento: Sem Ano
+anolancamento: 1898
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81768
 fontelivro: Domínio Público
 quote: |

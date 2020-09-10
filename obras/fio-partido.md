@@ -2,7 +2,7 @@
 layout: poesia
 nomelivro: Fio Partido
 nomeautora: Auta de Souza
-anolancamento: Sem Ano
+anolancamento: 1901
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81770
 fontelivro: Domínio Público
 quote: |

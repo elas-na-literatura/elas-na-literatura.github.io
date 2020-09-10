@@ -2,7 +2,7 @@
 layout: poesia
 nomelivro: Hoje
 nomeautora: Auta de Souza
-anolancamento: Sem Ano
+anolancamento: 1894
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81774
 fontelivro: Domínio Público
 quote: |

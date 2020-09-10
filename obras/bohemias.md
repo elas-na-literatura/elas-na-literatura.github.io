@@ -2,7 +2,7 @@
 layout: poesia
 nomelivro: Bohemias
 nomeautora: Auta de Souza
-anolancamento: Sem Ano
+anolancamento: 1897
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81689
 fontelivro: Domínio Público
 quote: |

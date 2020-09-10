@@ -2,7 +2,7 @@
 layout: poesia
 nomelivro: Mater
 nomeautora: Auta de Souza
-anolancamento: Sem Ano
+anolancamento: 1896
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81859
 fontelivro: Domínio Público
 quote: |
