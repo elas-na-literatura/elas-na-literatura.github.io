@@ -3,8 +3,9 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
+    <a href="{{ "/" | relative_url }}">
+      <img scr="{{ '/' | relative_url }}/rsc/logo-wide.svg" style="width:205px" alt="{{ site.title | escape }}">
+    </a>
     {%- if page_paths -%}
       <nav class="site-nav" style="z-index:1000;">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
