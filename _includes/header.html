@@ -4,7 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a href="{{ "/" | relative_url }}">
-      <img scr="{{ '/' | relative_url }}/rsc/logo-wide.svg" style="width:205px" alt="{{ site.title | escape }}">
+      <img scr="{{ url }}rsc/logo-wide.svg" style="width:205px" alt="{{ site.title | escape }}">
     </a>
     {%- if page_paths -%}
       <nav class="site-nav" style="z-index:1000;">
