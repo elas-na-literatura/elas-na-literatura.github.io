@@ -176,10 +176,10 @@ body{
 
 .line
 {
-    position: absolute;
+    position: relative;
     left:50%;
     margin-left: -8px;
-    text-align: center;
+    /*text-align: center;*/
     border-left: 16px solid white;
 }
 
@@ -213,7 +213,7 @@ body{
     position: absolute;
     color: black;
     padding: 16px;
-    min-width: 275%;
+    min-width: calc(100% - 196px);
     min-height: 196px;
     border-radius: 25px;
     border: 3px solid #EEE;
