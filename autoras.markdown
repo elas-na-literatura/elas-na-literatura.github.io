@@ -24,7 +24,6 @@ permalink: /autoras/
     let timeline = document.getElementById('timeline');
     let timelineState = "center";
     let lastButton = "";
-    let openBox = ""
 
     function slide(last)
     {
@@ -40,7 +39,6 @@ permalink: /autoras/
             infobox.style.animationDuration = '0.5s';
             infobox.style.opacity = '0';
 
-            openBox = "";
             lastButton = "";
         } 
 
@@ -64,7 +62,6 @@ permalink: /autoras/
                 lastInfobox.style.opacity = '0';
             }                  
                     
-            openBox = last;
             lastButton = last;
         }
     }
