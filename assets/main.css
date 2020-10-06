@@ -16,7 +16,8 @@ body{
   font-kerning:normal;
   display:flex;
   min-height:150vh;
-  flex-direction:column
+  flex-direction:column;
+  background-color: #FFEEEE;
 }
 
 /* Trens pra deixar legal a página do livro */
@@ -171,12 +172,6 @@ body{
 {
     from {opacity: 0;}
     to {opacity: 1;}
-}
-
-body
-{
-    font-family: "Poppins";
-    background-color: #FFEEEE;
 }
 
 .line
