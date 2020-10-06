@@ -149,3 +149,79 @@ body{
 {
     text-shadow: 0px 0px 1px #000, 0px 0px 2px #000, 0px 0px 3px #000, 0px 0px 4px #000, 0px 0px 5px #000;
 }
+
+/* Mega Linha do Tempo HTML */
+
+@keyframes slideLeft
+{
+    from {left:50%;}
+    to {left:96px;}
+}
+@keyframes slideRight
+{
+    from {left:96px;}
+    to {left:50%;}
+}
+@keyframes hide
+{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes appear
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body
+{
+    font-family: "Poppins";
+    background-color: #FFEEEE;
+}
+
+.line
+{
+    position: absolute;
+    left:50%;
+    margin-left: -8px;
+    text-align: center;
+    border-left: 16px solid white;
+}
+
+.dot
+{
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    vertical-align: middle;
+    font-size: 32px;
+    line-height: 128px;
+    min-width: 128px;
+    min-height: 128px;
+    border-radius: 50%;
+    margin-left: -74px;
+    margin-right: 32px;
+    background-color:  #F261C2;
+    border: 3px solid #813061;
+    display: inline-block;
+    text-shadow: #222222 0px 0px 4px;
+    box-shadow: #00000044 0px 4px 8px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.infobox
+{
+    background-color: #fff;
+    text-align: left;
+    position: absolute;
+    color: black;
+    padding: 16px;
+    min-width: 275%;
+    min-height: 196px;
+    border-radius: 25px;
+    border: 3px solid #EEE;
+    box-shadow: #00000022 0px 4px 8px;
+    opacity: 0;
+}
