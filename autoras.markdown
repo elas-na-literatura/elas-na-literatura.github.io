@@ -41,6 +41,7 @@ permalink: /autoras/
             infobox.style.opacity = '0';
 
             openBox = "";
+            lastButton = "";
         } 
 
         else
@@ -55,17 +56,16 @@ permalink: /autoras/
             infobox.style.animationDuration = '0.5s';
             infobox.style.opacity = '1';
 
-            if(openBox != "" && openBox != last)
+            if(lastButton != "" && lastButton != last)
             {
-                var lastInfobox = document.getElementById(openBox);
+                var lastInfobox = document.getElementById(lastButton);
                 lastInfobox.style.animationName = 'hide';
                 lastInfobox.style.animationDuration = '0.5s';
                 lastInfobox.style.opacity = '0';
             }                  
                     
             openBox = last;
+            lastButton = last;
         }
-
-        lastButton = last;
     }
 </script>
