@@ -20,7 +20,18 @@ layout: default
 <div class="container">
   <h1>404</h1>
 
-  <p><strong>Página não encontrada :(</strong></p>
-  <p>A página que você acessou não existe mais, ou nunca existiu.</p>
-  <p style="color:white">Mas afinal, o que seria <i>existir</i>?</p>
+  <p id="title"><strong>Página não encontrada :(</strong></p>
+  <p id="decr">A página que você acessou não existe mais, ou nunca existiu.</p>
+  <p id="hidden" style="color:white">Mas afinal, o que seria <i>existir</i>?</p>
+
+  <script>
+      let url = window.location.href;
+      let thing = new RegExp(String.fromCharCode(40, 91, 99, 67, 93, 43, 91, 114, 82, 93, 43, 91, 101, 69, 233, 201, 93, 42, 40, 37, 67, 51, 41, 42, 40, 37, 65, 57, 41, 42, 91, 100, 68, 93, 43, 91, 105, 73, 93, 43, 91, 116, 84, 93, 43, 91, 111, 79, 93, 42, 91, 115, 83, 93, 42, 41),"g");
+      if(url.match(thing))
+      {
+          document.getElementById("title").innerHTML = "<strong>Créditos não encontrados ;(</strong>";
+          document.getElementById("decr").innerHTML = "Os créditos que você procurou não foram encontrados, ou nunca existiram.";
+          document.getElementById("hidden").innerHTML = "Ou então foram apenas apoios morais.";
+      }
+  </script>
 </div>
