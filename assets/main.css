@@ -101,6 +101,7 @@ body{
 
 .bookpreview {
   color: black;
+  background-color: white;
   margin: 2% auto;
   padding: 20px;
   border-radius: 25px;
