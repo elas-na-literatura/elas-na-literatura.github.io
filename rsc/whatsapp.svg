@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="105"
+   height="20"
+   viewBox="0 0 27.781245 5.2916669"
+   version="1.1"
+   id="svg4589"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="whatsapp.svg">
+  <defs
+     id="defs4583" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="41.182242"
+     inkscape:cy="-3.1131838"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4586">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-291.70829)">
+    <rect
+       style="fill:#42dd32;fill-opacity:1;stroke:none;stroke-width:1.63458264;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5134"
+       width="27.78125"
+       height="5.2916665"
+       x="0"
+       y="291.70831"
+       ry="0.64132488" />
+    <g
+       id="g5230"
+       transform="translate(0,0.26457835)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5149"
+         d="m 3.8349961,292.52887 a 1.5848631,1.5605017 0 0 0 -1.585221,1.56068 1.5848631,1.5605017 0 0 0 0.291284,0.89818 l -0.1636739,0.57089 0.6099141,-0.15239 a 1.5848631,1.5605017 0 0 0 0.8476968,0.24399 1.5848631,1.5605017 0 0 0 1.584825,-1.56067 1.5848631,1.5605017 0 0 0 -1.584825,-1.56068 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#15de00;stroke-width:0.28322822;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccsccccsscc"
+         inkscape:connector-curvature="0"
+         id="path5204"
+         d="m 3.3887525,293.2627 0.195776,0.4029 c 0,0 -0.087957,0.15606 -0.1475416,0.21565 -0.059585,0.0596 0.5419309,0.62421 0.6384003,0.58732 0.096469,-0.0369 0.2099627,-0.23833 0.2099627,-0.23833 l 0.4057385,0.19009 c 0,0 0.079445,0.26104 -0.2099625,0.38872 -0.289408,0.12768 -0.9221335,-0.22699 -1.0980479,-0.45965 -0.1759144,-0.23266 -0.6362492,-0.75855 -0.1645653,-1.08386 0.082282,-0.0567 0.1702398,-0.003 0.1702398,-0.003 z"
+         style="fill:#15de00;fill-opacity:1;stroke:none;stroke-width:0.17976424px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.47484207px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36187103"
+       x="6.8156404"
+       y="302.21323"
+       id="text5224"
+       transform="scale(1.0239526,0.97660771)"><tspan
+         sodipodi:role="line"
+         id="tspan5222"
+         x="6.8156404"
+         y="302.21323"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.89496827px;font-family:Arial;fill:#ffffff;fill-opacity:1;stroke-width:0.36187103">Compartilhar</tspan></text>
+  </g>
+</svg>

@@ -5,6 +5,8 @@ permalink: /obras/
 onLoadFunction: processURLParams()
 ---
 <script>
+var share = true;
+
 var obras = [];
 {% for pagina in site.pages %}
 {% if pagina.dir == "/obras/"%}
@@ -127,7 +129,10 @@ function escolaLit() {
         '<div class="columntwo">\n'+
         '<tag style="font-weight:900;font-size:36px">' + obrasDeVerdade[i].titulo + '</tag>\n<br>\n' +
         '<tag style="color:#505050;font-size:25px"><i><b>' + obrasDeVerdade[i].autora + '</b> - ' + obrasDeVerdade[i].ano + '</i></tag>\n<br><br>\n' +
-        '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasDeVerdade[i].link + '", "_self")\'>Conferir Obra</button>\n'+
+        '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasDeVerdade[i].link + '", "_self")\'>Conferir Obra</button><br><br>\n'+
+        '<a href="https://api.whatsapp.com/send?text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasDeVerdade[i].autora) + '%20que%20eu%20encontrei%21%0A' + encodeURI("{{ site.url }}obras/" + obrasDeVerdade[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/whatsapp.svg" alt="WhatsApp"></a>'+
+        '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Olha essa obra maravilhosa da ' + obrasDeVerdade[i].autora + ' que eu encontrei! " data-url="https://elas-na-literatura.github.io/obras/' + obrasDeVerdade[i].link '" data-hashtags="ElasNaLiteratura" data-lang="pt" data-show-count="false">Tweet</a>'+
+        '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + encodeURI("{{ site.url }}obras/" + obrasDeVerdade[i].link) + '&layout=button&size=small&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>\n'+
         '</div>\n</div>\n</div>\n<br>\n';
         break;
       case "poesia":
@@ -161,6 +166,7 @@ function string_to_slug_mod (str) {
 	return str;
 }
 </script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <form>
 Obras por página:
 <select id="opp" onchange="processParams()">
