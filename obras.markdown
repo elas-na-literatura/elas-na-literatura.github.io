@@ -172,7 +172,7 @@ function string_to_slug_mod (str) {
 function randomObra()
 {
   var random = Math.floor(obras.length * Math.random());
-  window.open("{{  site.url }}obras/"obras[random].link, "_self");
+  window.open("{{  site.url }}obras/" + obras[random].link, "_self");
 }
 
 </script>
