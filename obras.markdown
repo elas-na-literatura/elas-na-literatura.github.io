@@ -168,6 +168,13 @@ function string_to_slug_mod (str) {
         .replace(/ +/g, ' '); // collapse spaces
 	return str;
 }
+
+function randomObra()
+{
+  var random = Math.floor(obras.length * Math.random());
+  window.open("{{  site.url }}obras/"obras[random].link, "_self");
+}
+
 </script>
 <form>
 Obras por página:
@@ -196,6 +203,9 @@ Autora: 🔍
 Nome da Obra: 🔍
 <input type="text" id="termo" value="" oninput="autora()"><br>
 </form>
+<div style="align-items: center; text-align: center;">
+  <button class="button" onclick="randomObra()">Me mostre uma obra aleatória!</button>
+</div>
 <p id="demo"></p>
 <div style="position: fixed;width: 600px;bottom: 15px;margin: auto;/* min-width: 300px; */border-radius: 5px;background: #F0F0F0;border: 2px solid #CDCDCD;box-shadow: 0px 5px 10px #AAAAAA;z-index: 50;padding: 5px 5px;align-content: center;">
 <form>
