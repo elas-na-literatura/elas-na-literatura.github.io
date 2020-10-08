@@ -153,7 +153,10 @@ body{
 }
 
 /* Mega Linha do Tempo HTML */
-
+:root
+{
+    --openedPos: 96px;
+}
 @keyframes slideLeft
 {
     from {left:50%;}
@@ -174,6 +177,11 @@ body{
     from {opacity: 0;}
     to {opacity: 1;}
 }
+body
+{
+    font-family: "Poppins";
+    background-color: #FFEEEE;
+}
 
 .line
 {
@@ -193,8 +201,8 @@ body{
     vertical-align: middle;
     font-size: 32px;
     line-height: 128px;
-    min-width: 128px;
-    min-height: 128px;
+    width: 128px;
+    height: 128px;
     border-radius: 50%;
     margin-left: -74px;
     margin-right: 32px;
@@ -214,10 +222,58 @@ body{
     position: absolute;
     color: black;
     padding: 16px;
-    min-width: calc(100% - 196px);
-    min-height: 196px;
+    width: calc(100% - 256px);
+    height: 196px;
     border-radius: 25px;
     border: 3px solid #EEE;
     box-shadow: #00000022 0px 4px 8px;
     opacity: 0;
+}
+
+@media only screen and (max-width: 512px)
+{
+    :root
+    {
+        --openedPos: 18.75vw;
+    }
+
+    @keyframes slideLeft
+    {
+        from {left:50%;}
+        to {left:18.75vw;}
+    }
+    @keyframes slideRight
+    {
+        from {left:18.75vw;}
+        to {left:50%;}
+    }
+
+    .infobox 
+    {
+        width: calc(100% - 50vw);
+        height: 38.28125vw;
+        font-size: calc(calc(100vw / 512) * 16);
+        border-radius: 4.8828125vw;
+        border: 0.5859375vw solid #EEE;
+        padding: 3.125vw;
+    }
+
+    .dot
+    {
+        width: 25vw;
+        height: 25vw;
+        line-height: 25vw;
+        margin-left: calc(-12.5vw - 1.953125vw);
+        margin-right: 6.25vw;
+        font-size: calc(calc(100vw / 512) * 32);
+        margin-top: 12.5vw;
+        margin-bottom: 12.5vw;
+        border: 0.5859375vw solid #813061;
+    }
+
+    .line
+    {
+        margin-left: -1.5625vw;
+        border-left: 3.125vw solid white;
+    }
 }

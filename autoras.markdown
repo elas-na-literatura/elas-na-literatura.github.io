@@ -44,7 +44,7 @@ permalink: /autoras/
 
         else
         {
-            timeline.style.left = '96px'; 
+            timeline.style.left = 'var(--openedPos)'; 
             timeline.style.animationName = 'slideLeft'; 
             timeline.style.animationDuration = '1s';
             timelineState = "left";
