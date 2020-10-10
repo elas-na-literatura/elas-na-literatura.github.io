@@ -305,9 +305,18 @@ body
     align-items: center;
     background-color: #2b8652;
     color: #b5e61d;
-    top: calc(var(--navtogglepos) + 8px);
-    left: calc(600px - 24px);
+    top: calc(var(--navtogglepos) + 162px);
+    left: calc(calc(calc(100vw - 680px) / 2) + 560px);
     border-radius: 0px 0px 4px 4px;
+}
+
+@media only screen and (max-width: 800px)
+{
+  .toggle
+  {
+    top: calc(var(--navtogglepos) + 156px);
+    left: 583px;
+  }
 }
 
 .toggle:hover

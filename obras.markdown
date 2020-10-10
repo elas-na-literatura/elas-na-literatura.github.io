@@ -188,7 +188,7 @@ function togglenavbar()
 <div class="navbar">
     <input class="nameobra" id="termo" placeholder="🔍 Título da Obra">
     <input class="nameautora" id="nomeautora" placeholder="🔍 Autora">
-    <select class="pagenum">
+    <select class="pagenum" id="opp" onchange="processParams()">
         <option value="5" disabled selected>Obras por Página</option>
         <option>5</option>
         <option>10</option>
@@ -197,7 +197,7 @@ function togglenavbar()
         <option>100</option>
         <option>Todas</option>
     </select>
-    <select class="obracat">
+    <select class="obracat" id="filtros" onload="escolaLit()" onchange="autora()">
         <option value="Todas" disabled selected>Estilo das Obras</option>
         <option>Todas</option>
         <option>Prosa</option>
@@ -226,6 +226,7 @@ Autora: 🔍
 Nome da Obra: 🔍
 <input type="text" id="termo" value="" oninput="autora()"><br>
 </form> -->
+<br><br><br>
 <div style="align-items: center; text-align: center;">
   <br>
   <button class="button" onclick="randomObra()" style="font-weight:900; box-shadow: #00000044 0px 3px 2px">Me mostre uma obra aleatória!</button>
