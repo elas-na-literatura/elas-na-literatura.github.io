@@ -56,7 +56,7 @@ function setParam(param)
 // Processamento do número de páginas
 function processParams()
 {
-  obrasPorPagina = parseInt(document.getElementById("opp").options[document.getElementById("opp").selectedIndex].text);
+  obrasPorPagina = parseInt(document.getElementById("opp").options[document.getElementById("opp").selectedIndex].value);
   if(!Number.isInteger(obrasPorPagina))
   {
     obrasPorPagina = 99999;
@@ -104,7 +104,7 @@ function search()
 function escolaLit() {
   alert("Hello, World!");
   var escolaOptions = document.getElementById("filtros");
-  var escola = escolaOptions.options[escolaOptions.selectedIndex].text;
+  var escola = escolaOptions.options[escolaOptions.selectedIndex].value;
   document.getElementById("demo").innerHTML = "";
   
   // Paginação
@@ -187,22 +187,22 @@ function togglenavbar()
 
 </script>
 <div class="navbar">
-    <input class="nameobra" id="termo" placeholder="🔍 Título da Obra" oninput="autora()">
-    <input class="nameautora" id="nomeautora" placeholder="🔍 Autora" oninput="autora()">
+    <input class="nameobra" id="termo" placeholder="🔍 Título da Obra" oninput="processParams()">
+    <input class="nameautora" id="nomeautora" placeholder="🔍 Autora" oninput="processParams()">
     <select class="pagenum" id="opp" onchange="processParams()">
         <option value="5" disabled selected>Obras por Página</option>
-        <option>5</option>
-        <option>10</option>
-        <option>25</option>
-        <option>50</option>
-        <option>100</option>
-        <option>Todas</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="Todas">Todas</option>
     </select>
-    <select class="obracat" id="filtros" onload="escolaLit()" onchange="autora()">
+    <select class="obracat" id="filtros" onload="escolaLit()" onchange="processParams()">
         <option value="Todas" disabled selected>Estilo das Obras</option>
-        <option>Todas</option>
-        <option>Prosa</option>
-        <option>Poesia</option>
+        <option value="Todas">Todas</option>
+        <option value="Prosa">Prosa</option>
+        <option value="Poesia">Poesia</option>
     </select>
 </div>
 <span class="toggle" onclick="togglenavbar()" id="togglebutton">⮝</span>
