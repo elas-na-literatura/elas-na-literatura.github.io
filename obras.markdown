@@ -175,8 +175,37 @@ function randomObra()
   window.open("{{  site.url }}obras/" + obras[random].link, "_self");
 }
 
+let navbar = true;
+
+function togglenavbar()
+{
+    navbar = !navbar;
+    document.documentElement.style.setProperty('--navtogglepos', (navbar*72).toString() +'px')
+    document.getElementById('togglebutton').innerHTML = '⮝'.substr(0,navbar) + '⮟'.substr(0,1-navbar);
+}
+
 </script>
-<form>
+<div class="navbar">
+    <input class="nameobra" id="termo" placeholder="🔍 Título da Obra">
+    <input class="nameautora" id="nomeautora" placeholder="🔍 Autora">
+    <select class="pagenum">
+        <option value="5" disabled selected>Obras por Página</option>
+        <option>5</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>100</option>
+        <option>Todas</option>
+    </select>
+    <select class="obracat">
+        <option value="Todas" disabled selected>Estilo das Obras</option>
+        <option>Todas</option>
+        <option>Prosa</option>
+        <option>Poesia</option>
+    </select>
+</div>
+<span class="toggle" onclick="togglenavbar()" id="togglebutton">⮝</span>
+<!--<form>
 Obras por página:
 <select id="opp" onchange="processParams()">
   <option>5</option>
@@ -185,24 +214,18 @@ Obras por página:
   <option>50</option>
   <option>100</option>
   <option>Todas</option>
-  <!-- <option>Pré-Modernismo</option> -->
-  <!-- <option>Modernismo</option> -->
-  <!-- <option></option> -->
 </select> <br>
 Tipo de Obra Literária:
 <select id="filtros" onload="escolaLit()" onchange="autora()">
   <option>Todas</option>
   <option>Prosa</option>
   <option>Poesia</option>
-  <!-- <option>Pré-Modernismo</option> -->
-  <!-- <option>Modernismo</option> -->
-  <!-- <option></option> -->
 </select> <br>
 Autora: 🔍
 <input type="text" id="nomeautora" value="" oninput="autora()"><br>
 Nome da Obra: 🔍
 <input type="text" id="termo" value="" oninput="autora()"><br>
-</form>
+</form> -->
 <div style="align-items: center; text-align: center;">
   <br>
   <button class="button" onclick="randomObra()" style="font-weight:900; box-shadow: #00000044 0px 3px 2px">Me mostre uma obra aleatória!</button>
