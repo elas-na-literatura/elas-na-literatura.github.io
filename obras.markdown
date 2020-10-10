@@ -186,8 +186,8 @@ function togglenavbar()
 
 </script>
 <div class="navbar">
-    <input class="nameobra" id="termo" placeholder="🔍 Título da Obra">
-    <input class="nameautora" id="nomeautora" placeholder="🔍 Autora">
+    <input class="nameobra" id="termo" placeholder="🔍 Título da Obra" oninput="autora()">
+    <input class="nameautora" id="nomeautora" placeholder="🔍 Autora" oninput="autora()">
     <select class="pagenum" id="opp" onchange="processParams()">
         <option value="5" disabled selected>Obras por Página</option>
         <option>5</option>
