@@ -50,7 +50,7 @@
         {
             position: absolute;
             font-weight: 400; 
-            font-size: 2.5vmax; 
+            font-size: 2vmax; 
             color:white; 
             text-shadow: #000 0px 2px 4px;
             --scrollpos: 0px;
@@ -60,14 +60,11 @@
         }
     </style>
 </head>
-<body>
-    <header class="site-header" role="banner">
+<body style="height:200vh;">
+    <header class="site-header" role="banner" style="border-bottom: 0px solid #00000000;">
         <div class="wrapper">
           {%- assign default_paths = site.pages | map: "path" -%}
           {%- assign page_paths = site.header_pages | default: default_paths -%}
-          <a href="{{ "/" | relative_url }}">
-            <img src="/rsc/logo-wide-fix.svg" style="width:205px" alt="{{ site.title | escape }}">
-          </a>
           {%- if page_paths -%}
             <nav class="site-nav" style="z-index:1000;">
               <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -79,7 +76,7 @@
                 </span>
               </label>
       
-              <div class="trigger">
+              <div class="trigger" style="color:white;font-weight: 900;text-shadow: #0004 0 1px 3px;">
                 {%- for path in page_paths -%}
                   {%- assign my_page = site.pages | where: "path", path | first -%}
                   {%- if my_page.title -%}
@@ -100,8 +97,8 @@
         <div class="specialquote" style="left: 10%;--scrollpos: 0vh;text-align: left;">Em aulas e livros de literatura brasileira, aprendemos sobre autores renomados como Machado de Assis, Guimarães Rosa, José de Alencar, Graciliano Ramos, entre outros.</div>
         <div class="specialquote" style="left: calc(50% - 20vw);--scrollpos: 50vh; font-size: 3.5vmax;text-align: center; font-weight: 700; width: 40vw;">Suas obras são exemplares. Porém, onde se encontram as autoras mulheres de nossa história?</div>
         <div class="specialquote" style="right: 10%;--scrollpos: 100vh;text-align: right;">O nosso projeto visa, portanto, trazer à luz diversas obras de autoras brasileiras não representadas em aulas e livros.</div>
-        <div class="specialquote" style="left: calc(50% - 20vw);--scrollpos: 125vh; font-size: 3.5vmax;text-align: center; font-weight: 700; width: 40vw;">
-            <button class="button" onclick='window.open("{{ site.url }}/obras","_self")'>Descubra mais!</button>
+        <div class="specialquote" style="left: calc(50% - 20vw);--scrollpos: 150vh; font-size: 3.5vmax;text-align: center; font-weight: 700; width: 40vw;">
+            <button class="button" onclick='window.open("{{ site.url }}/obras","_self")' style="transform:scale(2);">Descubra mais!</button>
         </div>
     </main>
 
@@ -114,7 +111,7 @@
         });
     </script>
 
-    <footer class="site-footer h-card">
+    <footer class="site-footer h-card" style="position: absolute;width: 100vw;bottom:-200vh;background-color: #ffc6e5;">
         <data class="u-url" href="{{ "/" | relative_url }}"></data>
     
         <div class="wrapper">
