@@ -57,19 +57,19 @@ function setParam(param)
 // Processamento do número de páginas
 function processParams(novaPag)
 {
-  if(novaPag == null || !Number.isInteger(novaPag))
-  {
-    obrasPorPagina = parseInt(document.getElementById("opp").options[document.getElementById("opp").selectedIndex].value);
-  }
-  else
-  {
-    obrasPorPagina = novaPag;
-  }
+  obrasPorPagina = parseInt(document.getElementById("opp").options[document.getElementById("opp").selectedIndex].value);
   if(!Number.isInteger(obrasPorPagina))
   {
     obrasPorPagina = 99999;
   }
-  atualPagina = parseInt(document.getElementById("paginaatual").value)
+  if(novaPag == null || !Number.isInteger(novaPag))
+  {
+    atualPagina = parseInt(document.getElementById("paginaatual").value)
+  }
+  else
+  {
+    atualPagina = novaPag;
+  }
   if(document.getElementById("paginaatual").value == "" || atualPagina < 1) atualPagina = 1;
   autora();
 }
