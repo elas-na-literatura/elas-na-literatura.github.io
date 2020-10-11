@@ -292,6 +292,7 @@ body
     background-color: #113520;
     border-radius: 4px 4px 0px 4px;
     left:calc(50% - 300px);
+    position: relative;
 }
 
 @media only screen and (max-width: 640px)

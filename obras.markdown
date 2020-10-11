@@ -200,28 +200,6 @@ window.addEventListener("resize", function()
         <option value="Poesia">Poesia</option>
     </select>
 </div>
-<!--<form>
-Obras por página:
-<select id="opp" onchange="processParams()">
-  <option>5</option>
-  <option>10</option>
-  <option>25</option>
-  <option>50</option>
-  <option>100</option>
-  <option>Todas</option>
-</select> <br>
-Tipo de Obra Literária:
-<select id="filtros" onload="escolaLit()" onchange="autora()">
-  <option>Todas</option>
-  <option>Prosa</option>
-  <option>Poesia</option>
-</select> <br>
-Autora: 🔍
-<input type="text" id="nomeautora" value="" oninput="autora()"><br>
-Nome da Obra: 🔍
-<input type="text" id="termo" value="" oninput="autora()"><br>
-</form> -->
-<br><br><br>
 <div style="align-items: center; text-align: center;">
   <br>
   <button class="button" onclick="randomObra()" style="font-weight:900; box-shadow: #00000044 0px 3px 2px">Me mostre uma obra aleatória!</button>
