@@ -30,8 +30,8 @@
             background-color: #ffc6e5;
             align-items: center;
             text-align: center;
-            filter: blur(calc(1vmin * var(--blurfactor)));
-            -webkit-filter: blur(calc(1vmin * var(--blurfactor)));
+            filter: blur(calc(1.5vmin * var(--blurfactor)));
+            -webkit-filter: blur(calc(1.5vmin * var(--blurfactor)));
         }
 
         .bigimage img
@@ -92,6 +92,7 @@
     <main class="page-content" aria-label="Content">
         <div class="bigimage">
             <img src="rsc/hmpg.svg">
+            <div style="position: fixed;width: 100vw;height: 100vh;background-color: #00000022;opacity: var(--blurfactor);"
         </div>
         <span style="position: fixed;bottom: 16px;text-align: center;width:100%;font-weight: 900;font-size: 2.5vmax;color:white;text-shadow: #0002 0px 2px 2px;opacity: calc(1 - var(--blurfactor));">Arraste para mais!</span>
         <div class="specialquote" style="left: 10%;--scrollpos: 0vh;text-align: left;">Em aulas e livros de literatura brasileira, aprendemos sobre autores renomados como Machado de Assis, Guimarães Rosa, José de Alencar, Graciliano Ramos, entre outros.</div>
@@ -105,7 +106,7 @@
     <script>
         window.addEventListener("scroll", function()
         {
-            var blurvalue = (window.scrollY/100);
+            var blurvalue = (window.scrollY/150);
             if(blurvalue > 1) blurvalue = 1;
             document.documentElement.style.setProperty('--blurfactor', blurvalue.toString());
         });
