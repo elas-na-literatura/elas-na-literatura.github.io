@@ -350,3 +350,38 @@ body
     margin-left: calc(calc(70% - 48px) + 24px);
     width: calc(35% - 16px);
 }
+
+/* Paginação 2.0 */
+.pagination
+{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.paginationbutton
+{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    margin-right: 4px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 900;
+    background-color: #61f1c2;
+    margin: 2px;
+    color: black;
+}
+
+.paginationbutton:hover
+{
+    background-color: aliceblue;
+    border: 2px solid #61f1c2;
+    color: #61f1c2;
+    margin: 0;
+}
+
+.paginationbutton:active
+{
+    background-color: #d6d6d6;
+}

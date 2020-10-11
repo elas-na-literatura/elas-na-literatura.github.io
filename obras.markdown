@@ -194,6 +194,34 @@ window.addEventListener("resize", function()
   document.documentElement.style.setProperty('--scalefac', (document.documentElement.clientWidth / 640).toString())
 });
 
+function pageButton(buttonID)
+{
+  switch (buttonID)
+  {
+    case 'f':
+      alert("volta pro começo")
+      break;
+    case 'a':
+      alert("vai pra essa página")
+      break;
+    case 'b':
+      alert("vai pra essa pbgina")
+      break;
+    case 'c':
+      alert("vai pra essa pcgina")
+      break;
+    case 'd':
+      alert("vai pra essa pdgina")
+      break;
+    case 'e':
+      alert("vai pra essa pegina")
+      break;
+    case 'l':
+      alert("vai pro final")
+      break;
+  }
+}
+
 </script>
 <div class="navbar">
     <input class="nameobra" id="termo" placeholder="🔍 Título da Obra" oninput="processParams()">
@@ -220,6 +248,15 @@ window.addEventListener("resize", function()
   <br>
 </div>
 <p id="demo"></p>
+<div class="pagination">
+    <span class="paginationbutton" onclick="pageButton('f')" id="pgnt-btn-first"><<</span>
+    <span class="paginationbutton" onclick="pageButton('a')" id="pgnt-btn-a">1</span>
+    <span class="paginationbutton" onclick="pageButton('b')" id="pgnt-btn-b">2</span>
+    <span class="paginationbutton" onclick="pageButton('c')" id="pgnt-btn-c">3</span>
+    <span class="paginationbutton" onclick="pageButton('d')" id="pgnt-btn-d">4</span>
+    <span class="paginationbutton" onclick="pageButton('e')" id="pgnt-btn-e">5</span>
+    <span class="paginationbutton" onclick="pageButton('l')" id="pgnt-btn-last">>></span>
+</div>
 <div style="position: fixed;width: 600px;bottom: 15px;margin: auto;/* min-width: 300px; */border-radius: 5px;background: #F0F0F0;border: 2px solid #CDCDCD;box-shadow: 0px 5px 10px #AAAAAA;z-index: 50;padding: 5px 5px;align-content: center;">
 <form>
 Página Atual
