@@ -103,6 +103,7 @@ function search()
 
 // Filtro por tipo de texto
 function tipoDeObra() {
+  obrasPraMostrar = [];
   var escolaOptions = document.getElementById("filtros");
   var escola = escolaOptions.options[escolaOptions.selectedIndex].value;
   document.getElementById("demo").innerHTML = "";
