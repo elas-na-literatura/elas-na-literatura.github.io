@@ -173,6 +173,36 @@ function listarObras()
     }
     obraEmPag++;
   }
+
+  buildPagination();
+}
+
+function buildPagination()
+{
+  var currentPageButton = '';
+
+  if(atualPagina == 1)
+  {
+    currentPageButton = 'a';
+  }
+  else if(atualPagina == 2)
+  {
+    currentPageButton = 'b';
+  }
+  else if(pagMax >= 5 && atualPagina < pagMax - 1)
+  {
+    currentPageButton = 'c';
+  }
+  else if(atualPagina == pagMax - 1)
+  {
+    currentPageButton = 'd';
+  }
+  else if(atualPagina == pagMax)
+  {
+    currentPageButton = 'e';
+  }
+
+  document.getElementById("pgnt-btn-"+currentPageButton).innerHTML = "<b>" + atualPagina.toString() + "</b>";
 }
 
 function string_to_slug_mod (str) {
