@@ -179,30 +179,37 @@ function listarObras()
 
 function buildPagination()
 {
-  var currentPageButton = '';
+  var currentPageButton = -1;
 
   if(atualPagina == 1)
   {
-    currentPageButton = 'a';
+    currentPageButton = 0;
   }
   else if(atualPagina == 2)
   {
-    currentPageButton = 'b';
+    currentPageButton = 1;
   }
   else if(pagMax >= 5 && atualPagina < pagMax - 1)
   {
-    currentPageButton = 'c';
+    currentPageButton = 2;
   }
   else if(atualPagina == pagMax - 1)
   {
-    currentPageButton = 'd';
+    currentPageButton = 3;
   }
   else if(atualPagina == pagMax)
   {
-    currentPageButton = 'e';
+    currentPageButton = 4;
   }
 
-  document.getElementById("pgnt-btn-"+currentPageButton).innerHTML = "<b>" + atualPagina.toString() + "</b>";
+  var buttonIndex = 0;
+  while(buttonIndex < 5)
+  {
+    document.getElementById("pgnt-btn-"+String.fromCharCode(97 + buttonIndex)).innerHTML = (atualPagina + buttonIndex - currentPageButton).toString();
+    buttonIndex += 1;
+  }
+
+  document.getElementById("pgnt-btn-"+String.fromCharCode(97 + currentPageButton)).innerHTML = "<b>" + atualPagina.toString() + "</b>";
 }
 
 function string_to_slug_mod (str) {
