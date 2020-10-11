@@ -58,6 +58,12 @@
             height: 30vmin;
             top: calc(100vh + var(--scrollpos));
         }
+
+        @keyframes waves {
+          0% {bottom: 16px;}
+          50% {bottom: 32px;}
+          100% {bottom: 16px;}
+        }
     </style>
 </head>
 <body style="height:200vh;background-color:#ffc6e5">
@@ -76,11 +82,11 @@
                 </span>
               </label>
       
-              <div class="trigger" style="color:white;font-weight: 900;text-shadow: #0004 0 1px 3px;">
+              <div class="trigger" style="color:white;font-weight: 900;text-shadow: #0004 0 2px 2px;">
                 {%- for path in page_paths -%}
                   {%- assign my_page = site.pages | where: "path", path | first -%}
                   {%- if my_page.title -%}
-                  <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                  <a class="page-link" href="{{ my_page.url | relative_url }}" style="color: white;">{{ my_page.title | escape }}</a>
                   {%- endif -%}
                 {%- endfor -%}
               </div>
@@ -94,7 +100,7 @@
             <img src="rsc/hmpg.svg">
             <div style="position: fixed;width: 100vw;height: 100vh;background-color: #00000022;opacity: var(--blurfactor);"></div>
         </div>
-        <span style="position: fixed;bottom: 16px;text-align: center;width:100%;font-weight: 900;font-size: 2.5vmax;color:white;text-shadow: #0002 0px 2px 2px;opacity: calc(1 - var(--blurfactor));">Arraste para mais!</span>
+        <span style="position: fixed;bottom: 16px;text-align: center;width:100%;font-weight: 900;font-size: 2.5vmin;color:white;text-shadow: #000 0px 2px 4px;opacity: calc(1 - var(--blurfactor));animation: waves 1s ease 0 infinite normal none running">Arraste para mais!</span>
         <div class="specialquote" style="left: 10%;--scrollpos: 0vmin;text-align: left;">Em aulas e livros de literatura brasileira, aprendemos sobre autores renomados como Machado de Assis, Guimarães Rosa, José de Alencar, Graciliano Ramos, entre outros.</div>
         <div class="specialquote" style="left: 0;--scrollpos: 50vmin; font-size: 6vmin;text-align: center; font-weight: 700; width: 100vw;height:60vmin">Suas obras são exemplares. Porém, onde se encontram as autoras mulheres de nossa história?</div>
         <div class="specialquote" style="right: 10%;--scrollpos: 110vmin;text-align: right;">O nosso projeto visa, portanto, trazer à luz diversas obras de autoras brasileiras não representadas em aulas e livros.</div>
