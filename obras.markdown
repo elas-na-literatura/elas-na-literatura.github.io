@@ -175,14 +175,10 @@ function randomObra()
   window.open("{{  site.url }}obras/" + obras[random].link, "_self");
 }
 
-let navbar = true;
-
-function togglenavbar()
+window.addEventListener("resize", function()
 {
-    navbar = !navbar;
-    document.documentElement.style.setProperty('--navtogglepos', (navbar*72).toString() +'px')
-    document.getElementById('togglebutton').innerHTML = '⮝'.substr(0,navbar) + '⮟'.substr(0,1-navbar);
-}
+  document.documentElement.style.setProperty('--scalefac', (document.documentElement.clientWidth / 640).toString())
+});
 
 </script>
 <div class="navbar">
@@ -204,7 +200,6 @@ function togglenavbar()
         <option value="Poesia">Poesia</option>
     </select>
 </div>
-<span class="toggle" onclick="togglenavbar()" id="togglebutton">⮝</span>
 <!--<form>
 Obras por página:
 <select id="opp" onchange="processParams()">

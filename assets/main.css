@@ -282,53 +282,24 @@ body
 
 :root
 {
-    --navtogglepos: 72px;
+    --scalefac: 1;
 }
 
 .navbar
 {
-    position: absolute;
     width: 600px;
     height: 72px;
     background-color: #113520;
     border-radius: 4px 4px 0px 4px;
-    clip-path: inset(0px 0px calc(72px - var(--navtogglepos)) 0px);
+    left:calc(50% - 300px);
 }
 
-.toggle
+@media only screen and (max-width: 640px)
 {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
-    align-items: center;
-    background-color: #2b8652;
-    color: #b5e61d;
-    top: calc(var(--navtogglepos) + 162px);
-    left: calc(calc(calc(100vw - 680px) / 2) + 560px);
-    border-radius: 0px 0px 4px 4px;
-}
-
-@media only screen and (max-width: 800px)
-{
-  .toggle
+  .navbar
   {
-    top: calc(var(--navtogglepos) + 156px);
-    left: 583px;
+    transform: scale(var(--scalefac));
   }
-}
-
-.toggle:hover
-{
-    background-color: #b5e61d;
-    color: #2b8652;
-}
-
-.toggle:active
-{
-    background-color: #c1ff00;
-    color: #7ca10b;
 }
 
 .navbar input
