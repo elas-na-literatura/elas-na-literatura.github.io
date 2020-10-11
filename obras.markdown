@@ -55,9 +55,16 @@ function setParam(param)
 }
 
 // Processamento do número de páginas
-function processParams()
+function processParams(novaPag)
 {
-  obrasPorPagina = parseInt(document.getElementById("opp").options[document.getElementById("opp").selectedIndex].value);
+  if(novaPag == null || !Number.isInteger(novaPag))
+  {
+    obrasPorPagina = parseInt(document.getElementById("opp").options[document.getElementById("opp").selectedIndex].value);
+  }
+  else
+  {
+    obrasPorPagina = novaPag;
+  }
   if(!Number.isInteger(obrasPorPagina))
   {
     obrasPorPagina = 99999;
@@ -196,30 +203,47 @@ window.addEventListener("resize", function()
 
 function pageButton(buttonID)
 {
+  var switchPage = false;
+  var pageToSwitch = 0;
   switch (buttonID)
   {
     case 'f':
-      alert("volta pro começo")
+      alert("volta pro começo");
+      switchPage = true;
+      pageToSwitch = 1;
       break;
     case 'a':
-      alert("vai pra essa página")
+      alert("vai pra essa página");
+      switchPage = true;
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-a").innerHTML);
       break;
     case 'b':
-      alert("vai pra essa pbgina")
+      alert("vai pra essa pbgina");
+      switchPage = true;
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-b").innerHTML);
       break;
     case 'c':
-      alert("vai pra essa pcgina")
+      alert("vai pra essa pcgina");
+      switchPage = true;
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-c").innerHTML);
       break;
     case 'd':
-      alert("vai pra essa pdgina")
+      alert("vai pra essa pdgina");
+      switchPage = true;
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-d").innerHTML);
       break;
     case 'e':
-      alert("vai pra essa pegina")
+      alert("vai pra essa pegina");
+      switchPage = true;
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-e").innerHTML);
       break;
     case 'l':
-      alert("vai pro final")
+      alert("vai pro final");
+      switchPage = true;
+      pageToSwitch = 99999999999;
       break;
   }
+  if(switchPage) { processParams(pageToSwitch); }
 }
 
 </script>
