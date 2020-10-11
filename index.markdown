@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
     <head>
         <link rel="icon" href="https://elas-na-literatura.github.io/rsc/favicon.svg" type="image/svg" sizes="16x16">
         <meta charset="utf-8">
@@ -93,7 +91,7 @@
 
         <main class="page-content" aria-label="Content">
             <div class="bigimage">
-                <img src="desenho.svg">
+                <img src="rsc/hmpg.svg">
             </div>
             <span style="position: fixed;bottom: 16px;text-align: center;width:100%;font-weight: 900;font-size: 2.5vmax;color:white;text-shadow: #0002 0px 2px 2px;opacity: calc(1 - var(--blurfactor));">Arraste para mais!</span>
             <div class="specialquote" style="left: 10%;--scrollpos: 0vh;text-align: left;">Em aulas e livros de literatura brasileira, aprendemos sobre autores renomados como Machado de Assis, Guimarães Rosa, José de Alencar, Graciliano Ramos, entre outros.</div>
@@ -151,4 +149,3 @@
 
 
     </body>
-</html>

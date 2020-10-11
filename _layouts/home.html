@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "pt" }}">
 
-  {%- include head.html -%}
+<!--{%- include head.html -%}
 
   <body onload="{{ page.onLoadFunction }}">
 
@@ -14,12 +14,15 @@
         <h1 id=title>{{ page.banner }}</h1>
       </section>
       <div class="wrapper">
-        {{ content }}
+        
       </div>
     </main>
 
     {%- include footer.html -%}
 
   </body>
+-->
+
+{{ content }}
 
 </html>
