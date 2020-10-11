@@ -61,7 +61,8 @@
 
         @keyframes waves {
           0% {bottom: 16px;}
-          50% {bottom: 32px;}
+          25% {bottom: 24px;}
+          75% {bottom: 8px;}
           100% {bottom: 16px;}
         }
     </style>
@@ -100,7 +101,7 @@
             <img src="rsc/hmpg.svg">
             <div style="position: fixed;width: 100vw;height: 100vh;background-color: #00000022;opacity: var(--blurfactor);"></div>
         </div>
-        <span style="position: fixed;bottom: 16px;text-align: center;width:100%;font-weight: 900;font-size: 2.5vmin;color:white;text-shadow: #000 0px 2px 4px;opacity: calc(1 - var(--blurfactor));animation: waves 1s ease 0 infinite normal none running">Arraste para mais!</span>
+        <span style="position: fixed;bottom: 16px;text-align: center;width:100%;font-weight: 900;font-size: 2.5vmin;color:white;text-shadow: #000 0px 2px 4px;opacity: calc(1 - var(--blurfactor));animation-name: waves;animation-duration: 6s;animation-iteration-count: infinite;">Arraste para mais!</span>
         <div class="specialquote" style="left: 10%;--scrollpos: 0vmin;text-align: left;">Em aulas e livros de literatura brasileira, aprendemos sobre autores renomados como Machado de Assis, Guimarães Rosa, José de Alencar, Graciliano Ramos, entre outros.</div>
         <div class="specialquote" style="left: 0;--scrollpos: 50vmin; font-size: 6vmin;text-align: center; font-weight: 700; width: 100vw;height:60vmin">Suas obras são exemplares. Porém, onde se encontram as autoras mulheres de nossa história?</div>
         <div class="specialquote" style="right: 10%;--scrollpos: 110vmin;text-align: right;">O nosso projeto visa, portanto, trazer à luz diversas obras de autoras brasileiras não representadas em aulas e livros.</div>
