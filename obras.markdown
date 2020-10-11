@@ -140,6 +140,7 @@ function listarObras()
   {
     if(obraEmPag >= obrasPorPagina) continue;
     var i = parseInt(val) + obraOffset;
+    if(i >= orbasPraMostrar.length) continue;
     switch(obrasPraMostrar[i].escola)
     {
       case "prosa":
@@ -245,37 +246,30 @@ function pageButton(buttonID)
   switch (buttonID)
   {
     case 'f':
-      alert("volta pro começo");
       switchPage = true;
       pageToSwitch = 1;
       break;
     case 'a':
-      alert("vai pra essa página");
       switchPage = true;
       pageToSwitch = parseInt(document.getElementById("pgnt-btn-a").innerHTML);
       break;
     case 'b':
-      alert("vai pra essa pbgina");
       switchPage = true;
       pageToSwitch = parseInt(document.getElementById("pgnt-btn-b").innerHTML);
       break;
     case 'c':
-      alert("vai pra essa pcgina");
       switchPage = true;
       pageToSwitch = parseInt(document.getElementById("pgnt-btn-c").innerHTML);
       break;
     case 'd':
-      alert("vai pra essa pdgina");
       switchPage = true;
       pageToSwitch = parseInt(document.getElementById("pgnt-btn-d").innerHTML);
       break;
     case 'e':
-      alert("vai pra essa pegina");
       switchPage = true;
       pageToSwitch = parseInt(document.getElementById("pgnt-btn-e").innerHTML);
       break;
     case 'l':
-      alert("vai pro final");
       switchPage = true;
       pageToSwitch = 99999999999;
       break;
