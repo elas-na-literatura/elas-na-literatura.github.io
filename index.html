@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="https://elas-na-literatura.github.io/rsc/favicon.svg" type="image/svg" sizes="16x16">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {%- seo -%}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+        {%- feed_meta -%}
+        {%- if jekyll.environment == 'production' and site.google_analytics -%}
+          {%- include google-analytics.html -%}
+        {%- endif -%}
+        <style>
+            :root
+            {
+                --blurfactor: 0;
+            }
+
+            .bigimage
+            {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: -100;
+                background-color: #ffc6e5;
+                align-items: center;
+                text-align: center;
+                filter: blur(calc(1vmin * var(--blurfactor)));
+                -webkit-filter: blur(calc(1vmin * var(--blurfactor)));
+            }
+
+            .bigimage img
+            {
+                position: absolute;
+                width: 100vmin;
+                height: 100vmin;
+                vertical-align: middle;
+                top: 50%;
+                left: 50%;
+                margin-top: -50vmin;
+                margin-left: -50vmin;
+            }
+
+            .specialquote
+            {
+                position: absolute;
+                font-weight: 400; 
+                font-size: 2.5vmax; 
+                color:white; 
+                text-shadow: #000 0px 2px 4px;
+                --scrollpos: 0px;
+                width: 40vw;
+                height: 22.5vh;
+                top: calc(100vh + var(--scrollpos));
+            }
+        </style>
+    </head>
+    <body>
+        <header class="site-header" role="banner">
+            <div class="wrapper">
+              {%- assign default_paths = site.pages | map: "path" -%}
+              {%- assign page_paths = site.header_pages | default: default_paths -%}
+              <a href="{{ "/" | relative_url }}">
+                <img src="/rsc/logo-wide-fix.svg" style="width:205px" alt="{{ site.title | escape }}">
+              </a>
+              {%- if page_paths -%}
+                <nav class="site-nav" style="z-index:1000;">
+                  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                  <label for="nav-trigger">
+                    <span class="menu-icon">
+                      <svg viewBox="0 0 18 15" width="18px" height="15px">
+                        <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                      </svg>
+                    </span>
+                  </label>
+          
+                  <div class="trigger">
+                    {%- for path in page_paths -%}
+                      {%- assign my_page = site.pages | where: "path", path | first -%}
+                      {%- if my_page.title -%}
+                      <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                </nav>
+              {%- endif -%}
+            </div>
+        </header>
+
+        <main class="page-content" aria-label="Content">
+            <div class="bigimage">
+                <img src="desenho.svg">
+            </div>
+            <span style="position: fixed;bottom: 16px;text-align: center;width:100%;font-weight: 900;font-size: 2.5vmax;color:white;text-shadow: #0002 0px 2px 2px;opacity: calc(1 - var(--blurfactor));">Arraste para mais!</span>
+            <div class="specialquote" style="left: 10%;--scrollpos: 0vh;text-align: left;">Em aulas e livros de literatura brasileira, aprendemos sobre autores renomados como Machado de Assis, Guimarães Rosa, José de Alencar, Graciliano Ramos, entre outros.</div>
+            <div class="specialquote" style="left: calc(50% - 20vw);--scrollpos: 50vh; font-size: 3.5vmax;text-align: center; font-weight: 700; width: 40vw;">Suas obras são exemplares. Porém, onde se encontram as autoras mulheres de nossa história?</div>
+            <div class="specialquote" style="right: 10%;--scrollpos: 100vh;text-align: right;">O nosso projeto visa, portanto, trazer à luz diversas obras de autoras brasileiras não representadas em aulas e livros.</div>
+            <div class="specialquote" style="left: calc(50% - 20vw);--scrollpos: 125vh; font-size: 3.5vmax;text-align: center; font-weight: 700; width: 40vw;">
+                <button class="button" onclick='window.open("{{ site.url }}/obras","_self")'>Descubra mais!</button>
+            </div>
+        </main>
+
+        <script>
+            window.addEventListener("scroll", function()
+            {
+                var blurvalue = (window.scrollY/100);
+                if(blurvalue > 1) blurvalue = 1;
+                document.documentElement.style.setProperty('--blurfactor', blurvalue.toString());
+            });
+        </script>
+
+        <footer class="site-footer h-card">
+            <data class="u-url" href="{{ "/" | relative_url }}"></data>
+        
+            <div class="wrapper">
+        
+            <h2 class="footer-heading">{{ site.title | escape }}</h2>
+        
+            <div class="footer-col-wrapper">
+                <div class="footer-col footer-col-1">
+                <ul class="contact-list">
+                    <li class="p-name">
+                    {%- if site.author -%}
+                        {{ site.author | escape }}
+                    {%- else -%}
+                        {{ site.title | escape }}
+                    {%- endif -%}
+                    </li>
+                    {%- if site.email -%}
+                    <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                    {%- endif -%}
+                </ul>
+                </div>
+        
+                <div class="footer-col footer-col-2">
+                {%- include social.html -%}
+                </div>
+        
+                <div class="footer-col footer-col-3">
+                <p>{{- site.description | escape -}}</p>
+                </div>
+            </div>
+        
+            </div>
+        
+        </footer>
+
+
+    </body>
+</html>
