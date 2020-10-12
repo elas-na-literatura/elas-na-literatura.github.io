@@ -40,6 +40,8 @@ onLoadFunction: processURLParams()
 <script>
 var share = true;
 
+document.documentElement.style.setProperty('--scalefac', (document.documentElement.clientWidth / 640).toString())
+
 var obras = [
 {% for pagina in site.pages %}{% if pagina.dir == "/obras/"%}{% if pagina.name != "obras.markdown"%}
 {titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}", quotepag:"{{ pagina.quotepagina }}"},
