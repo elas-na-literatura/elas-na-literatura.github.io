@@ -223,7 +223,7 @@ body
     color: black;
     padding: 16px;
     width: calc(100% - 256px);
-    height: 196px;
+    min-height: 196px;
     border-radius: 25px;
     border: 3px solid #EEE;
     box-shadow: #00000022 0px 4px 8px;
@@ -251,7 +251,7 @@ body
     .infobox 
     {
         width: calc(100% - 50vw);
-        height: 38.28125vw;
+        min-height: 38.28125vw;
         font-size: calc(calc(100vw / 512) * 16);
         border-radius: 4.8828125vw;
         border: 0.5859375vw solid #EEE;
