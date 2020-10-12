@@ -233,7 +233,7 @@ function buildPagination()
 
   document.getElementById("pgnt-btn-"+String.fromCharCode(97 + currentPageButton)).innerHTML = "<b>" + atualPagina.toString() + "</b>";
 
-  document.getElementById("pagination-top").innerHTML = document.getElementById("pagination-bottom").innerHTML;
+  //document.getElementById("pagination-top").innerHTML = document.getElementById("pagination-bottom").innerHTML;
 }
 
 function string_to_slug_mod (str) {
