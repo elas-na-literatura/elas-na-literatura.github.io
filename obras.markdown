@@ -38,7 +38,6 @@ onLoadFunction: processURLParams()
     <span class="paginationbutton" onclick="pageButton('l')" id="pgnt-btn-l">>></span>
 </div>
 <script>
-alert("script");
 var share = true;
 
 var obras = [
