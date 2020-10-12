@@ -202,15 +202,15 @@ function buildPagination()
   {
     currentPageButton = 1;
   }
-  else if((pagMax > 5 && atualPagina < pagMax - 1) || atualPagina == 3)
+  else if((pagMax > 5 && atualPagina < pagMax - 1) || (pagMax <= 5 && atualPagina == 3))
   {
     currentPageButton = 2;
   }
-  else if((pagMax > 5 && atualPagina == pagMax - 1) || atualPagina == 4)
+  else if((pagMax > 5 && atualPagina == pagMax - 1) || (pagMax <= 5 && atualPagina == 4))
   {
     currentPageButton = 3;
   }
-  else if((pagMax > 5 && atualPagina == pagMax) || atualPagina == 5)
+  else if((pagMax > 5 && atualPagina == pagMax) || (pagMax <= 5 && atualPagina == 5))
   {
     currentPageButton = 4;
   }
