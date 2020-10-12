@@ -1,9 +1,8 @@
 ---
 layout: prosa
-nomelivro: 
-Batata cozida, mingau de cará - Coleção de Poesias 
+nomelivro: Batata cozida, mingau de cará - Coleção de Poesias 
 
-nomeautora: Eloí Elisabete Bocheco 
+nomeautora: Eloí Elisabet Bocheco 
 anolancamento: 2006
 sinopse: |
   Com a proposta de garantir o direito à educação, a autora reúne diversos poemas que enaltecem a cultura e a literatura brasileira remetendo a simplicidade da vida cotidiana e a beleza de sua efemeridade. 

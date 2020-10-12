@@ -10,6 +10,6 @@ fontelivro: Domínio Público
 imagemcapa: 
 quote: |
   Numa só frase, quantas lembranças,
-sobrevieram. Quanto medo, quanta angustia. E se ele não voltasse? Não agüentei. Mais uma vez a armadura remendada caiu e eu chorei.
+  sobrevieram. Quanto medo, quanta angustia. E se ele não voltasse? Não agüentei. Mais uma vez a armadura remendada caiu e eu chorei.
 quotepagina: 11
 ---
