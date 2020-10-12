@@ -131,9 +131,8 @@ function listarObras()
 {
   // Paginação
   pagMax = Math.ceil(obrasPraMostrar.length / obrasPorPagina);
-  if(atualPagina > pagMax) atualPagina = pagMax
-  document.getElementById("paginaatual").value = atualPagina;
-  var obraOffset = (obrasPorPagina * (atualPagina - 1))
+  if(atualPagina > pagMax) atualPagina = pagMax;
+  var obraOffset = (obrasPorPagina * (atualPagina - 1));
   var obraEmPag = 0;
 
   // Adição de obras no HTML
