@@ -57,6 +57,7 @@ function setParam(param)
 // Processamento do número de páginas
 function processParams(novaPag)
 {
+  document.getElementById("pagination-top").innerHTML = "";
   obrasPorPagina = parseInt(document.getElementById("opp").options[document.getElementById("opp").selectedIndex].value);
   if(!Number.isInteger(obrasPorPagina))
   {
