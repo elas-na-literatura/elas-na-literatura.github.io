@@ -113,6 +113,20 @@ body{
   padding: 10px;
 }
 
+@media only screen and (max-width: 740px)
+{
+  .columncapatwo
+  {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .columntwo
+  {
+    width: 100%;
+  }
+}
+
 .bookpreview {
   color: black;
   background-color: white;
