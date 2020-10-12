@@ -234,10 +234,7 @@ function buildPagination()
 
   document.getElementById("pgnt-btn-"+String.fromCharCode(97 + currentPageButton)).innerHTML = "<b>" + atualPagina.toString() + "</b>";
 
-  var innerHTMLdaPag = document.getElementById("pagination-bottom").innerHTML;
-  alert(innerHTMLdaPag);
-
-  document.getElementById("pagination-top").innerHTML = innerHTMLdaPag;
+  document.getElementById("pagination-top").innerHTML = document.getElementById("pagination-bottom").innerHTML;
 }
 
 function string_to_slug_mod (str) {
@@ -338,9 +335,9 @@ function pageButton(buttonID)
     <span class="paginationbutton" onclick="pageButton('e')" id="pgnt-btn-e">5</span>
     <span class="paginationbutton" onclick="pageButton('l')" id="pgnt-btn-l">>></span>
 </div>
-<div style="position: fixed;width: 600px;bottom: 15px;margin: auto;/* min-width: 300px; */border-radius: 5px;background: #F0F0F0;border: 2px solid #CDCDCD;box-shadow: 0px 5px 10px #AAAAAA;z-index: 50;padding: 5px 5px;align-content: center;">
+<!--<div style="position: fixed;width: 600px;bottom: 15px;margin: auto;/* min-width: 300px; */border-radius: 5px;background: #F0F0F0;border: 2px solid #CDCDCD;box-shadow: 0px 5px 10px #AAAAAA;z-index: 50;padding: 5px 5px;align-content: center;">
 <form>
 Página Atual
 <input type="number" id="paginaatual" value="1" oninput="processParams()"><br>
 </form>
-</div>
+</div>-->
