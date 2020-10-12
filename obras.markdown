@@ -182,6 +182,18 @@ function buildPagination()
 {
   var currentPageButton = -1;
 
+  if(pagMax <= 5)
+  {
+    document.getElementById("pgnt-btn-f").style.display = "none";
+    document.getElementById("pgnt-btn-l").style.display = "none";
+  }
+  else
+  {
+    document.getElementById("pgnt-btn-f").style.display = "inline-block";
+    document.getElementById("pgnt-btn-l").style.display = "inline-block";
+  }
+
+
   if(atualPagina == 1)
   {
     currentPageButton = 0;
@@ -190,7 +202,7 @@ function buildPagination()
   {
     currentPageButton = 1;
   }
-  else if(pagMax >= 5 && atualPagina < pagMax - 1)
+  else if((pagMax >= 5 && atualPagina < pagMax - 1) || atualPagina == 3)
   {
     currentPageButton = 2;
   }
@@ -206,7 +218,16 @@ function buildPagination()
   var buttonIndex = 0;
   while(buttonIndex < 5)
   {
-    document.getElementById("pgnt-btn-"+String.fromCharCode(97 + buttonIndex)).innerHTML = (atualPagina + buttonIndex - currentPageButton).toString();
+    var paginaToDisplay = (atualPagina + buttonIndex - currentPageButton);
+    if(paginaToDisplay <= pagMax)
+    {
+      document.getElementById("pgnt-btn-"+String.fromCharCode(97 + buttonIndex)).innerHTML = paginaToDisplay.toString();
+      document.getElementById("pgnt-btn-"+String.fromCharCode(97 + buttonIndex)).style.display = "inline-block";
+    }
+    else
+    {
+      document.getElementById("pgnt-btn-"+String.fromCharCode(97 + buttonIndex)).style.display = "none";
+    }
     buttonIndex += 1;
   }
 
