@@ -1,6 +1,6 @@
 ---
 layout: poesia
-nomelivro: Sancta Virgo Virginum: Prece
+nomelivro: Sancta Virgo Virginum- Prece
 nomeautora: Auta de Souza
 anolancamento: 1897
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=81948
