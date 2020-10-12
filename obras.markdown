@@ -320,10 +320,8 @@ function pageButton(buttonID)
         <option value="Poesia">Poesia</option>
     </select>
 </div>
-<div style="align-items: center; text-align: center;">
-  <br>
-  <button class="button" onclick="randomObra()" style="font-weight:900; box-shadow: #00000044 0px 3px 2px">Me mostre uma obra aleatória!</button>
-  <br>
+<div style="align-items: center; text-align: center; line-height: 80px">
+  <button class="button" onclick="randomObra()" style="font-weight:900; box-shadow: #00000044 0px 3px 2px; display: inline-block;">Me mostre uma obra aleatória!</button>
 </div>
 <div class="pagination" id="pagination-top"></div>
 <p id="demo"></p>
