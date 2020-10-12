@@ -140,7 +140,7 @@ function listarObras()
   {
     if(obraEmPag >= obrasPorPagina) continue;
     var i = parseInt(val) + obraOffset;
-    if(i >= orbasPraMostrar.length) continue;
+    if(i >= obrasPraMostrar.length) continue;
     switch(obrasPraMostrar[i].escola)
     {
       case "prosa":
