@@ -63,15 +63,15 @@ function processParams(novaPag)
   {
     obrasPorPagina = 99999;
   }
-  if(novaPag == null || !Number.isInteger(novaPag))
-  {
-    atualPagina = parseInt(document.getElementById("paginaatual").value)
-  }
-  else
+  if(novaPag != null && Number.isInteger(novaPag))
   {
     atualPagina = novaPag;
   }
-  if(document.getElementById("paginaatual").value == "" || atualPagina < 1) atualPagina = 1;
+  else
+  {
+    atualPagina = 1;
+  }
+  if(atualPagina < 1) atualPagina = 1;
   autora();
 }
 
