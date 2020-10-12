@@ -4,8 +4,41 @@ title: Obras
 permalink: /obras/
 onLoadFunction: processURLParams()
 ---
+<div class="navbar">
+    <input class="nameobra" id="termo" placeholder="🔍 Título da Obra" oninput="processParams()">
+    <input class="nameautora" id="nomeautora" placeholder="🔍 Autora" oninput="processParams()">
+    <select class="pagenum" id="opp" onchange="processParams()">
+        <option value="5" disabled selected>Obras por Página</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="Todas">Todas</option>
+    </select>
+    <select class="obracat" id="filtros" onchange="processParams()">
+        <option value="Todas" disabled selected>Estilo das Obras</option>
+        <option value="Todas">Todas</option>
+        <option value="Prosa">Prosa</option>
+        <option value="Poesia">Poesia</option>
+    </select>
+</div>
+<div style="align-items: center; text-align: center; line-height: 80px">
+  <button class="button" onclick="randomObra()" style="font-weight:900; box-shadow: #00000044 0px 3px 2px; display: inline-block;">Me mostre uma obra aleatória!</button>
+</div>
+<div class="pagination" id="pagination-top"></div>
+<p id="demo"></p>
+<div class="pagination" id="pagination-bottom">
+    <span class="paginationbutton" onclick="pageButton('f')" id="pgnt-btn-f"><<</span>
+    <span class="paginationbutton" onclick="pageButton('a')" id="pgnt-btn-a">1</span>
+    <span class="paginationbutton" onclick="pageButton('b')" id="pgnt-btn-b">2</span>
+    <span class="paginationbutton" onclick="pageButton('c')" id="pgnt-btn-c">3</span>
+    <span class="paginationbutton" onclick="pageButton('d')" id="pgnt-btn-d">4</span>
+    <span class="paginationbutton" onclick="pageButton('e')" id="pgnt-btn-e">5</span>
+    <span class="paginationbutton" onclick="pageButton('l')" id="pgnt-btn-l">>></span>
+</div>
 <script>
-alert("script executa");
+alert("script");
 var share = true;
 
 var obras = [
@@ -300,39 +333,6 @@ function pageButton(buttonID)
 }
 
 </script>
-<div class="navbar">
-    <input class="nameobra" id="termo" placeholder="🔍 Título da Obra" oninput="processParams()">
-    <input class="nameautora" id="nomeautora" placeholder="🔍 Autora" oninput="processParams()">
-    <select class="pagenum" id="opp" onchange="processParams()">
-        <option value="5" disabled selected>Obras por Página</option>
-        <option value="5">5</option>
-        <option value="10">10</option>
-        <option value="25">25</option>
-        <option value="50">50</option>
-        <option value="100">100</option>
-        <option value="Todas">Todas</option>
-    </select>
-    <select class="obracat" id="filtros" onchange="processParams()">
-        <option value="Todas" disabled selected>Estilo das Obras</option>
-        <option value="Todas">Todas</option>
-        <option value="Prosa">Prosa</option>
-        <option value="Poesia">Poesia</option>
-    </select>
-</div>
-<div style="align-items: center; text-align: center; line-height: 80px">
-  <button class="button" onclick="randomObra()" style="font-weight:900; box-shadow: #00000044 0px 3px 2px; display: inline-block;">Me mostre uma obra aleatória!</button>
-</div>
-<div class="pagination" id="pagination-top"></div>
-<p id="demo"></p>
-<div class="pagination" id="pagination-bottom">
-    <span class="paginationbutton" onclick="pageButton('f')" id="pgnt-btn-f"><<</span>
-    <span class="paginationbutton" onclick="pageButton('a')" id="pgnt-btn-a">1</span>
-    <span class="paginationbutton" onclick="pageButton('b')" id="pgnt-btn-b">2</span>
-    <span class="paginationbutton" onclick="pageButton('c')" id="pgnt-btn-c">3</span>
-    <span class="paginationbutton" onclick="pageButton('d')" id="pgnt-btn-d">4</span>
-    <span class="paginationbutton" onclick="pageButton('e')" id="pgnt-btn-e">5</span>
-    <span class="paginationbutton" onclick="pageButton('l')" id="pgnt-btn-l">>></span>
-</div>
 <!--<div style="position: fixed;width: 600px;bottom: 15px;margin: auto;/* min-width: 300px; */border-radius: 5px;background: #F0F0F0;border: 2px solid #CDCDCD;box-shadow: 0px 5px 10px #AAAAAA;z-index: 50;padding: 5px 5px;align-content: center;">
 <form>
 Página Atual
