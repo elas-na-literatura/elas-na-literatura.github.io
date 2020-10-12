@@ -202,15 +202,15 @@ function buildPagination()
   {
     currentPageButton = 1;
   }
-  else if((pagMax >= 5 && atualPagina < pagMax - 1) || atualPagina == 3)
+  else if((pagMax > 5 && atualPagina < pagMax - 1) || atualPagina == 3)
   {
     currentPageButton = 2;
   }
-  else if(atualPagina == pagMax - 1)
+  else if((pagMax > 5 && atualPagina == pagMax - 1) || atualPagina == 4)
   {
     currentPageButton = 3;
   }
-  else if(atualPagina == pagMax)
+  else if((pagMax > 5 && atualPagina == pagMax) || atualPagina == 5)
   {
     currentPageButton = 4;
   }
@@ -232,6 +232,8 @@ function buildPagination()
   }
 
   document.getElementById("pgnt-btn-"+String.fromCharCode(97 + currentPageButton)).innerHTML = "<b>" + atualPagina.toString() + "</b>";
+
+  document.getElementById("pagination-top").innerHTML = document.getElementById("pagination-bottom").innerHTML;
 }
 
 function string_to_slug_mod (str) {
@@ -323,8 +325,9 @@ function pageButton(buttonID)
   <button class="button" onclick="randomObra()" style="font-weight:900; box-shadow: #00000044 0px 3px 2px">Me mostre uma obra aleatória!</button>
   <br>
 </div>
+<div class="pagination" id="pagination-top"></div>
 <p id="demo"></p>
-<div class="pagination">
+<div class="pagination" id="pagination-bottom">
     <span class="paginationbutton" onclick="pageButton('f')" id="pgnt-btn-f"><<</span>
     <span class="paginationbutton" onclick="pageButton('a')" id="pgnt-btn-a">1</span>
     <span class="paginationbutton" onclick="pageButton('b')" id="pgnt-btn-b">2</span>
