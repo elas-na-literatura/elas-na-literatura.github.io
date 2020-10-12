@@ -7,7 +7,7 @@ link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action
 fontelivro: Domínio Público
 quote: |
   Ai, deve ser o trágico tormento,
-  O estertor prolongado, lento, lento,
-  Do último adeus de um coração que morre...
+O estertor prolongado, lento, lento,
+Do último adeus de um coração que morre...
 quotepagina: 4
 ---

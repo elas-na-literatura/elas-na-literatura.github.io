@@ -7,7 +7,7 @@ link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action
 fontelivro: Domínio Público
 quote: |
   Eu fiz do Céu azul minha esperança
-  E dos astros dourados meu tesouro... Imagina por que, doce criança,
+E dos astros dourados meu tesouro... Imagina por que, doce criança,
 Nas noites de luar meus sonhos douro!
 quotepagina: 1
 ---
