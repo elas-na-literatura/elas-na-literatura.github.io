@@ -1,6 +1,6 @@
 ---
 layout: poesia
-nomelivro: Do livro "Mulher núa"
+nomelivro: Do livro “Mulher núa”
 nomeautora: Gilka Machado
 anolancamento: 1919
 link: http://memoria.bn.br/docreader/DocReader.aspx?bib=331457&pagfis=12 
