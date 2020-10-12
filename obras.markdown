@@ -5,6 +5,7 @@ permalink: /obras/
 onLoadFunction: processURLParams()
 ---
 <script>
+alert("script executa");
 var share = true;
 
 var obras = [
