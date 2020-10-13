@@ -78,7 +78,7 @@ function setParam(param)
   {
     try
     {
-      document.getElementById(values[0]).value = values[1].replace(/\+/g, " ").replace(/(%20)/g, " "); 
+      document.getElementById(values[0]).value = decodeURIComponent(values[1]); 
     }
     catch(err)
     {
