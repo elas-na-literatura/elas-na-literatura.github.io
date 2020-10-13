@@ -11,7 +11,7 @@ permalink: /autoras/
     {% for pagina in site.pages %}
         {% if pagina.dir == "/autoras/" %}
             {% if pagina.name != "autoras.markdown" %}
-                <span class="dot" onclick="slide('{{ pagina.nomeautora }}')">{{ pagina.anonascimento }}</span>
+                <span class="dot" onclick="slide('{{ pagina.nomeautora }}')">{{ pagina.anonascimento | replace: "b", "" }}</span>
                 <span class="infobox" id="{{ pagina.nomeautora }}">
                     <div class="row">
                     <div class="columncapatwo">

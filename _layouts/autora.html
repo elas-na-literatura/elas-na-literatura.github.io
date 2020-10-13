@@ -13,7 +13,7 @@
           {% if pagina.fotoautora != "" %}<div class="columncapa"> <img src={{ page.fotoautora }}> </div>{% endif %}
           <div class="column">
             <h1 style="font-weight:900">{{ page.nomeautora | default: "Nome da Autora" }}</h1>
-            <h3 style="color:#505050"><i><b>{{ page.anonascimento | default: "????" }}</b></i></h3>
+            <h3 style="color:#505050"><i><b>{{ page.anonascimento | replace: "b", ""}}</b></i></h3>
             {{ content }}
           </div>
         </div>
