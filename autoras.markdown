@@ -9,7 +9,7 @@ permalink: /autoras/
 
 <div class="line" id="timeline">
     {% for pagina in site.pages %}
-        {% if pagina.dir == "/obras/" %}
+        {% if pagina.dir == "/autoras/" %}
             {% if pagina.name != "autoras.markdown" %}
                 <span class="dot" onclick="slide('{{ pagina.nomeautora }}')">{{ pagina.anonascimento }}</span>
                 <span class="infobox" id="{{ pagina.nomeautora }}">
