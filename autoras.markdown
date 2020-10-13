@@ -14,10 +14,10 @@ permalink: /autoras/
                 <span class="dot" onclick="slide('{{ pagina.nomeautora }}')">{{ pagina.anonascimento }}</span>
                 <span class="infobox" id="{{ pagina.nomeautora }}">
                     <div class="row">
-                    <div class="columncapatwo" style="margin: 0px 16px 16px 16px;">
-                        <img src="{{ pagina.fotoautora }}">
+                    <div class="columncapatwo" style="float: none; width: 100%; text-align: center;">
+                        <img src="{{ pagina.fotoautora }}" style="margin: 16px;">
                     </div>
-                    <div class="columntwo" style="float: none;">
+                    <div class="columntwo" style="float: none; width: 100%">
                         <h1>{{ pagina.nomeautora }}</h1>
                         <p>{{ pagina.biografia }}</p>
                     </div>
