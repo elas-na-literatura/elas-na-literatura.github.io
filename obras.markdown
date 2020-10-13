@@ -177,18 +177,33 @@ function listarObras()
     switch(obrasPraMostrar[i].escola)
     {
       case "prosa":
-        document.getElementById("demo").innerHTML += 
-        '<div class="bookpreview">\n'+
-        '<div class="row">\n'+
-        '<div class="columncapatwo">\n<img src=' + obrasPraMostrar[i].imagem + '>\n</div>\n'+
-        '<div class="columntwo">\n'+
-        '<tag style="font-weight:900;font-size:36px">' + obrasPraMostrar[i].titulo + '</tag>\n<br>\n' +
-        '<tag style="color:#505050;font-size:25px"><i><b>' + obrasPraMostrar[i].autora + '</b> - ' + obrasPraMostrar[i].ano + '</i></tag>\n<br><br>\n' +
-        '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasPraMostrar[i].link + '", "_self")\'>Conferir Obra</button>\n</div>\n</div>\n<br>\n'+
-        '<a href="https://api.whatsapp.com/send?text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei%21%0A' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/whatsapp.svg" alt="WhatsApp" style="margin-top:-12px;margin-right:5px;"></a>'+
-        '<a href="https://twitter.com/intent/tweet?hashtags=ElasNaLiteratura&original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei!%20&tw_p=tweetbutton&url=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/twitter.svg" alt="Twitter" style="margin-top:-12px;margin-right:5px;"></a>'+
-        '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '&layout=button&size=small&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>\n'+
-        '</div>\n<br>\n';
+        if(obrasPraMostrar[i].imagem != "")
+        {
+          document.getElementById("demo").innerHTML += 
+          '<div class="bookpreview">\n'+
+          '<div class="row">\n'+
+          '<div class="columncapatwo">\n<img src=' + obrasPraMostrar[i].imagem + '>\n</div>\n'+
+          '<div class="columntwo">\n'+
+          '<tag style="font-weight:900;font-size:36px">' + obrasPraMostrar[i].titulo + '</tag>\n<br>\n' +
+          '<tag style="color:#505050;font-size:25px"><i><b>' + obrasPraMostrar[i].autora + '</b> - ' + obrasPraMostrar[i].ano + '</i></tag>\n<br><br>\n' +
+          '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasPraMostrar[i].link + '", "_self")\'>Conferir Obra</button>\n</div>\n</div>\n<br>\n'+
+          '<a href="https://api.whatsapp.com/send?text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei%21%0A' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/whatsapp.svg" alt="WhatsApp" style="margin-top:-12px;margin-right:5px;"></a>'+
+          '<a href="https://twitter.com/intent/tweet?hashtags=ElasNaLiteratura&original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei!%20&tw_p=tweetbutton&url=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/twitter.svg" alt="Twitter" style="margin-top:-12px;margin-right:5px;"></a>'+
+          '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '&layout=button&size=small&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>\n'+
+          '</div>\n<br>\n';
+        }
+        else
+        {
+          document.getElementById("demo").innerHTML += 
+          '<div class="bookpreview">\n'+
+          '<tag style="font-weight:900;font-size:36px">' + obrasPraMostrar[i].titulo + '</tag>\n<br>\n' +
+          '<tag style="color:#505050;font-size:25px"><i><b>' + obrasPraMostrar[i].autora + '</b> - ' + obrasPraMostrar[i].ano + '</i></tag>\n<br><br>\n' +
+          '<button class="button" onclick=\'window.open("{{ site.url }}obras/' + obrasPraMostrar[i].link + '", "_self")\'>Conferir Obra</button>\n<br><br>\n'+
+          '<a href="https://api.whatsapp.com/send?text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei%21%0A' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/whatsapp.svg" alt="WhatsApp" style="margin-top:-12px;margin-right:5px;"></a>'+
+          '<a href="https://twitter.com/intent/tweet?hashtags=ElasNaLiteratura&original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei!%20&tw_p=tweetbutton&url=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/twitter.svg" alt="Twitter" style="margin-top:-12px;margin-right:5px;"></a>'+
+          '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '&layout=button&size=small&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>\n'+
+          '</div>\n<br>\n';
+        }
         break;
       case "poesia":
         document.getElementById("demo").innerHTML += 
