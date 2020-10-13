@@ -14,8 +14,13 @@ permalink: /autoras/
                 <span class="dot" onclick="slide('{{ pagina.nomeautora }}')">{{ pagina.anonascimento }}</span>
                 <span class="infobox" id="{{ pagina.nomeautora }}">
                     <div class="row">
-                    <div class="columncapatwo"><img src={{ pagina.fotoautora }}></div>
-                    <div class="columntwo" style="float: none;">{{ pagina.biografia }}</span>
+                    <div class="columncapatwo" style="margin: 0px 16px 16px 16px;">
+                        <img src="{{ pagina.fotoautora }}">
+                    </div>
+                    <div class="columntwo" style="float: none;">
+                        <h1>{{ pagina.nomeautora }}</h1>
+                        <p>{{ pagina.biografia }}</p>
+                    </div>
                     </div>
                     <br><br>
                     <button class="button" onclick='window.open("{{ site.url }}autoras/{{ pagina.nomeautora }}", "_blank")'><b>Veja suas obras!</b></button><br><br>{% capture encoded-link %}{{ pagina.anonascimento }} {{ pagina.nomeautora }}{% endcapture %}
