@@ -2,7 +2,7 @@
 layout: poesia
 nomelivro: Exausta, espírito, exausta
 nomeautora: Cecília Meireles
-anolancamento: 1985
+anolancamento: Sem Ano
 link: http://objdigital.bn.br/acervo_digital/div_manuscritos/mss_I_07_12_033A_n62/mss_I_07_12_033A_n62.pdf
 fontelivro: Biblioteca Nacional
 quote: |
