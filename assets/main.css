@@ -284,6 +284,7 @@ body
         border-radius: 4.8828125vw;
         border: 0.5859375vw solid #EEE;
         padding: 3.125vw;
+        z-index: -999999;
     }
 
     .dot
