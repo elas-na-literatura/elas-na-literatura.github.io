@@ -31,7 +31,7 @@
         {% capture encoded-link %}
         {{ page.nomeautora | uri_escape }}
         {% endcapture %}
-        {{ "https://sitesuperlegal.com/trem%20com%20uri?funciona=por%20favor" | uri_escape }}
+        {{ "https://sitesuperlegal.com/trem com%20uri?funciona=por%20favor" | uri_escape }}
         <a href="https://api.whatsapp.com/send?text=Olha%20que%20autora%20maravilhosa%20que%20eu%20encontrei%3A%20{{ page.nomeautora | uri_escape }}%21%20%0Ahttps%3A%2F%2Felas-na-literatura.github.io%2Fobras%2F%3Fnomeautora%3D{{ encoded-link | uri_escape }}" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/whatsapp.svg" alt="WhatsApp"  style="margin-top:-12px;"></a>
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Olha que autora maravilhosa que eu encontrei: {{ page.nomeautora }}! " data-url="https://elas-na-literatura.github.io/obras/?nomeautora={{ page.nomeautora | uri_escape }}" data-hashtags="ElasNaLiteratura" data-lang="pt" data-show-count="false"><img src="https://elas-na-literatura.github.io/rsc/twitter.svg" alt="Twitter"  style="margin-top:-12px;"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Felas-na-literatura.github.io%2Fobras%2F%3Fnomeautora%3D{{ page.nomeautora | uri_escape }}&layout=button&size=small&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
