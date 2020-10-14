@@ -31,7 +31,7 @@
         {{ links }} <br>
         {% for destination in links %}
         {{ forloop.index }} // {{ destination }} <br>
-        {% assign half = links | split: " # " %}
+        {% assign half = destination | split: " # " %}
         {% for element in half %}
         {{ forloop.index }} -- {{ element }} <br>
         {% if forloop.first == true %}
