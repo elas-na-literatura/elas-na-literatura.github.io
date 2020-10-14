@@ -194,6 +194,7 @@ function listarObras()
         '<a href="https://twitter.com/intent/tweet?hashtags=ElasNaLiteratura&original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei!%20&tw_p=tweetbutton&url=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/twitter.svg" alt="Twitter" style="margin-top:-11px;margin-right:5px;"></a>'+
         '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '&layout=button&size=small&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>\n'+
         '\n</div>\n<br>\n';
+        obraEmPag++;
         continue;
     }
     switch(obrasPraMostrar[i].escola)
