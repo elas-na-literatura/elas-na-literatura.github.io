@@ -181,15 +181,15 @@ function listarObras()
       {
         var linkURL = obrasPraMostrar[i].dest.split(" $ ")[link].split(" # ")[0];
         var linkEdition = obrasPraMostrar[i].dest.split(" $ ")[link].split(" # ")[1];
-        buttons += '<button class="button" onclick=\'window.open("' + linkURL + '", "_self")\'>Acesse a ' + linkEdition + 'ª Edição via ' + obrasPraMostrar[i].destname + '!</button><br>\n';
+        buttons += '<button class="button" style="display: inline-block;" onclick=\'window.open("' + linkURL + '", "_self")\'>Acesse a ' + linkEdition + 'ª Edição via ' + obrasPraMostrar[i].destname + '!</button><br><br>\n';
       }
         document.getElementById("demo").innerHTML += 
         '<div class="bookpreview">\n'+
         '<tag style="font-weight:900;font-size:36px">' + obrasPraMostrar[i].titulo + '</tag>\n<br>\n' +
         '<tag style="color:#505050;font-size:25px"><i><b>' + obrasPraMostrar[i].autora + '</b> - ' + obrasPraMostrar[i].ano + '</i></tag>\n<br>\n' +
-        '<div class="quote" style="font-weight:400; background-color: #0000;">\n<i>\n' +
-        '<div class="center">' + obrasPraMostrar[i].quote + '</div><br>\n' + '</i></div>' +
-        buttons + "<br>\n"
+        '<div class="quote" style="font-weight:400;background-color: #0000;color: black;text-shadow: none;">\n<i>\n' +
+        '<div style="text-align: justify">' + obrasPraMostrar[i].quote + '</div><br>\n' + '</i></div>' +
+        '<div style="text-align: center">'buttons + "</div><br>\n"
         '<a href="https://api.whatsapp.com/send?text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei%21%0A' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/whatsapp.svg" alt="WhatsApp" style="margin-top:-11px;margin-right:5px;"></a>'+
         '<a href="https://twitter.com/intent/tweet?hashtags=ElasNaLiteratura&original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei!%20&tw_p=tweetbutton&url=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/twitter.svg" alt="Twitter" style="margin-top:-11px;margin-right:5px;"></a>'+
         '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '&layout=button&size=small&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>\n'+
