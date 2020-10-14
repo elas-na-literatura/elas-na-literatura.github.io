@@ -18,7 +18,7 @@ permalink: /autoras/
                         <img src="{{ pagina.fotoautora }}" style="display: inline-block; border-radius: 15px; margin-bottom: 16px;">
                     </div>
                     <div style="text-align: justify">
-                        <h1><a href="https://elas-na-literatura.github.io/autoras/{{ encoded-link | slugify }}">{{ pagina.nomeautora }}</a></h1>
+                        <h1>{{ pagina.nomeautora }}<a href="https://elas-na-literatura.github.io/autoras/{{ encoded-link | slugify }}"><img src="/rsc/nw.svg" style="vertical-align: super;"></a></h1>
                         <p>{{ pagina.biografia }}</p>
                     </div>
                     <br>
