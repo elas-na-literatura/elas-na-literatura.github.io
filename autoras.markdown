@@ -13,14 +13,12 @@ permalink: /autoras/
             {% if pagina.name != "autoras.markdown" %}
                 <span class="dot" onclick="slide('{{ pagina.nomeautora }}')">{{ pagina.anonascimento | replace: "b", "" }}</span>
                 <span class="infobox" id="{{ pagina.nomeautora }}">
-                    <div class="row">
-                    <div class="columncapatwo">
+                    <div style="height: 128px; text-align: center;">
                         <img src="{{ pagina.fotoautora }}">
                     </div>
-                    <div class="columntwo" style="float: none; text-align: justify">
+                    <div style="text-align: justify">
                         <h1>{{ pagina.nomeautora }}</h1>
                         <p>{{ pagina.biografia }}</p>
-                    </div>
                     </div>
                     <br><br>
                     <button class="button" onclick='window.open("{{ site.url }}autoras/{{ pagina.nomeautora }}", "_blank")'><b>Veja suas obras!</b></button><br><br>{% capture encoded-link %}{{ pagina.anonascimento }} {{ pagina.nomeautora }}{% endcapture %}
