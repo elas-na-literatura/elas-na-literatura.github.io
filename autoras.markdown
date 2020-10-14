@@ -17,7 +17,7 @@ permalink: /autoras/
                     <div class="columncapatwo">
                         <img src="{{ pagina.fotoautora }}">
                     </div>
-                    <div class="columntwo" style="float: none;">
+                    <div class="columntwo" style="float: none; text-align: justify">
                         <h1>{{ pagina.nomeautora }}</h1>
                         <p>{{ pagina.biografia }}</p>
                     </div>
@@ -33,7 +33,7 @@ permalink: /autoras/
     {% endfor %}
 
     <span class="dot" onclick="slide('????')">????</span>
-    <span class="infobox" id="????">As autoras Isabel Lima, Luciana V. P. de Mendonça e Sylvia Senny não se apresentam na linha do tempo tanto por não termos o acesso e quantidade de informações necessárias quanto por saber se as informações de fato diziam respeito à essas autoras. Contudo, ressaltamos que suas obras não são menos importantes e merecem serem lidas tanto quanto as outras se interessarem ao leitor. </span><br>
+    <span class="infobox" id="????">As autoras <b>Isabel Lima</b>, <b>Luciana V. P. de Mendonça</b> e <b>Sylvia Senny</b> não se apresentam na linha do tempo tanto por não termos o acesso e quantidade de informações necessárias quanto por saber se as informações de fato diziam respeito à essas autoras. Contudo, ressaltamos que suas obras não são menos importantes e merecem serem lidas tanto quanto as outras se interessarem ao leitor. </span><br>
 </div>
 
 <br><br>

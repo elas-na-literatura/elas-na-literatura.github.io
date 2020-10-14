@@ -3,7 +3,7 @@ layout: page
 title: Sobre
 permalink: /sobre/
 ---
-
+<div style="text-align: justify">
 # Olá! Seja bem-vindo(a) ao Elas na Literatura! 
 
 Esse site sem fins lucrativos tem por objetivo _enaltecer, divulgar, valorizar e representar_ as várias mulheres que fazem da Literatura brasileira o que ela é! Confira aqui produções do século XVIII até o século XXI, viajando e explorando parte imprescindível da cultura do Brasil. 
@@ -21,3 +21,4 @@ _Henrique Rodrigues Hissa Amorim_ e _Lara Johnsen Villas Boas Stefani_ são alun
 - Isabelli Bachman Sacilotto 
 - Lara Johnsen Villas Boas Stefani
 - Marina Rodrigues Grohmann
+</div>
