@@ -28,9 +28,12 @@
         </div>
         {% if page.revista == true %}
         {% assign links = page.link | split: " $ " %}
+        {{ links }} <br>
         {% for destination in links %}
+        {{ forloop.index }} // {{ destination }} <br>
         {% assign half = links | split: " # " %}
         {% for element in half %}
+        {{ forloop.index }} // {{ element }} <br>
         {% if forloop.first == true %}
             <button class="button" style="display: inline-block;" onclick="window.open('{{ element }}', '_self')">
         {% else %}
