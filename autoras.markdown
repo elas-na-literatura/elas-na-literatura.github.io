@@ -78,6 +78,7 @@ permalink: /autoras/
                 lastInfobox.style.animationName = 'hide';
                 lastInfobox.style.animationDuration = '0.5s';
                 lastInfobox.style.opacity = '0';
+                infobox.style.zIndex = '-999999';
             }                  
                     
             lastButton = last;
