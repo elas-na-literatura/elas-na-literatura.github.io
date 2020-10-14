@@ -8,7 +8,7 @@ sinopse: |
   Com a proposta de garantir o direito à educação, a autora reúne diversos poemas que enaltecem a cultura e a literatura brasileira remetendo a simplicidade da vida cotidiana e a beleza de sua efemeridade. 
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=50050
 fontelivro: Domínio Público
-imagemcapa: 
+imagemcapa: https://www.containercultura.com.br/imgs/produtos/3497/images/3497.jpg
 quote: |
   Não lhe tirei a razão<br>Caçarola centenária<br>fritou bolinhos de chuva<br>para várias gerações.
 quotepagina: 42

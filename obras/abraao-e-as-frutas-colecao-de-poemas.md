@@ -7,7 +7,7 @@ sinopse: |
   Livro que reúne poesias para todas as idades, com uma literatura leve e com gostinho da cultura do Brasil.
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=50056
 fontelivro: Domínio Público
-imagemcapa: 
+imagemcapa: https://www.containercultura.com.br/imgs/produtos/3364/images/3364.jpg
 quote: |
   Lembro-me apenas do pé de goiaba Da menina órfã de olhar castanho Que ao se apaixonar por um estranho Foi viver longe, bem longe de casa.
 quotepagina: 23

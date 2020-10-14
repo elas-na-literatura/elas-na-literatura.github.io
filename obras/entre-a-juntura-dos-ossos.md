@@ -8,7 +8,7 @@ sinopse: |
 link: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=50040
 
 fontelivro: Domínio Público
-imagemcapa: 
+imagemcapa: https://images-na.ssl-images-amazon.com/images/I/51mAQhnaxYL._AC_SY400_.jpg
 quote: |
   O mar arremessava-se<br>contra o céu<br>a espuma rangia<br>e uns bicos de aves doídas<br>batiam na alma<br>batiam na alma.
 quotepagina: 27
