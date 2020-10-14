@@ -13,8 +13,8 @@ permalink: /autoras/
             {% if pagina.name != "autoras.markdown" %}
                 <span class="dot" onclick="slide('{{ pagina.nomeautora }}')">{{ pagina.anonascimento | replace: "b", "" }}</span>
                 <span class="infobox" id="{{ pagina.nomeautora }}">
-                    <div style="height: 196px; text-align: center;">
-                        <img src="{{ pagina.fotoautora }}" style="height: 100%">
+                    <div style="text-align: center;">
+                        <img src="{{ pagina.fotoautora }}" style="display: inline-block;">
                     </div>
                     <div style="text-align: justify">
                         <h1>{{ pagina.nomeautora }}</h1>
