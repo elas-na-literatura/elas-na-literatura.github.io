@@ -44,7 +44,7 @@ document.documentElement.style.setProperty('--scalefac', (document.documentEleme
 
 var obras = [
 {% for pagina in site.pages %}{% if pagina.dir == "/obras/"%}{% if pagina.name != "obras.markdown"%}
-{titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{{ pagina.layout }}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}", quotepag:"{{ pagina.quotepagina }}"},
+{titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{% if pagina.revista != true %}{{ pagina.layout }}{% else %}prosa{% endif %}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}", quotepag:"{{ pagina.quotepagina }}"},
 {% endif %}{% endif %}{% endfor %}{}];
 
 delete obras[obras.length - 1];
@@ -174,6 +174,27 @@ function listarObras()
     if(obraEmPag >= obrasPorPagina) continue;
     var i = parseInt(val) + obraOffset;
     if(i >= obrasPraMostrar.length) continue;
+    if(obrasPraMostrar[i].titulo.toLowerCase().includes("revista"))
+    {
+      var buttons = "";
+      for(link in obrasPraMostrar[i].split(" $ "))
+      {
+        var linkURL = obrasPraMostrar.split(" $ ")[link].split(" # ")[0];
+        var linkEdition = obrasPraMostrar.split(" $ ")[link].split(" # ")[1];
+        buttons += '<button class="button" onclick=\'window.open("' + linkURL + '", "_self")\'>Acesse a ' + linkEdition + 'ª Edição via ' + obrasPraMostrar[i].destname + '!</button><br>\n';
+      }
+        document.getElementById("demo").innerHTML += 
+        '<div class="bookpreview">\n'+
+        '<tag style="font-weight:900;font-size:36px">' + obrasPraMostrar[i].titulo + '</tag>\n<br>\n' +
+        '<tag style="color:#505050;font-size:25px"><i><b>' + obrasPraMostrar[i].autora + '</b> - ' + obrasPraMostrar[i].ano + '</i></tag>\n<br>\n' +
+        '<div class="quote" style="font-weight:400; background-color: #0000;">\n<i>\n' +
+        '<div class="center">' + obrasPraMostrar[i].quote + '</div><br>\n' +</i></div>' +
+        buttons + "<br>\n"
+        '<a href="https://api.whatsapp.com/send?text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei%21%0A' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/whatsapp.svg" alt="WhatsApp" style="margin-top:-11px;margin-right:5px;"></a>'+
+        '<a href="https://twitter.com/intent/tweet?hashtags=ElasNaLiteratura&original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&text=Olha%20essa%20obra%20maravilhosa%20da%20' + encodeURI(obrasPraMostrar[i].autora) + '%20que%20eu%20encontrei!%20&tw_p=tweetbutton&url=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '" target="_blank"><img src="https://elas-na-literatura.github.io/rsc/twitter.svg" alt="Twitter" style="margin-top:-11px;margin-right:5px;"></a>'+
+        '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + encodeURI("{{ site.url }}obras/" + obrasPraMostrar[i].link) + '&layout=button&size=small&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>\n'+
+        '\n</div>\n<br>\n';
+    }
     switch(obrasPraMostrar[i].escola)
     {
       case "prosa":
