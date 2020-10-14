@@ -44,7 +44,7 @@ document.documentElement.style.setProperty('--scalefac', (document.documentEleme
 
 var obras = [
 {% for pagina in site.pages %}{% if pagina.dir == "/obras/"%}{% if pagina.name != "obras.markdown"%}
-{titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{% if pagina.revista != true %}{{ pagina.layout }}{% else %}prosa{% endif %}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}", quotepag:"{{ pagina.quotepagina }}"},
+{titulo:"{{ pagina.nomelivro }}", autora:"{{ pagina.nomeautora }}", ano:"{{ pagina.anolancamento }}", escola:"{% if pagina.revista != true %}{{ pagina.layout }}{% else %}prosa{% endif %}", imagem:"{{ pagina.imagemcapa }}", link:"{{ pagina.nomelivro | slugify: "latin"}}", dest:"{{ pagina.link  | strip_newlines || default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }}", destname:"{{ pagina.fontelivro | default: "YouTube" }}", quote:"{{ pagina.quote | strip_newlines }}", quotepag:"{{ pagina.quotepagina }}"},
 {% endif %}{% endif %}{% endfor %}{}];
 
 delete obras[obras.length - 1];
