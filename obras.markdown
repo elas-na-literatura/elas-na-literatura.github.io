@@ -179,8 +179,8 @@ function listarObras()
       var buttons = "";
       for(link in obrasPraMostrar[i].dest.split(" $ "))
       {
-        var linkURL = obrasPraMostrar.split(" $ ")[link].split(" # ")[0];
-        var linkEdition = obrasPraMostrar.split(" $ ")[link].split(" # ")[1];
+        var linkURL = obrasPraMostrar[i].dest.split(" $ ")[link].split(" # ")[0];
+        var linkEdition = obrasPraMostrar[i].dest.split(" $ ")[link].split(" # ")[1];
         buttons += '<button class="button" onclick=\'window.open("' + linkURL + '", "_self")\'>Acesse a ' + linkEdition + 'ª Edição via ' + obrasPraMostrar[i].destname + '!</button><br>\n';
       }
         document.getElementById("demo").innerHTML += 
