@@ -10,8 +10,8 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="row">
-          {% if pagina.imagemcapa != "" %}<div class="columncapa"> <img src={{ page.imagemcapa | default: "https://images-na.ssl-images-amazon.com/images/I/31aX81I6vnL._SX351_BO1,204,203,200_.jpg" }}> </div>{% endif %}
-          <div class="column">
+          {% if page.imagemcapa != "" %}<div class="columncapa"> <img src={{ page.imagemcapa }}> </div>{% endif %}
+          <div class="column"{% if page.imagemcapa != "" %}style="width: 100%;"{% endif %}>
             <h1 style="font-weight:900">{{ page.nomelivro | default: "Nome da Obra" }}</h1>
             <h3 style="color:#505050"><i><b>{{ page.nomeautora | default: "Autora Da Silva" }}</b> - {{ page.anolancamento | default: "Sem Ano" }}</i></h3>
             <p> Sinopse: {{ page.sinopse | default: "Lorem ipsum dolor sit amet."}} </p>
