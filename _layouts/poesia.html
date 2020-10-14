@@ -33,11 +33,13 @@
         {{ forloop.index }} // {{ destination }} <br>
         {% assign half = links | split: " # " %}
         {% for element in half %}
-        {{ forloop.index }} // {{ element }} <br>
+        {{ forloop.index }} -- {{ element }} <br>
         {% if forloop.first == true %}
-            <button class="button" style="display: inline-block;" onclick="window.open('{{ element }}', '_self')">
+            <p>first</p><br>
+            <!--<button class="button" style="display: inline-block;" onclick="window.open('{{ element }}', '_self')">-->
         {% else %}
-            Acesse a {{ element }}ª Edição via {{ page.fontelivro }}!</button><br><br>
+            <p>second</p><br>
+            <!--Acesse a {{ element }}ª Edição via {{ page.fontelivro }}!</button><br><br>-->
         {% endif %}
         {% endfor %}
         {% endfor %}
