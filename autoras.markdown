@@ -11,16 +11,17 @@ permalink: /autoras/
     {% for pagina in site.pages %}
         {% if pagina.dir == "/autoras/" %}
             {% if pagina.name != "autoras.markdown" %}
+                {% capture encoded-link %}{{ pagina.anonascimento }} {{ pagina.nomeautora | slugify: "latin"}}{% endcapture %}
                 <span class="dot" onclick="slide('{{ pagina.nomeautora }}')">{{ pagina.anonascimento | replace: "b", "" }}</span>
                 <span class="infobox" id="{{ pagina.nomeautora }}">
                     <div style="text-align: center;">
-                        <img src="{{ pagina.fotoautora }}" style="display: inline-block;">
+                        <img src="{{ pagina.fotoautora }}" style="display: inline-block; border-radius: 15px; margin-bottom: 16px;">
                     </div>
                     <div style="text-align: justify">
-                        <h1>{{ pagina.nomeautora }}</h1>
+                        <h1><a href="https://elas-na-literatura.github.io/autora/{{ encoded-link }}">{{ pagina.nomeautora }}</a></h1>
                         <p>{{ pagina.biografia }}</p>
                     </div>
-                    <br>{% capture encoded-link %}{{ pagina.anonascimento }} {{ pagina.nomeautora | slugify: "latin"}}{% endcapture %}
+                    <br>
                     <a href='https://api.whatsapp.com/send?text=Olha%20que%20autora%20maravilhosa%20que%20eu%20encontrei%3A%20{{ pagina.nomeautora | uri_escape }}%21%20%0Ahttps%3A%2F%2Felas-na-literatura.github.io%2Fautoras%2F{{ encoded-link | slugify }}' target="_blank"><img src="https://elas-na-literatura.github.io/rsc/whatsapp.svg" alt="WhatsApp"  style="margin-top:-12px;"></a>
                     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Olha que autora maravilhosa que eu encontrei: {{ pagina.nomeautora }}! " data-url="https://elas-na-literatura.github.io/autora/{{ encoded-link }}" data-hashtags="ElasNaLiteratura" data-lang="pt" data-show-count="false"><img src="https://elas-na-literatura.github.io/rsc/twitter.svg" alt="Twitter"  style="margin-top:-12px;"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <iframe src='https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Felas-na-literatura.github.io%2Fautoras%2F{{ encoded-link | slugify }}&layout=button&size=small&width=110&height=20&appId' width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>

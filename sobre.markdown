@@ -17,8 +17,8 @@ Os textos disponíveis foram retirados tanto do <b>Domínio Público</b> quanto 
 <i>Henrique Rodrigues Hissa Amorim</i> e <i>Lara Johnsen Villas Boas Stefani</i> são alunos do <b>Colégio Dante Alighieri</b>, cursando a 2ª série do Ensino Médio em 2020. O projeto nasceu da iniciativa do <i>3º Desafio de Empreendedorismo Social</i> da escola, que tem como proposta elaborar em grupos um projeto que resolva problemas presentes no mundo, aplicando conhecimentos de tecnologias e desenvolvimento habilidades. O tema deste ano foi a <i>conservação de patrimônios materiais e imateriais</i>, e com este site, foi desejado ir além do proposto. Assim contribuindo para combater a desigualdade de gênero e étnica na Literatura, sendo essa uma área que desenvolve pensamento crítico, escrita, leitura e compreensão do mundo através da história. Os alunos acima executaram toda a pesquisa de conteúdo, organização, e design no site e a programação desses para o meio digital para que todos pudessem acessar. 
 
 <h3>Membros do grupo:</h3>
-- Henrique Rodrigues Hissa Amorim
-- Isabelli Bachman Sacilotto 
-- Lara Johnsen Villas Boas Stefani
-- Marina Rodrigues Grohmann
+- Henrique Rodrigues Hissa Amorim<br>
+- Isabelli Bachman Sacilotto<br>
+- Lara Johnsen Villas Boas Stefani<br>
+- Marina Rodrigues Grohmann<br>
 </div>
