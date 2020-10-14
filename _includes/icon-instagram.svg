@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 16 16"
+   width="16px"
+   height="16px"
+   version="1.1"
+   id="svg845"
+   sodipodi:docname="icon-instagram.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata851">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs849">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect924"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect897"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath893">
+      <rect
+         style="display:none;fill:#ffffff;fill-opacity:1;stroke-width:0.00206408"
+         id="rect895"
+         width="11.711417"
+         height="11.710441"
+         x="1.9690043"
+         y="2.0247023"
+         ry="3.3384948"
+         d="m 5.3074991,2.0247023 h 5.0344279 c 1.849526,0 3.338494,1.4889687 3.338494,3.3384948 v 5.0334509 c 0,1.849526 -1.488968,3.338495 -3.338494,3.338495 H 5.3074991 c -1.8495262,0 -3.3384948,-1.488969 -3.3384948,-3.338495 V 5.3631971 c 0,-1.8495261 1.4889686,-3.3384948 3.3384948,-3.3384948 z" />
+      <path
+         id="lpe_path-effect897"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.00206408"
+         class="powerclip"
+         d="M -5,-5 H 21 V 21 H -5 Z M 5.3074991,2.0247023 c -1.8495262,0 -3.3384948,1.4889687 -3.3384948,3.3384948 v 5.0334509 c 0,1.849526 1.4889686,3.338495 3.3384948,3.338495 h 5.0344279 c 1.849526,0 3.338494,-1.488969 3.338494,-3.338495 V 5.3631971 c 0,-1.8495261 -1.488968,-3.3384948 -3.338494,-3.3384948 z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath920">
+      <path
+         id="path922"
+         style="display:none;fill:#ffffff;fill-opacity:1;stroke-width:0.00213092"
+         d="M 11.007812,3.9882812 A 0.72814268,0.73284036 0 0 0 10.28125,4.7207031 0.72814268,0.73284036 0 0 0 11.007812,5.453125 0.72814268,0.73284036 0 0 0 11.736328,4.7207031 0.72814268,0.73284036 0 0 0 11.007812,3.9882812 Z M 7.7773438,4.7988281 a 2.998791,3.0181379 0 0 0 -2.9414063,3.0175781 2.998791,3.0181379 0 0 0 3,3.0175778 2.998791,3.0181379 0 0 0 2.9980465,-3.0175778 2.998791,3.0181379 0 0 0 -2.9980465,-3.0175781 2.998791,3.0181379 0 0 0 -0.058594,0 z" />
+      <path
+         id="lpe_path-effect924"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.00213092"
+         class="powerclip"
+         d="M -1.9431679,-1.904474 H 17.652962 V 17.575575 H -1.9431679 Z M 11.007812,3.9882812 A 0.72814268,0.73284036 0 0 0 10.28125,4.7207031 0.72814268,0.73284036 0 0 0 11.007812,5.453125 0.72814268,0.73284036 0 0 0 11.736328,4.7207031 0.72814268,0.73284036 0 0 0 11.007812,3.9882812 Z M 7.7773438,4.7988281 a 2.998791,3.0181379 0 0 0 -2.9414063,3.0175781 2.998791,3.0181379 0 0 0 3,3.0175778 2.998791,3.0181379 0 0 0 2.9980465,-3.0175778 2.998791,3.0181379 0 0 0 -2.9980465,-3.0175781 2.998791,3.0181379 0 0 0 -0.058594,0 z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1267"
+     inkscape:window-height="1040"
+     id="namedview847"
+     showgrid="false"
+     inkscape:zoom="36.548582"
+     inkscape:cx="7.5080182"
+     inkscape:cy="8.1677255"
+     inkscape:window-x="52"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg845" />
+  <path
+     style="fill:#828282;fill-opacity:1;stroke-width:0.00198812"
+     id="rect883"
+     width="9.5961304"
+     height="9.4800491"
+     x="3.0568321"
+     y="3.095526"
+     ry="2.199569"
+     sodipodi:type="rect"
+     clip-path="url(#clipPath920)"
+     inkscape:path-effect="#path-effect924"
+     d="m 5.2564011,3.095526 h 5.1969919 c 1.218562,0 2.199569,0.9810077 2.199569,2.199569 v 5.080911 c 0,1.218561 -0.981007,2.199569 -2.199569,2.199569 H 5.2564011 c -1.2185613,0 -2.199569,-0.981008 -2.199569,-2.199569 V 5.295095 c 0,-1.2185613 0.9810077,-2.199569 2.199569,-2.199569 z" />
+  <path
+     style="fill:#828282;fill-opacity:1;stroke-width:0.00199079"
+     id="rect879"
+     width="16"
+     height="16"
+     x="0"
+     y="0"
+     ry="3.5008223"
+     clip-path="url(#clipPath893)"
+     sodipodi:type="rect"
+     inkscape:path-effect="#path-effect897"
+     d="M 3.5008223,0 H 12.499178 C 14.438633,0 16,1.5613667 16,3.5008223 V 12.499178 C 16,14.438633 14.438633,16 12.499178,16 H 3.5008223 C 1.5613667,16 0,14.438633 0,12.499178 V 3.5008223 C 0,1.5613667 1.5613667,0 3.5008223,0 Z" />
+  <ellipse
+     style="fill:#828282;fill-opacity:1;stroke-width:0.00139211"
+     id="ellipse889"
+     cx="7.8355503"
+     cy="7.8162036"
+     rx="1.9590789"
+     ry="1.9717181" />
+</svg>
