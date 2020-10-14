@@ -177,7 +177,7 @@ function listarObras()
     if(obrasPraMostrar[i].titulo.toLowerCase().includes("revista"))
     {
       var buttons = "";
-      for(link in obrasPraMostrar[i].split(" $ "))
+      for(link in obrasPraMostrar[i].dest.split(" $ "))
       {
         var linkURL = obrasPraMostrar.split(" $ ")[link].split(" # ")[0];
         var linkEdition = obrasPraMostrar.split(" $ ")[link].split(" # ")[1];
