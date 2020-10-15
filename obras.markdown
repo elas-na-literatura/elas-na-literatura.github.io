@@ -345,23 +345,23 @@ function pageButton(buttonID)
       break;
     case 'a':
       switchPage = true;
-      pageToSwitch = parseInt(document.getElementById("pgnt-btn-a").innerHTML);
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-a").innerText);
       break;
     case 'b':
       switchPage = true;
-      pageToSwitch = parseInt(document.getElementById("pgnt-btn-b").innerHTML);
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-b").innerText);
       break;
     case 'c':
       switchPage = true;
-      pageToSwitch = parseInt(document.getElementById("pgnt-btn-c").innerHTML);
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-c").innerText);
       break;
     case 'd':
       switchPage = true;
-      pageToSwitch = parseInt(document.getElementById("pgnt-btn-d").innerHTML);
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-d").innerText);
       break;
     case 'e':
       switchPage = true;
-      pageToSwitch = parseInt(document.getElementById("pgnt-btn-e").innerHTML);
+      pageToSwitch = parseInt(document.getElementById("pgnt-btn-e").innerText);
       break;
     case 'l':
       switchPage = true;
