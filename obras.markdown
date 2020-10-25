@@ -4,6 +4,7 @@ title: Obras
 permalink: /obras/
 onLoadFunction: processURLParams()
 ---
+<p>Obs.: As citações das obras respeitaram a gramática e ortografia da época em que foram escritas as obras.</p>
 <div class="navbar">
     <input class="nameobra" id="termo" placeholder="🔍 Título da Obra" oninput="processParams()">
     <input class="nameautora" id="nomeautora" placeholder="🔍 Autora" oninput="processParams()">
