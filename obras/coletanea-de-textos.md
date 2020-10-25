@@ -9,6 +9,6 @@ link: http://objdigital.bn.br/acervo_digital/div_manuscritos/mss_I_07_12_033A_n0
 fontelivro: Biblioteca Nacional
 imagemcapa: 
 quote: |
-  E todos êles poderiam estar, com suas várias conversas e suas recordações terrenas, e andariam pela minha casa, misturados a coisas ue foram suas, e de que já não guardariam lembrança. E eu iria com eles, nem apontar nada, esperando que as suas antigas visões aparecessem. Mas talvez estejam para sempre perdidas.
+  E todos êles poderiam estar, com suas várias conversas e suas recordações terrenas, e andariam pela minha casa, misturados a coisas que foram suas, e de que já não guardariam lembrança. E eu iria com eles, nem apontar nada, esperando que as suas antigas visões aparecessem. Mas talvez estejam para sempre perdidas.
 quotepagina: 1
 ---
